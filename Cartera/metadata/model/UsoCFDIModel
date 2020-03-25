@@ -1,0 +1,120 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "UsoCFDIModel"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "BancosModel1",
+    "designerId": "2ad50bc4-f3a5-4d72-a49c-0fb307eb0b37",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_uso_cfdi"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger7",
+            "designerId": "2eb9ab8c-a4fe-4901-8f0d-eece39c6b069"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "uso_cfdi_id"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger3",
+            "designerId": "4f65ef9f-885d-4e3a-8100-8fb3fa7b4ad1"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_institucion"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger19",
+            "designerId": "ebf2fc1e-5a6a-45a8-a817-d2e956615ea0"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": true,
+                "name": "clave"
+            },
+            "configAlternates": {
+                "name": "string",
+                "allowNull": "boolean"
+            },
+            "name": "MyString1",
+            "designerId": "6038eab3-e6b7-4256-a4ed-cd9ab3b7f216"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": true,
+                "name": "uso"
+            },
+            "configAlternates": {
+                "name": "string",
+                "allowNull": "boolean"
+            },
+            "name": "MyString18",
+            "designerId": "da1e9f6f-b3cb-4e62-8494-bff82b48087a"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": true,
+                "name": "status"
+            },
+            "configAlternates": {
+                "name": "string",
+                "allowNull": "boolean"
+            },
+            "name": "MyInteger2",
+            "designerId": "285c230e-1374-453d-b5d3-714461d8651b"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ciclosescolarestab",
+        "designer|userClassName": "InstitucionesTabViewController1"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesTabViewController1",
+    "designerId": "e83c97f7-da02-4664-ad1c-ef5e093ef51f"
+}

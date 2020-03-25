@@ -1,0 +1,84 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "cmbTransporteModel"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "AlumnosModel1",
+    "designerId": "d00dbb47-4da5-422d-9014-6cd6e82b8416",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_cuota_transporte"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger7",
+            "designerId": "df2115bd-6fca-48c8-9ea5-5e7f7a8a382a"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_institucion"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger20",
+            "designerId": "8d801efe-3c42-4152-a5bd-c3ad33250950"
+        },
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "cuota"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger4",
+            "designerId": "030f2ab5-2c64-4f1b-9a94-ce44333fb2ac"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": true,
+                "name": "descripcion"
+            },
+            "configAlternates": {
+                "name": "string",
+                "allowNull": "boolean"
+            },
+            "name": "MyString1",
+            "designerId": "157af92e-0170-4a66-8290-e64ed260c09e"
+        }
+    ]
+}

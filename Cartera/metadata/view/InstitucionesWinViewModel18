@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "capturacobroswin",
+        "designer|userClassName": "InstitucionesWinViewModel18"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesWinViewModel18",
+    "designerId": "d0e9f4fc-5ed9-4d43-91b1-67780758f4f2"
+}

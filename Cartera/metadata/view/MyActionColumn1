@@ -1,0 +1,169 @@
+{
+    "type": "Ext.grid.column.Action",
+    "reference": {
+        "name": "columns",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "align": "center",
+        "dataIndex": "logo",
+        "designer|userAlias": "myactioncolumn11",
+        "designer|userClassName": "MyActionColumn1",
+        "text": "Estatus"
+    },
+    "configAlternates": {
+        "align": "string",
+        "dataIndex": "datafield",
+        "text": "string",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "MyActionColumn1",
+    "designerId": "483e1d81-57cd-42db-88d0-0112bb8c2ca9",
+    "viewControllerInstanceId": "0214137e-cb70-4fbf-8f73-c4a8450e8828",
+    "viewModelInstanceId": "11895c57-c487-4d9b-aa8f-8c518a30bd1f",
+    "cn": [
+        {
+            "type": "actioncolumnitem",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "MyActionColumnItem",
+            "designerId": "1d1c08f8-7a07-42f3-8003-f68f50502cad",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|params": [
+                            "view",
+                            "rowIndex",
+                            "colIndex",
+                            "item",
+                            "e",
+                            "record",
+                            "row"
+                        ],
+                        "fn": "handler",
+                        "implHandler": [
+                            "console.log(record.data.estatus);",
+                            "var razon_social = record.data.razon_social;",
+                            "if(record.data.estatus === 1){",
+                            "    Ext.MessageBox.show({",
+                            "        title : 'Desactivar Institución',",
+                            "        buttons : Ext.MessageBox.YESNO,",
+                            "        buttonText:{",
+                            "                yes:'Sí',",
+                            "                no:'No',",
+                            "                cancel:'Cancelar'",
+                            "            },",
+                            "        msg : '¿Desea Desactivar a '+razon_social+'?',",
+                            "        icon : Ext.Msg.WARNING,",
+                            "        fn : function(btn)",
+                            "        {",
+                            "            if (btn == 'yes')",
+                            "            {",
+                            "                var values= {'estatus': 0};",
+                            "                record.set(values);",
+                            "                Ext.getStore('DatosStore').sync({",
+                            "                    callback: function(records, operation, success)",
+                            "                    {",
+                            "                        Ext.MessageBox.show({",
+                            "                            title : 'Desactivar Institución',",
+                            "                            buttons : Ext.MessageBox.OK,",
+                            "                            msg : 'Institución desactivada correctamente',",
+                            "                            icon : Ext.Msg.INFO",
+                            "                        });",
+                            "                    }",
+                            "                });",
+                            "                Ext.getStore('DatosStore').load();",
+                            "            }",
+                            "        }",
+                            "    });",
+                            "}",
+                            "else{",
+                            "    Ext.MessageBox.show({",
+                            "        title : 'Activar Institución',",
+                            "        buttons : Ext.MessageBox.YESNO,",
+                            "        buttonText:{",
+                            "                yes:'Sí',",
+                            "                no:'No',",
+                            "                cancel:'Cancelar'",
+                            "            },",
+                            "        msg : '¿Desea Activar a '+razon_social+'?',",
+                            "        icon : Ext.Msg.WARNING,",
+                            "        fn : function(btn)",
+                            "        {",
+                            "            if (btn == 'yes')",
+                            "            {",
+                            "                var values= {'estatus': 1};",
+                            "                record.set(values);",
+                            "                Ext.getStore('DatosStore').sync({",
+                            "                    callback: function(records, operation, success)",
+                            "                    {",
+                            "                        Ext.MessageBox.show({",
+                            "                            title : 'Activar Institución',",
+                            "                            buttons : Ext.MessageBox.OK,",
+                            "                            msg : 'Instutición Activada correctamente',",
+                            "                            icon : Ext.Msg.INFO",
+                            "                        });",
+                            "                    }",
+                            "                });",
+                            "",
+                            "                Ext.getStore('DatosStore').load();",
+                            "            }",
+                            "        }",
+                            "    });",
+                            "}"
+                        ]
+                    },
+                    "configAlternates": {
+                        "designer|params": "typedarray",
+                        "fn": "string",
+                        "implHandler": "code"
+                    },
+                    "name": "handler",
+                    "designerId": "facbecc8-94bc-4d12-b557-de7ab2bd80aa"
+                }
+            ]
+        },
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|params": [
+                    "value",
+                    "metaData",
+                    "record",
+                    "rowIndex",
+                    "colIndex",
+                    "store",
+                    "view"
+                ],
+                "fn": "renderer",
+                "implHandler": [
+                    "this.items[0].icon = record.get('estatus') == 1 ? \"resources/images/ok2.png\" : \"resources/images/eliminar.png\";",
+                    "return value;"
+                ]
+            },
+            "configAlternates": {
+                "designer|params": "typedarray",
+                "fn": "string",
+                "implHandler": "code"
+            },
+            "name": "renderer",
+            "designerId": "f0c9de80-3a65-478b-a74d-186d023eb071"
+        }
+    ]
+}

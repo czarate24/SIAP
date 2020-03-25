@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "formaspagowin",
+        "designer|userClassName": "InstitucionesWinViewModel2"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesWinViewModel2",
+    "designerId": "41e2d42e-3aa9-42e9-90a6-8bcc56af1399"
+}

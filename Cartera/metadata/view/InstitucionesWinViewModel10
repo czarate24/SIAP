@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "asigcamionwin",
+        "designer|userClassName": "InstitucionesWinViewModel10"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesWinViewModel10",
+    "designerId": "8203d5d6-97a9-4d61-a4a9-9eed8671ad6a"
+}

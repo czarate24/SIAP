@@ -1,0 +1,872 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": true,
+        "designer|userAlias": "cuotascolegiaturatab",
+        "designer|userClassName": "CuotasColegiaturaTab",
+        "height": 630,
+        "id": "CuotasColegiaturaTab",
+        "itemId": "CuotasColegiaturaTab",
+        "layout": "fit",
+        "title": "Cuotas de Colegiaturas",
+        "width": 829
+    },
+    "configAlternates": {
+        "closable": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "id": "string",
+        "itemId": "string",
+        "layout": "string",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "CuotasInscripcionTab1",
+    "designerId": "4088d866-745e-4857-b9d4-fd243c6be009",
+    "viewControllerInstanceId": "396fb587-58c9-40ae-8d6a-57f4363fbbdf",
+    "viewModelInstanceId": "ae8505cc-525d-4968-864d-9ab127571282",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar1",
+            "designerId": "93b3d71f-cfa1-4b9a-aebe-ac486a7f04b5",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/agregar.png",
+                        "iconAlign": "top",
+                        "id": "btnAgregarCuoCol",
+                        "itemId": "btnAgregarCuoCol",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto",
+                        "disabled": "boolean"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "c419c2a8-c41c-4e67-a854-e63db3c090b6",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnAgregarCuoColClick",
+                                "implHandler": [
+                                    "    var FormCuoCol = Ext.create('cartera.view.CuotasColegiaturaWin');",
+                                    "    FormCuoCol.show();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnAgregarCuoColClick",
+                            "designerId": "321c3145-985e-4d25-a9bf-4c5d20353f56"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/eliminar.png",
+                        "iconAlign": "bottom",
+                        "id": "btnBorrarCuoCol",
+                        "itemId": "btnBorrarCuoCol",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "iconCls": "binding",
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto",
+                        "disabled": "boolean"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "a1b6b72b-f069-4160-ad87-4551508a120c",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnBorrarCuoColClick",
+                                "implHandler": [
+                                    "var record = Ext.getCmp('GridCuoCol').getSelectionModel().getSelection()[0];",
+                                    "if(record !== undefined){",
+                                    "    var estatus = Ext.getCmp('GridCuoCol').getSelectionModel().getSelection()[0].data.estatus;",
+                                    "    var descripcion = Ext.getCmp('GridCuoCol').getSelectionModel().getSelection()[0].data.descripcion;",
+                                    "    console.log(estatus);",
+                                    "    if(estatus === 1){",
+                                    "        Ext.MessageBox.show({",
+                                    "            title : 'Desactivar Cuota',",
+                                    "            buttons : Ext.MessageBox.YESNO,",
+                                    "            buttonText:{",
+                                    "                yes:'Sí',",
+                                    "                no:'No',",
+                                    "                cancel:'Cancelar'",
+                                    "            },",
+                                    "            msg : '¿Desea Desactivar a '+descripcion+'?',",
+                                    "            icon : Ext.Msg.WARNING,",
+                                    "            fn : function(btn)",
+                                    "            {",
+                                    "                if (btn == 'yes')",
+                                    "                {",
+                                    "                    var values= {'estatus': 0};",
+                                    "                    record.set(values);",
+                                    "                    Ext.getStore('CuotasColegiaturaStore').sync({",
+                                    "                        callback: function(records, operation, success)",
+                                    "                        {",
+                                    "                            Ext.MessageBox.show({",
+                                    "                                title : 'Desactivar Cuota',",
+                                    "                                buttons : Ext.MessageBox.OK,",
+                                    "                                msg : 'Cuota desactivada correctamente',",
+                                    "                                icon : Ext.Msg.INFO",
+                                    "                            });",
+                                    "                        }",
+                                    "                    });",
+                                    "                }",
+                                    "            }",
+                                    "        });",
+                                    "    }",
+                                    "    else{",
+                                    "        Ext.MessageBox.show({",
+                                    "            title : 'Activar Cuota',",
+                                    "            buttons : Ext.MessageBox.YESNO,",
+                                    "            buttonText:{",
+                                    "                yes:'Sí',",
+                                    "                no:'No',",
+                                    "                cancel:'Cancelar'",
+                                    "            },",
+                                    "            msg : '¿Desea Activar a '+descripcion+'?',",
+                                    "            icon : Ext.Msg.WARNING,",
+                                    "            fn : function(btn)",
+                                    "            {",
+                                    "                if (btn == 'yes')",
+                                    "                {",
+                                    "                    var values= {'estatus': 1};",
+                                    "                    record.set(values);",
+                                    "                    Ext.getStore('CuotasColegiaturaStore').sync({",
+                                    "                        callback: function(records, operation, success)",
+                                    "                        {",
+                                    "                            Ext.MessageBox.show({",
+                                    "                                title : 'Activar Cuota',",
+                                    "                                buttons : Ext.MessageBox.OK,",
+                                    "                                msg : 'Cuota activada correctamente',",
+                                    "                                icon : Ext.Msg.INFO",
+                                    "                            });",
+                                    "                        }",
+                                    "                    });",
+                                    "                }",
+                                    "            }",
+                                    "        });",
+                                    "    }",
+                                    "}",
+                                    "else{",
+                                    "    Ext.MessageBox.show({",
+                                    "        title : 'Información',",
+                                    "        buttons : Ext.MessageBox.OK,",
+                                    "        msg : 'Seleccione registro.',",
+                                    "        icon : Ext.Msg.INFO",
+                                    "    });",
+                                    "",
+                                    "}"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnBorrarCuoColClick",
+                            "designerId": "fdbf6e8f-2c77-4670-8430-378beaac8f5b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/modificar.png",
+                        "iconAlign": "bottom",
+                        "id": "btnModificarCuoCol",
+                        "itemId": "btnModificarCuoCol",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "iconCls": "binding",
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto",
+                        "disabled": "boolean"
+                    },
+                    "name": "MyButton5",
+                    "designerId": "272cf806-1c89-4d73-a81b-572d3f1074e8",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnModificarCuoColClick",
+                                "implHandler": [
+                                    "records = Ext.getCmp('GridCuoCol').getSelectionModel().getSelection();",
+                                    "if(records.length > 0){",
+                                    "    var WinCuotasInscripcion = Ext.create('cartera.view.CuotasColegiaturaWin'),",
+                                    "        EditForm = WinCuotasInscripcion.down('form'),",
+                                    "        record = records[0],",
+                                    "        form = Ext.getCmp('formCuotaColegiatura');",
+                                    "",
+                                    "    WinCuotasInscripcion.setTitle('Modificar Cuotas de Inscripción');",
+                                    "    form.getForm().loadRecord(record);",
+                                    "    //Ext.getCmp('institucionescmb').disabled=true;",
+                                    "",
+                                    "}else{",
+                                    "    Ext.MessageBox.show({",
+                                    "        title : 'Advertencia',",
+                                    "        buttons : Ext.MessageBox.OK,",
+                                    "        msg : 'Seleccione registro.',",
+                                    "        icon : Ext.Msg.ERROR",
+                                    "",
+                                    "    });",
+                                    "}"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnModificarCuoColClick",
+                            "designerId": "8fd95030-5f5a-4271-b3d0-03f6c65b1987"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/actualizar.png",
+                        "iconAlign": "bottom",
+                        "id": "btnActualizarCuoCol",
+                        "itemId": "btnActualizarCuoCol",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "iconCls": "binding",
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyButton6",
+                    "designerId": "523e11eb-f381-444b-817f-659d990c48ee",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnActualizarCuoColClick",
+                                "implHandler": [
+                                    "  Ext.getStore('CuotasColegiaturaStore').load({",
+                                    "            params:{",
+                                    "                'id_ins': Ext._id_institucion,",
+                                    "                'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                    "            },",
+                                    "        });",
+                                    "",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnActualizarCuoColClick",
+                            "designerId": "05c55118-52f0-482a-9819-48282cbc1117"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/pdf.png",
+                        "iconAlign": "bottom",
+                        "id": "btnReporteCol",
+                        "itemId": "btnReporteCol",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "iconCls": "binding",
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyButton7",
+                    "designerId": "738d2444-6221-43e3-baa1-7fe64ac39e73",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnReporteColClick",
+                                "implHandler": [
+                                    "",
+                                    "    var id_institucion = Ext._id_institucion;",
+                                    "    var id_ciclo_escolar=Ext._id_ciclo_escolar;",
+                                    "",
+                                    "    new Ext.Window({",
+                                    "        title : \"CUOTAS DE INSCRIPCIÓN Y COLEGIATURA\",",
+                                    "        width : 990,",
+                                    "        maximizable: true,",
+                                    "        modal: true,",
+                                    "        height: 700,",
+                                    "        layout : 'fit',",
+                                    "        items : [{",
+                                    "            xtype : \"component\",",
+                                    "            autoEl : {",
+                                    "                tag : \"iframe\",",
+                                    "                src : \"pdf/pdf_Cuotas.php?id_institucion=\"+id_institucion+\"&id_ciclo_escolar=\"+id_ciclo_escolar",
+                                    "",
+                                    "            }",
+                                    "        }]",
+                                    "    }).show();",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnReporteColClick",
+                            "designerId": "7d1fec48-afb6-43e4-967d-00d411cd6631"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "GridCuoCol",
+                "store": "CuotasColegiaturaStore"
+            },
+            "configAlternates": {
+                "store": "store",
+                "id": "string"
+            },
+            "name": "MyGridPanel",
+            "designerId": "e7c69c8f-45f9-45ae-a897-04c90235f722",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_ciclo_escolar",
+                        "format": "0",
+                        "hidden": true,
+                        "menuDisabled": true,
+                        "text": "id_ciclo_escolar"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "format": "string"
+                    },
+                    "name": "MyNumberColumn1",
+                    "designerId": "8e24dd46-0fa5-4887-846b-925175801e35"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_cuota_colegiatura",
+                        "format": "0",
+                        "hidden": true,
+                        "menuDisabled": true,
+                        "text": "id_cuota_colegiatura"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "format": "string"
+                    },
+                    "name": "MyNumberColumn3",
+                    "designerId": "ca8ee85a-4355-45c9-9fb3-34e932b3148f"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_institucion",
+                        "format": "0",
+                        "hidden": true,
+                        "menuDisabled": true,
+                        "text": "id_institucion"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "format": "string"
+                    },
+                    "name": "MyNumberColumn2",
+                    "designerId": "a0b55659-8d87-4f85-abd8-2a130028cefc"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_nivel_educativo",
+                        "format": "0",
+                        "hidden": true,
+                        "menuDisabled": true,
+                        "text": "id_nivel_educativo"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "format": "string"
+                    },
+                    "name": "MyNumberColumn4",
+                    "designerId": "9bb1ff6b-3181-4156-ac0f-3cd662d9fc1b"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "descripcion",
+                        "text": "Descripción",
+                        "width": 150
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "e456bdd8-3b44-41a7-89f6-f049be77f4d8"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "grado",
+                        "text": "Grado",
+                        "width": 150
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "f7220225-c0b9-4400-b89c-7af0680057b6"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "descrip_nivel",
+                        "text": "Nivel",
+                        "width": 150
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyColumn11",
+                    "designerId": "b5a61ad3-6b3f-495e-9328-f1eb926a14af"
+                },
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "cuota",
+                        "text": "Cuota",
+                        "width": 150
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyNumberColumn",
+                    "designerId": "5be21b95-e0f0-48cd-b9b1-4b3f21536c67"
+                },
+                {
+                    "type": "Ext.grid.column.Action",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "align": "center",
+                        "dataIndex": "estatus",
+                        "text": "Estatus"
+                    },
+                    "configAlternates": {
+                        "align": "string",
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyActionColumn3",
+                    "designerId": "b95d3916-48a3-4c81-8f3f-0d6b68aa8789",
+                    "cn": [
+                        {
+                            "type": "actioncolumnitem",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyActionColumnItem1",
+                            "designerId": "cdf3bcd0-1fc3-43df-849c-3b76f1299d14",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "view",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "item",
+                                            "e",
+                                            "record",
+                                            "row"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "console.log(record.data.estatus);",
+                                            "var descripcion = record.data.descripcion;",
+                                            "if(record.data.estatus === 1){",
+                                            "    Ext.MessageBox.show({",
+                                            "        title : 'Desactivar Cuota',",
+                                            "        buttons : Ext.MessageBox.YESNO,",
+                                            "        buttonText:{",
+                                            "                yes:'Sí',",
+                                            "                no:'No',",
+                                            "                cancel:'Cancelar'",
+                                            "            },",
+                                            "        msg : '¿Desea Desactivar a '+descripcion+'?',",
+                                            "        icon : Ext.Msg.WARNING,",
+                                            "        fn : function(btn)",
+                                            "        {",
+                                            "            if (btn == 'yes')",
+                                            "            {",
+                                            "                var values= {'estatus': 0};",
+                                            "                record.set(values);",
+                                            "                Ext.getStore('CuotasColegiaturaStore').sync({",
+                                            "                    callback: function(records, operation, success)",
+                                            "                    {",
+                                            "                        Ext.MessageBox.show({",
+                                            "                            title : 'Desactivar Cuota',",
+                                            "                            buttons : Ext.MessageBox.OK,",
+                                            "                            msg : 'Cuota desactivada correctamente',",
+                                            "                            icon : Ext.Msg.INFO",
+                                            "                        });",
+                                            "                    }",
+                                            "                });",
+                                            "                Ext.getStore('CuotasColegiaturaStore').load({",
+                                            "                    params:{",
+                                            "                        'id_ins': Ext._id_institucion,",
+                                            "                        'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                    },",
+                                            "                });",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "}",
+                                            "else{",
+                                            "    Ext.MessageBox.show({",
+                                            "        title : 'Activar Cuota',",
+                                            "        buttons : Ext.MessageBox.YESNO,",
+                                            "        buttonText:{",
+                                            "                yes:'Sí',",
+                                            "                no:'No',",
+                                            "                cancel:'Cancelar'",
+                                            "            },",
+                                            "        msg : '¿Desea Activar a '+descripcion+'?',",
+                                            "        icon : Ext.Msg.WARNING,",
+                                            "        fn : function(btn)",
+                                            "        {",
+                                            "            if (btn == 'yes')",
+                                            "            {",
+                                            "                var values= {'estatus': 1};",
+                                            "                record.set(values);",
+                                            "                Ext.getStore('CuotasColegiaturaStore').sync({",
+                                            "                    callback: function(records, operation, success)",
+                                            "                    {",
+                                            "                        Ext.MessageBox.show({",
+                                            "                            title : 'Activar Cuota',",
+                                            "                            buttons : Ext.MessageBox.OK,",
+                                            "                            msg : 'Cuota Activada correctamente',",
+                                            "                            icon : Ext.Msg.INFO",
+                                            "                        });",
+                                            "                    }",
+                                            "                });",
+                                            "",
+                                            "                Ext.getStore('CuotasColegiaturaStore').load({",
+                                            "                    params:{",
+                                            "                        'id_ins': Ext._id_institucion,",
+                                            "                        'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                    },",
+                                            "                });",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "designer|params": "typedarray",
+                                        "fn": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "handler",
+                                    "designerId": "462480b8-6595-4e16-ad5b-7d44b7feae35"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "this.items[0].icon = record.get('estatus') == 1 ? \"resources/images/ok2.png\" : \"resources/images/eliminar.png\";",
+                                    "return value;"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "56fd4b1e-2b39-4adb-8b69-51910c94aadc"
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridcolumnAfterRender",
+                        "implHandler": [
+                            "Ext.getStore('CuotasColegiaturaStore').load({",
+                            "                params:{",
+                            "                    'id_ins': Ext._id_institucion,",
+                            "                    'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                            "                    },",
+                            "});"
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onGridcolumnAfterRender",
+                    "designerId": "27a786bc-0060-47bc-a3d6-1ff9301188c4"
+                }
+            ]
+        }
+    ]
+}

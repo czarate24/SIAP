@@ -1,0 +1,658 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "cuotascolegiaturawin",
+        "designer|userClassName": "CuotasColegiaturaWin",
+        "dock": null,
+        "height": 305,
+        "id": "CuotasColegiaturaWin",
+        "itemId": "CuotasColegiaturaWin",
+        "layout": "hbox",
+        "modal": true,
+        "resizable": false,
+        "title": "Agregar Cuota de Colegiatura",
+        "width": 482
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "resizable": "boolean",
+        "id": "string",
+        "itemId": "string",
+        "container|align": "string",
+        "dock": "string",
+        "layout": "string"
+    },
+    "name": "CuotasInscripcionWin1",
+    "designerId": "babc0a72-ff9b-4dca-85a6-c95f4b26f4db",
+    "viewControllerInstanceId": "d465e6c4-56b7-4357-a20a-3368aeba61f4",
+    "viewModelInstanceId": "21c15d54-b157-4984-9b51-24bf29785db7",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "dock": "top",
+                "height": 265,
+                "id": "formCuotaColegiatura",
+                "itemId": "formCuotaColegiatura",
+                "layout": "form",
+                "width": 881
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "height": "auto",
+                "width": "auto",
+                "id": "string",
+                "dock": "string",
+                "layout": "string"
+            },
+            "name": "MyForm1",
+            "designerId": "ba4ddaa8-929f-4c3c-9e7c-4558f55ad3ea",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_cuota_colegiatura",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_cuota_colegiatura",
+                        "name": "id_cuota_colegiatura"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField2",
+                    "designerId": "b488a2f0-ada9-43c7-99d6-e7dc80d819e5"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_institucion",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_insCC",
+                        "name": "id_institucion"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField4",
+                    "designerId": "0205ab9a-83f2-4929-a091-935aacd432fe"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_ciclo_escolar",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_ciclo_escolarCC",
+                        "name": "id_ciclo_escolar"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "85b7f09c-53cf-494e-a9d8-b974f2c0c9e9"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "nombre",
+                        "dock": null,
+                        "editable": false,
+                        "fieldLabel": "Nivel",
+                        "id": "nivelcmbCC",
+                        "name": "id_nivel_educativo",
+                        "queryMode": "local",
+                        "store": "NivelesEducativosStore",
+                        "valueField": "id_nivel_educativo"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string",
+                        "displayField": "datafield",
+                        "editable": "boolean",
+                        "queryMode": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "name": "MyComboBox3",
+                    "designerId": "f531253b-d083-4a8b-89a9-174f68141f6a",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onNivelcmbCCChange",
+                                "implHandler": [
+                                    "var lengthRecord = field.lastSelectedRecords;",
+                                    "//console.log(lengthRecord);",
+                                    "if(lengthRecord !== null){",
+                                    "            Ext.getStore('GradosStore').load({",
+                                    "                params:{",
+                                    "                    'id_ins': Ext._id_institucion,",
+                                    "                    'id_nivel_educativo': lengthRecord[0].data.id_nivel_educativo",
+                                    "                    },",
+                                    "                callback: function (records, operation, success){",
+                                    "               if(success === true){",
+                                    "                       if (records[0].data.id_nivel_educativo != 1){",
+                                    "",
+                                    "                          Ext.getCmp('gradocmbCC').disabled = true;",
+                                    "                          Ext.getCmp('gradocmbCC').setValue('');",
+                                    "                       }else{",
+                                    "",
+                                    "                          Ext.getCmp('gradocmbCC').disabled = false;",
+                                    "                       }",
+                                    "                    }",
+                                    "                    else",
+                                    "                   {",
+                                    "                      // Ext.getCmp('cicloCmb').setStore('CiclosEscolaresStore');",
+                                    "                       Ext.getCmp('gradocmbCC').disabled = true;",
+                                    "                       Ext.getCmp('gradocmbCC').setValue('');",
+                                    "                       //Ext.getCmp('tabPrin').reload();",
+                                    "",
+                                    "                  }",
+                                    "               }",
+                                    "            });",
+                                    "           }"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onNivelcmbCCChange",
+                            "designerId": "8dee8976-22ae-4b32-8a43-fc015a8da58b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "grado",
+                        "dock": null,
+                        "editable": false,
+                        "fieldLabel": "Grado",
+                        "id": "gradocmbCC",
+                        "name": "grado",
+                        "queryMode": "local",
+                        "store": "GradosStore",
+                        "valueField": "grado"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string",
+                        "displayField": "datafield",
+                        "editable": "boolean",
+                        "queryMode": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "name": "MyComboBox4",
+                    "designerId": "3e4935ed-008c-4ca1-b352-458f49381583"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "dock": null,
+                        "fieldLabel": "Descripcion",
+                        "id": "descripcionCC",
+                        "name": "descripcion",
+                        "validateBlank": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "f1e95959-6ff8-4466-a633-ddf7a83728b0",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "ondescripcionCCChange",
+                                "implHandler": [
+                                    "field.setValue(newValue.toUpperCase());"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "ondescripcionCCChange",
+                            "designerId": "d94111f8-8a4d-48d6-a480-60ee9f5e2d4e"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "Cuota",
+                        "hideTrigger": true,
+                        "id": "cuotaCC",
+                        "name": "cuota"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string",
+                        "hideTrigger": "boolean"
+                    },
+                    "name": "MyNumberField",
+                    "designerId": "ff094caf-3c39-4a42-b3e6-d0b70d996e42"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "height": 84,
+                        "width": 843
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "width": "auto"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "25576c4e-65a0-4edf-b12a-5e9e91b62850",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "left",
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "dock": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer",
+                            "designerId": "9d99707c-6900-483a-968d-7ccb9e62c59c"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/guardar.png",
+                                "iconAlign": "top",
+                                "id": "btnGuardarCC",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Guardar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "height": "auto",
+                                "icon": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "iconAlign": "string",
+                                "id": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "d316fd47-243f-4ace-9141-be77ab8c2529",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnGuardarCi",
+                                        "implHandler": [
+                                            "var win = button.up('window'),",
+                                            "    form   = Ext.getCmp('formCuotaColegiatura'),",
+                                            "    record = form.getRecord(),",
+                                            "    values = form.getValues();",
+                                            "",
+                                            "//console.log(form);",
+                                            "console.log(values.id_cuota_colegiatura);",
+                                            "if(form.isValid()){",
+                                            "    if(values.id_cuota_colegiatura>0){",
+                                            "        //Modificar Forma de Pago.",
+                                            "        //var recordLogin = Ext.getStore('StoreLogin').data.items[0];",
+                                            "        //values.id_usuarioAct = recordLogin.data.id_usuario;",
+                                            "        // record.set(values);",
+                                            "        // Ext.getStore('FormasPagoStore').sync();",
+                                            "         form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/cuotascolegiatura/actualiza',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Cuota de Colegiatura para '+values.descripcion+' ha sido actualizada.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                    Ext.getStore('CuotasColegiaturaStore').load({",
+                                            "                        params:{",
+                                            "                            'id_ins': Ext._id_institucion,",
+                                            "                            'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                        },",
+                                            "                    });",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                    console.log('FAILURE CAPTURA FORMA DE PAGO');",
+                                            "                }",
+                                            "            });",
+                                            "    }else{",
+                                            "         //Agregar Institución.",
+                                            "         if(Ext.getStore('CuotasColegiaturaStore').findExact('descripcion', values.descripcion)!=-1){",
+                                            "            Ext.MessageBox.show({",
+                                            "                title : 'Advertencia',",
+                                            "                buttons : Ext.MessageBox.OK,",
+                                            "                msg : 'Ya Existe Cuota para: '+values.descripcion+'. Verifique...',",
+                                            "                icon : Ext.Msg.ERROR",
+                                            "            });",
+                                            "        }else{",
+                                            "         // var recordLogin = Ext.getStore('StoreLogin').data.items[0];",
+                                            "         //values.id_usuarioAct = recordLogin.data.id_usuario;",
+                                            "         record = Ext.create('cartera.model.CuotasColegiaturaModel');",
+                                            "         console.log(record);",
+                                            "         record.set(values);",
+                                            "         //Ext.getStore('FormasPagoStore').add(record);",
+                                            "         //Ext.getStore('FormasPagoStore').sync();",
+                                            "            Ext.getCmp('id_insCC').setValue(Ext._id_institucion);",
+                                            "            form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/cuotascolegiatura/create',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Cuota de Colegiatura para '+values.descripcion+' ha sido agregada.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                    Ext.getStore('CuotasColegiaturaStore').load({",
+                                            "                        params:{",
+                                            "                            'id_ins': Ext._id_institucion,",
+                                            "                            'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                        },",
+                                            "                    });",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                    console.log('FAILURE CAPTURA INSTITUCION');",
+                                            "                }",
+                                            "            });",
+                                            "",
+                                            "",
+                                            "        }",
+                                            "    }",
+                                            "",
+                                            "}else{",
+                                            "    //Si el formulario no es válido",
+                                            "     Ext.MessageBox.show({",
+                                            "        title : 'Atencion',",
+                                            "        buttons : Ext.MessageBox.OK,",
+                                            "        msg : 'Ingrese todos los campos obligatorios',",
+                                            "        icon : Ext.Msg.ERROR",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onbtnGuardarCi",
+                                    "designerId": "bf9f66fe-e67b-4ff9-973c-990218c41054"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/cancelar.png",
+                                "iconAlign": "top",
+                                "id": "btnCancelarCC",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Cancelar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "icon": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "height": "auto",
+                                "iconAlign": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "57db4185-d17b-4633-9c5c-328f1247c8c0",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnCancelarCi",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onbtnCancelarCi",
+                                    "designerId": "421e36a2-cc6e-4473-ad6b-8f01f9819dc8"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCuotasColegiaturaWinAfterRender",
+                "implHandler": [
+                    "Ext.getCmp('id_insCC').setValue(Ext._id_institucion);",
+                    "Ext.getCmp('id_ciclo_escolarCC').setValue(Ext._id_ciclo_escolar);",
+                    "Ext.getStore('NivelesEducativosStore').load({",
+                    "                                params:{",
+                    "                                    'id_ins': Ext._id_institucion",
+                    "                                },",
+                    "                            });"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onCuotasColegiaturaWinAfterRender",
+            "designerId": "122e08e6-8558-48d0-97fb-f64f3cc15ea9"
+        }
+    ]
+}

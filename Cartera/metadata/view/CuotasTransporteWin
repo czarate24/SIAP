@@ -1,0 +1,578 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "cuotastransportewin",
+        "designer|userClassName": "CuotasTransporteWin",
+        "dock": null,
+        "height": 315,
+        "id": "CuotasTransporteWin",
+        "itemId": "CuotasTransporteWin",
+        "layout": "hbox",
+        "modal": true,
+        "resizable": false,
+        "title": "Agregar Cuota de Transporte",
+        "width": 482
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "resizable": "boolean",
+        "id": "string",
+        "itemId": "string",
+        "container|align": "string",
+        "dock": "string",
+        "layout": "string"
+    },
+    "name": "CuotasColegiaturaWin1",
+    "designerId": "081b5cc3-63b4-4dcb-adba-daca4e48afe0",
+    "viewControllerInstanceId": "a1c9521c-e2c2-4732-8575-4e49e2f8850f",
+    "viewModelInstanceId": "b8e98f51-95b7-44c6-9f84-e8a9517e0561",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "dock": "top",
+                "height": 276,
+                "id": "formCuotaTransporte",
+                "itemId": "formCuotaTransporte",
+                "layout": "form",
+                "width": 881
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "height": "auto",
+                "width": "auto",
+                "id": "string",
+                "dock": "string",
+                "layout": "string"
+            },
+            "name": "MyForm1",
+            "designerId": "a814b04c-0666-4c06-917f-df48bdb7ba3b",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_cuota_transporte",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_cuota_transporte",
+                        "name": "id_cuota_transporte"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField2",
+                    "designerId": "2475f920-63e1-4434-95e3-ac61c27a28a8"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_institucion",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_insCT",
+                        "name": "id_institucion"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField4",
+                    "designerId": "d4d6a8ac-b8fa-4253-a2bf-24c22a6fcb6c"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_ciclo_escolar",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_ciclo_escolarCT",
+                        "name": "id_ciclo_escolar"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "ad69b686-9712-4b8c-81a2-5ad6c9992e76"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "dock": null,
+                        "fieldLabel": "Descripcion",
+                        "id": "descripcionCT",
+                        "name": "descripcion",
+                        "validateBlank": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "37c5942d-9475-4cbd-b1f6-4422ac66a0da",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "ondescripcionCTChange",
+                                "implHandler": [
+                                    "field.setValue(newValue.toUpperCase());"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "ondescripcionCTChange",
+                            "designerId": "8687cfc2-fb3a-4060-8914-c67b2a1ea7bd"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "Cuota",
+                        "hideTrigger": true,
+                        "id": "cuotaCT",
+                        "name": "cuota"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string",
+                        "hideTrigger": "boolean"
+                    },
+                    "name": "MyNumberField",
+                    "designerId": "995f49f6-619b-4585-b212-86134c2d1462"
+                },
+                {
+                    "type": "Ext.form.field.TextArea",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "Observaciones",
+                        "id": "observacionCT",
+                        "name": "observacion",
+                        "validateBlank": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string"
+                    },
+                    "name": "MyTextArea",
+                    "designerId": "a0feff4f-9abb-48a0-9014-070a4ea563c6",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onobservacionCTChange",
+                                "implHandler": [
+                                    "field.setValue(newValue.toUpperCase());"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onobservacionCTChange",
+                            "designerId": "6f24dff6-cc03-4f24-a7d3-b7dc32e2e52b"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "height": 84,
+                        "width": 843
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "width": "auto"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "19428f37-e831-4e78-8e42-23411b39ebdd",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "left",
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "dock": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer",
+                            "designerId": "69b6c904-e604-48c5-829b-476d58db7445"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/guardar.png",
+                                "iconAlign": "top",
+                                "id": "btnGuardarCT",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Guardar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "height": "auto",
+                                "icon": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "iconAlign": "string",
+                                "id": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "b445e889-a06d-490f-9ad2-c390789b9874",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnGuardarCT",
+                                        "implHandler": [
+                                            "var win = button.up('window'),",
+                                            "    form   = Ext.getCmp('formCuotaTransporte'),",
+                                            "    record = form.getRecord(),",
+                                            "    values = form.getValues();",
+                                            "",
+                                            "//console.log(form);",
+                                            "console.log(values.id_cuota_transporte);",
+                                            "if(form.isValid()){",
+                                            "    if(values.id_cuota_transporte>0){",
+                                            "        //Modificar Forma de Pago.",
+                                            "        //var recordLogin = Ext.getStore('StoreLogin').data.items[0];",
+                                            "        //values.id_usuarioAct = recordLogin.data.id_usuario;",
+                                            "        // record.set(values);",
+                                            "        // Ext.getStore('FormasPagoStore').sync();",
+                                            "         form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/cuotastransporte/actualiza',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Cuota de Transporte ha sido actualizada.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                    Ext.getStore('CuotasTransporteStore').load({",
+                                            "                        params:{",
+                                            "                            'id_ins': Ext._id_institucion,",
+                                            "                            'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                        },",
+                                            "                    });",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                    console.log('FAILURE CAPTURA FORMA DE PAGO');",
+                                            "                }",
+                                            "            });",
+                                            "    }else{",
+                                            "         //Agregar Institución.",
+                                            "         if(Ext.getStore('CuotasTransporteStore').findExact('descripcion', values.descripcion)!=-1){",
+                                            "            Ext.MessageBox.show({",
+                                            "                title : 'Advertencia',",
+                                            "                buttons : Ext.MessageBox.OK,",
+                                            "                msg : 'Ya Existe Cuota para: '+values.descripcion+'. Verifique...',",
+                                            "                icon : Ext.Msg.ERROR",
+                                            "            });",
+                                            "        }else{",
+                                            "         // var recordLogin = Ext.getStore('StoreLogin').data.items[0];",
+                                            "         //values.id_usuarioAct = recordLogin.data.id_usuario;",
+                                            "         record = Ext.create('cartera.model.CuotasTransporteModel');",
+                                            "         console.log(record);",
+                                            "         record.set(values);",
+                                            "         //Ext.getStore('FormasPagoStore').add(record);",
+                                            "         //Ext.getStore('FormasPagoStore').sync();",
+                                            "            Ext.getCmp('id_insCT').setValue(Ext._id_institucion);",
+                                            "            form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/cuotastransporte/create',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Cuota de Transporte para '+values.descripcion+' ha sido agregada.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                    Ext.getStore('CuotasTransporteStore').load({",
+                                            "                        params:{",
+                                            "                            'id_ins': Ext._id_institucion,",
+                                            "                            'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                        },",
+                                            "                    });",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                    console.log('FAILURE CAPTURA TRANSPORTE');",
+                                            "                }",
+                                            "            });",
+                                            "",
+                                            "",
+                                            "        }",
+                                            "    }",
+                                            "",
+                                            "}else{",
+                                            "    //Si el formulario no es válido",
+                                            "     Ext.MessageBox.show({",
+                                            "        title : 'Atencion',",
+                                            "        buttons : Ext.MessageBox.OK,",
+                                            "        msg : 'Ingrese todos los campos obligatorios',",
+                                            "        icon : Ext.Msg.ERROR",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onbtnGuardarCT",
+                                    "designerId": "b9663370-8e47-4b37-9e05-885c5430d0ed"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/cancelar.png",
+                                "iconAlign": "top",
+                                "id": "btnCancelarCT",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Cancelar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "icon": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "height": "auto",
+                                "iconAlign": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "88193bb6-ad66-4d20-a5fb-1d305cba7b88",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnCancelarCT",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onbtnCancelarCT",
+                                    "designerId": "742c7ee7-a341-486e-86f4-77f5af94302f"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCuotasTransporteWinAfterRender",
+                "implHandler": [
+                    "Ext.getCmp('id_insCT').setValue(Ext._id_institucion);",
+                    "Ext.getCmp('id_ciclo_escolarCT').setValue(Ext._id_ciclo_escolar);",
+                    ""
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onCuotasTransporteWinAfterRender",
+            "designerId": "1e6e5592-8f1f-4230-b5c4-00d733989404"
+        }
+    ]
+}

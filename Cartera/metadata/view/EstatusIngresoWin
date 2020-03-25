@@ -1,0 +1,425 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "estatusingresoswin",
+        "designer|userClassName": "EstatusIngresoWin",
+        "dock": null,
+        "height": 186,
+        "id": "FormasPagoWin1",
+        "itemId": "FormasPagoWin",
+        "layout": "hbox",
+        "modal": true,
+        "resizable": false,
+        "title": "Agregar Estatus Ingreso",
+        "width": 377
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "resizable": "boolean",
+        "id": "string",
+        "itemId": "string",
+        "container|align": "string",
+        "dock": "string",
+        "layout": "string"
+    },
+    "name": "FormasPagoWin1",
+    "designerId": "65cc14b4-0878-42d9-8b74-8d8e7c470db3",
+    "viewControllerInstanceId": "906e3591-418c-4190-8233-ae80ac37b98f",
+    "viewModelInstanceId": "a9ca48b2-887b-480a-9682-3c309277b103",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "dock": "top",
+                "height": 145,
+                "id": "formEstatusIngreso",
+                "itemId": "formEstatusIngreso",
+                "layout": "form",
+                "width": 881
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "height": "auto",
+                "width": "auto",
+                "id": "string",
+                "dock": "string",
+                "layout": "string"
+            },
+            "name": "MyForm1",
+            "designerId": "e3616a7e-bdf0-460f-a65a-a99efaafcec6",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_estatus_ingreso",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_estatus_ingresoEI",
+                        "name": "id_estatus_ingreso"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField2",
+                    "designerId": "ca94c086-7692-4a8c-8cc0-7acf3e9d2e18"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "dock": null,
+                        "fieldLabel": "Descripción",
+                        "id": "descripcionEI",
+                        "name": "descripcion",
+                        "validateBlank": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string"
+                    },
+                    "name": "MyTextField7",
+                    "designerId": "09e3b795-a924-4f3d-909b-cf758d5796ef",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onDescripcionEIChange",
+                                "implHandler": [
+                                    "field.setValue(newValue.toUpperCase());"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onDescripcionEIChange",
+                            "designerId": "7666694b-2975-488f-b1a3-6c9c870af6ab"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "height": 84,
+                        "width": 843
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "width": "auto"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "54425770-54de-4c77-8e08-fe891697f0a1",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "left",
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "dock": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer",
+                            "designerId": "97d10b90-df2f-4e1c-a31d-468f4dfcad27"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/guardar.png",
+                                "iconAlign": "top",
+                                "id": "btnGuardarEI",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Guardar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "height": "auto",
+                                "icon": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "iconAlign": "string",
+                                "id": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "aa71cc31-bf6e-44db-bfe6-1cc856c17b8e",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnGuardarEI",
+                                        "implHandler": [
+                                            "var win = button.up('window'),",
+                                            "    form   = Ext.getCmp('formEstatusIngreso'),",
+                                            "    record = form.getRecord(),",
+                                            "    values = form.getValues();",
+                                            "",
+                                            "//console.log(form);",
+                                            "console.log(values.id_estatus_ingreso);",
+                                            "if(form.isValid()){",
+                                            "    if(values.id_estatus_ingreso>0){",
+                                            "        //Modificar Forma de Pago.",
+                                            "        //var recordLogin = Ext.getStore('StoreLogin').data.items[0];",
+                                            "        //values.id_usuarioAct = recordLogin.data.id_usuario;",
+                                            "        // record.set(values);",
+                                            "        // Ext.getStore('FormasPagoStore').sync();",
+                                            "         form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/estatusgrid/actualiza',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Estatus '+values.descripcion+' ha sido actualizada.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                   Ext.getStore('EstatusIngresoGridStore').load();",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                   // console.log('FAILURE CAPTURA ESTATUS');",
+                                            "                }",
+                                            "            });",
+                                            "    }else{",
+                                            "         //Agregar Estatus Ingreso.",
+                                            "         if(Ext.getStore('EstatusIngresoGridStore').findExact('descripcion', values.descripcion)!=-1){",
+                                            "            Ext.MessageBox.show({",
+                                            "                title : 'Advertencia',",
+                                            "                buttons : Ext.MessageBox.OK,",
+                                            "                msg : 'Ya Existe Eestatus: '+values.descripcion+'. Verifique...',",
+                                            "                icon : Ext.Msg.ERROR",
+                                            "            });",
+                                            "        }else{",
+                                            "         // var recordLogin = Ext.getStore('StoreLogin').data.items[0];",
+                                            "         //values.id_usuarioAct = recordLogin.data.id_usuario;",
+                                            "         record = Ext.create('cartera.model.EstatusIngresoGridModel');",
+                                            "         console.log(record);",
+                                            "         record.set(values);",
+                                            "         //Ext.getStore('FormasPagoStore').add(record);",
+                                            "         //Ext.getStore('FormasPagoStore').sync();",
+                                            "          //Ext.getCmp('id_insFP').setValue(Ext._id_institucion);",
+                                            "            form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/estatusgrid/create',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Estatus '+values.descripcion+' ha sido agregado.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                   Ext.getStore('EstatusIngresoGridStore').load();",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                    //console.log('FAILURE CAPTURA INSTITUCION');",
+                                            "                }",
+                                            "            });",
+                                            "",
+                                            "",
+                                            "        }",
+                                            "    }",
+                                            "",
+                                            "}else{",
+                                            "    //Si el formulario no es válido",
+                                            "     Ext.MessageBox.show({",
+                                            "        title : 'Atencion',",
+                                            "        buttons : Ext.MessageBox.OK,",
+                                            "        msg : 'Ingrese todos los campos obligatorios',",
+                                            "        icon : Ext.Msg.ERROR",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onbtnGuardarEI",
+                                    "designerId": "be314f5c-b1cd-4e64-8a40-12b8f72343ba"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/cancelar.png",
+                                "iconAlign": "top",
+                                "id": "btnCancelarEI",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Cancelar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "icon": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "height": "auto",
+                                "iconAlign": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "2c0bfd5b-441d-4b65-965d-5f1810024915",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnCancelarEI",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onbtnCancelarEI",
+                                    "designerId": "0ee9e42e-73f1-47ee-a088-469c510e39e0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFormasPagoWinAfterRender",
+                "implHandler": [
+                    ""
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onFormasPagoWinAfterRender",
+            "designerId": "7019d1ff-7c89-4db1-921d-75ed0b5d0e50"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "editarplazawindow",
+        "designer|userClassName": "EditarPlazaWindowViewController"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "NuevaPlazaWindowViewController1",
+    "designerId": "d27d28d2-c8de-4f0c-86f6-afb833709600"
+}

@@ -1,0 +1,774 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": true,
+        "designer|userAlias": "BancosTab",
+        "designer|userClassName": "BancosTab",
+        "height": 637,
+        "id": "BancosTab",
+        "itemId": "BancosTab",
+        "layout": "fit",
+        "title": "Bancos",
+        "width": 829
+    },
+    "configAlternates": {
+        "closable": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "id": "string",
+        "itemId": "string",
+        "layout": "string",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "EstatusIngresoTab1",
+    "designerId": "fbbf8881-4f8f-4b0a-8ef8-745f9f0725fb",
+    "viewControllerInstanceId": "dc5297fe-8b10-4e3a-97c1-87df76385f73",
+    "viewModelInstanceId": "29af5350-dd02-4860-b9d8-9a3d880c0868",
+    "cn": [
+        {
+            "type": "Ext.toolbar.Toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top"
+            },
+            "configAlternates": {
+                "dock": "string"
+            },
+            "name": "MyToolbar1",
+            "designerId": "bd79b943-e788-4bcc-9b17-9107a9aedc0b",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/agregar.png",
+                        "iconAlign": "top",
+                        "id": "btnAgregarB",
+                        "itemId": "btnAgregarB",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "tooltip": "Agregar Banco",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto",
+                        "tooltip": "string"
+                    },
+                    "name": "MyButton1",
+                    "designerId": "0c315960-5107-40c2-b4c9-c79cc1359fd1",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnAgregarBClick",
+                                "implHandler": [
+                                    "    var FormBancos = Ext.create('cartera.view.BancosWin');",
+                                    "    FormBancos.show();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnAgregarBClick",
+                            "designerId": "c4e2bc95-b19f-4547-b210-d99565107c28"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/eliminar.png",
+                        "iconAlign": "bottom",
+                        "id": "btnBorrarB",
+                        "itemId": "btnBorrarB",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "tooltip": "Eliminar",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "iconCls": "binding",
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto",
+                        "tooltip": "string"
+                    },
+                    "name": "MyButton2",
+                    "designerId": "5e8339de-17f5-465d-bc47-df0057cda336",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnBorrarBClick",
+                                "implHandler": [
+                                    "var record = Ext.getCmp('GridBancos').getSelectionModel().getSelection()[0];",
+                                    "if(record !== undefined){",
+                                    "    var estatus = Ext.getCmp('GridBancos').getSelectionModel().getSelection()[0].data.estatus;",
+                                    "    var nombre = Ext.getCmp('GridBancos').getSelectionModel().getSelection()[0].data.nombre;",
+                                    "    console.log(estatus);",
+                                    "    if(estatus === 1){",
+                                    "        Ext.MessageBox.show({",
+                                    "            title : 'Desactivar Banco',",
+                                    "            buttons : Ext.MessageBox.YESNO,",
+                                    "            buttonText:{",
+                                    "                yes:'Sí',",
+                                    "                no:'No',",
+                                    "                cancel:'Cancelar'",
+                                    "            },",
+                                    "            msg : '¿Desea Desactivar a '+nombre+'?',",
+                                    "            icon : Ext.Msg.WARNING,",
+                                    "            fn : function(btn)",
+                                    "            {",
+                                    "                if (btn == 'yes')",
+                                    "                {",
+                                    "                    var values= {'estatus': 0};",
+                                    "                    record.set(values);",
+                                    "                    Ext.getStore('BancosStore').sync({",
+                                    "                        callback: function(records, operation, success)",
+                                    "                        {",
+                                    "                            Ext.MessageBox.show({",
+                                    "                                title : 'Desactivar Banco',",
+                                    "                                buttons : Ext.MessageBox.OK,",
+                                    "                                msg : 'Banco desactivado correctamente',",
+                                    "                                icon : Ext.Msg.INFO",
+                                    "                            });",
+                                    "                        }",
+                                    "                    });",
+                                    "                }",
+                                    "            }",
+                                    "        });",
+                                    "    }",
+                                    "    else{",
+                                    "        Ext.MessageBox.show({",
+                                    "            title : 'Activar Banco',",
+                                    "            buttons : Ext.MessageBox.YESNO,",
+                                    "            buttonText:{",
+                                    "                yes:'Sí',",
+                                    "                no:'No',",
+                                    "                cancel:'Cancelar'",
+                                    "            },",
+                                    "            msg : '¿Desea Activar a '+nombre+'?',",
+                                    "            icon : Ext.Msg.WARNING,",
+                                    "            fn : function(btn)",
+                                    "            {",
+                                    "                if (btn == 'yes')",
+                                    "                {",
+                                    "                    var values= {'estatus': 1};",
+                                    "                    record.set(values);",
+                                    "                    Ext.getStore('BancosStore').sync({",
+                                    "                        callback: function(records, operation, success)",
+                                    "                        {",
+                                    "                            Ext.MessageBox.show({",
+                                    "                                title : 'Activar Banco',",
+                                    "                                buttons : Ext.MessageBox.OK,",
+                                    "                                msg : 'Banco correctamente',",
+                                    "                                icon : Ext.Msg.INFO",
+                                    "                            });",
+                                    "                        }",
+                                    "                    });",
+                                    "                }",
+                                    "            }",
+                                    "        });",
+                                    "    }",
+                                    "}",
+                                    "else{",
+                                    "    Ext.MessageBox.show({",
+                                    "        title : 'Información',",
+                                    "        buttons : Ext.MessageBox.OK,",
+                                    "        msg : 'Seleccione registro.',",
+                                    "        icon : Ext.Msg.INFO",
+                                    "    });",
+                                    "",
+                                    "}"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnBorrarBClick",
+                            "designerId": "e73abf52-af74-4cfe-9447-ee135f1fe5ba"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/modificar.png",
+                        "iconAlign": "bottom",
+                        "id": "btnModificarB",
+                        "itemId": "btnModificarB",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "tooltip": "Modificar",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "iconCls": "binding",
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto",
+                        "tooltip": "string"
+                    },
+                    "name": "MyButton5",
+                    "designerId": "090a4082-0c2f-4fb8-803c-ea1d93faee2f",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnModificarBClick",
+                                "implHandler": [
+                                    "records = Ext.getCmp('GridBancos').getSelectionModel().getSelection();",
+                                    "if(records.length > 0){",
+                                    "    var WinEstatusIngreso = Ext.create('cartera.view.BancosWin'),",
+                                    "        EditForm = WinEstatusIngreso.down('form'),",
+                                    "        record = records[0],",
+                                    "        form   = Ext.getCmp('formBancos');",
+                                    "",
+                                    "    WinEstatusIngreso.setTitle('Modificar Banco');",
+                                    "    form.getForm().loadRecord(record);",
+                                    "",
+                                    "",
+                                    "",
+                                    "}else{",
+                                    "    Ext.MessageBox.show({",
+                                    "        title : 'Advertencia',",
+                                    "        buttons : Ext.MessageBox.OK,",
+                                    "        msg : 'Seleccione registro.',",
+                                    "        icon : Ext.Msg.ERROR",
+                                    "",
+                                    "    });",
+                                    "}"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnModificarBClick",
+                            "designerId": "fbcffa17-c9ce-488d-ae7d-b3c335903bf0"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "height": 45,
+                        "icon": "resources/images/actualizar.png",
+                        "iconAlign": "bottom",
+                        "id": "btnActualizarB",
+                        "itemId": "btnActualizarB",
+                        "layout|flex": null,
+                        "scale": "large",
+                        "tooltip": "Actualizar",
+                        "width": 45
+                    },
+                    "configAlternates": {
+                        "iconCls": "binding",
+                        "height": "auto",
+                        "icon": "string",
+                        "iconAlign": "string",
+                        "id": "string",
+                        "itemId": "string",
+                        "layout|flex": "number",
+                        "scale": "string",
+                        "width": "auto",
+                        "tooltip": "string"
+                    },
+                    "name": "MyButton6",
+                    "designerId": "33711619-1905-4ee2-b093-76ac5235df3f",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onBtnActualizarBClick",
+                                "implHandler": [
+                                    "  Ext.getStore('BancosStore').load();",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onBtnActualizarBClick",
+                            "designerId": "0ea5a85c-0e64-4ad9-809c-b42d3f9be5bb"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.grid.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "id": "GridBancos",
+                "store": "BancosStore"
+            },
+            "configAlternates": {
+                "store": "store",
+                "id": "string"
+            },
+            "name": "MyGridPanel",
+            "designerId": "acf1cf9c-4028-400a-aa06-6628bc824312",
+            "cn": [
+                {
+                    "type": "Ext.grid.column.Number",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "id_banco",
+                        "format": "0",
+                        "hidden": true,
+                        "itemId": "id_banco",
+                        "menuDisabled": true,
+                        "text": "Id"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "hidden": "boolean",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "format": "string",
+                        "itemId": "string"
+                    },
+                    "name": "MyNumberColumn1",
+                    "designerId": "4d88486c-52d7-4c89-8247-968e7bfbccbc"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "nombre",
+                        "itemId": "nombre",
+                        "menuDisabled": true,
+                        "text": "Nombre",
+                        "width": 250
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto",
+                        "itemId": "string"
+                    },
+                    "name": "MyColumn11",
+                    "designerId": "6c47e81d-b71b-436a-b15b-f9808d39f7e3"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "afiliacion",
+                        "itemId": "afiliacion",
+                        "menuDisabled": true,
+                        "text": "Afiliación",
+                        "width": 150
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto",
+                        "itemId": "string"
+                    },
+                    "name": "MyColumn1",
+                    "designerId": "18e35cbb-2728-41b4-8503-6d299725072d"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "num_cta",
+                        "itemId": "num_cta",
+                        "menuDisabled": true,
+                        "text": "Número de Cuenta",
+                        "width": 150
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto",
+                        "itemId": "string"
+                    },
+                    "name": "MyColumn2",
+                    "designerId": "c2593b6e-35e9-4793-825b-84feb8ce9fa0"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "cta_CLABE",
+                        "itemId": "cta_CLABE",
+                        "menuDisabled": true,
+                        "text": "Cuenta CLABE",
+                        "width": 200
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto",
+                        "itemId": "string"
+                    },
+                    "name": "MyColumn5",
+                    "designerId": "b6f56008-66ca-4522-bae6-98b57a41598a"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "contacto",
+                        "itemId": "contacto",
+                        "menuDisabled": true,
+                        "text": "Contacto",
+                        "width": 180
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto",
+                        "itemId": "string"
+                    },
+                    "name": "MyColumn7",
+                    "designerId": "2fb38729-60eb-4a44-81eb-5527cf38f873"
+                },
+                {
+                    "type": "Ext.grid.column.Column",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "correo",
+                        "itemId": "correo",
+                        "menuDisabled": true,
+                        "text": "Correo",
+                        "width": 200
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "format": "string",
+                        "menuDisabled": "boolean",
+                        "text": "string",
+                        "width": "auto",
+                        "itemId": "string"
+                    },
+                    "name": "MyColumn12",
+                    "designerId": "544658a7-66bd-48ba-a323-0ff8698b2644"
+                },
+                {
+                    "type": "Ext.grid.column.Action",
+                    "reference": {
+                        "name": "columns",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dataIndex": "estatus",
+                        "text": "Estatus"
+                    },
+                    "configAlternates": {
+                        "dataIndex": "datafield",
+                        "text": "string"
+                    },
+                    "name": "MyActionColumn2",
+                    "designerId": "c4f450d2-dfbc-4b1d-8cab-eeeab6042f2d",
+                    "cn": [
+                        {
+                            "type": "actioncolumnitem",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "name": "MyActionColumnItem2",
+                            "designerId": "b201861b-f5fd-4b94-8f25-479913fe82a8",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "view",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "item",
+                                            "e",
+                                            "record",
+                                            "row"
+                                        ],
+                                        "fn": "handler",
+                                        "implHandler": [
+                                            "var nombre = record.data.nombre;",
+                                            "if(record.data.estatus === 1){",
+                                            "    Ext.MessageBox.show({",
+                                            "        title : 'Desactivar Banco',",
+                                            "        buttons : Ext.MessageBox.YESNO,",
+                                            "        buttonText:{",
+                                            "                yes:'Sí',",
+                                            "                no:'No',",
+                                            "                cancel:'Cancelar'",
+                                            "            },",
+                                            "        msg : '¿Desea Desactivar a '+nombre+'?',",
+                                            "        icon : Ext.Msg.WARNING,",
+                                            "        fn : function(btn)",
+                                            "        {",
+                                            "            if (btn == 'yes')",
+                                            "            {",
+                                            "                var values= {'estatus': 0};",
+                                            "                record.set(values);",
+                                            "                Ext.getStore('BancosStore').sync({",
+                                            "                    callback: function(records, operation, success)",
+                                            "                    {",
+                                            "                        Ext.MessageBox.show({",
+                                            "                            title : 'Desactivar Bancos',",
+                                            "                            buttons : Ext.MessageBox.OK,",
+                                            "                            msg : 'Banco desactivado correctamente',",
+                                            "                            icon : Ext.Msg.INFO",
+                                            "                        });",
+                                            "                    }",
+                                            "                });",
+                                            "",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "}",
+                                            "else{",
+                                            "    Ext.MessageBox.show({",
+                                            "        title : 'Activar Banco',",
+                                            "        buttons : Ext.MessageBox.YESNO,",
+                                            "        buttonText:{",
+                                            "                yes:'Sí',",
+                                            "                no:'No',",
+                                            "                cancel:'Cancelar'",
+                                            "            },",
+                                            "        msg : '¿Desea Activar a '+nombre+'?',",
+                                            "        icon : Ext.Msg.WARNING,",
+                                            "        fn : function(btn)",
+                                            "        {",
+                                            "            if (btn == 'yes')",
+                                            "            {",
+                                            "                var values= {'estatus': 1};",
+                                            "                record.set(values);",
+                                            "                Ext.getStore('BancosStore').sync({",
+                                            "                    callback: function(records, operation, success)",
+                                            "                    {",
+                                            "                        Ext.MessageBox.show({",
+                                            "                            title : 'Activar Banco',",
+                                            "                            buttons : Ext.MessageBox.OK,",
+                                            "                            msg : 'Banco activado correctamente',",
+                                            "                            icon : Ext.Msg.INFO",
+                                            "                        });",
+                                            "                    }",
+                                            "                });",
+                                            "",
+                                            "",
+                                            "            }",
+                                            "        }",
+                                            "    });",
+                                            "}"
+                                        ]
+                                    },
+                                    "configAlternates": {
+                                        "designer|params": "typedarray",
+                                        "fn": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "handler",
+                                    "designerId": "dad9a584-bc2b-4786-a10e-d3771f129a30"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "fixedfunction",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|params": [
+                                    "value",
+                                    "metaData",
+                                    "record",
+                                    "rowIndex",
+                                    "colIndex",
+                                    "store",
+                                    "view"
+                                ],
+                                "fn": "renderer",
+                                "implHandler": [
+                                    "this.items[0].icon = record.get('estatus') == 1 ? \"resources/images/ok2.png\" : \"resources/images/eliminar.png\";",
+                                    "return value;"
+                                ]
+                            },
+                            "configAlternates": {
+                                "designer|params": "typedarray",
+                                "fn": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "renderer",
+                            "designerId": "1c977b42-4288-4049-9de7-31eb71c89f22"
+                        }
+                    ]
+                },
+                {
+                    "type": "viewcontrollereventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onGridcolumnAfterRender",
+                        "implHandler": [
+                            "Ext.getStore('BancosStore').load({",
+                            "                params:{",
+                            "                    'id_ins': Ext._id_institucion",
+                            "                    },",
+                            "});",
+                            ""
+                        ],
+                        "name": "afterrender",
+                        "scope": "me"
+                    },
+                    "configAlternates": {
+                        "fn": "string",
+                        "implHandler": "code",
+                        "name": "string",
+                        "scope": "string"
+                    },
+                    "name": "onGridcolumnAfterRender",
+                    "designerId": "cb9584b0-a2c0-45ba-8206-1c4115c1013f"
+                }
+            ]
+        }
+    ]
+}

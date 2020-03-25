@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "capturacobroswin",
+        "designer|userClassName": "InstitucionesWinViewController18"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesWinViewController18",
+    "designerId": "7b97bd7b-c882-4ac5-90bd-4c95d97c8a63"
+}

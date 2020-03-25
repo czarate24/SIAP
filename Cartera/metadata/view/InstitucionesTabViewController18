@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "carnetscoltab",
+        "designer|userClassName": "InstitucionesTabViewController18"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesTabViewController18",
+    "designerId": "8957cc9b-1f4c-4324-81d7-50e20c801f9c"
+}

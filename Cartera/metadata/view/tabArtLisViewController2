@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabcomp",
+        "designer|userClassName": "tabArtLisViewController2"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "tabArtLisViewController2",
+    "designerId": "01e60ee4-1f9f-4a86-aa8a-f7ddd9792e1c"
+}

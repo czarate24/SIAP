@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "alumnosanualidadtab",
+        "designer|userClassName": "InstitucionesTabViewModel19"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesTabViewModel19",
+    "designerId": "ef726840-5a65-4b78-acec-c8776e7a3c57"
+}

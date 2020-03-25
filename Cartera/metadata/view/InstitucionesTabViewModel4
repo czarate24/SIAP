@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "cuotasinscripciontab",
+        "designer|userClassName": "InstitucionesTabViewModel4"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesTabViewModel4",
+    "designerId": "2ff1950c-2cd7-42f2-9122-152bf2f36065"
+}

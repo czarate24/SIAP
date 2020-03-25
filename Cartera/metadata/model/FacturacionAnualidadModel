@@ -1,0 +1,34 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FacturacionAnualidadModel"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "FacturacionIngresosModel1",
+    "designerId": "4ced8d2b-a1b9-459a-b52f-8c0be8430b99",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_cobro"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger7",
+            "designerId": "41c48682-b690-4103-a20c-fe8163ba10c8"
+        }
+    ]
+}

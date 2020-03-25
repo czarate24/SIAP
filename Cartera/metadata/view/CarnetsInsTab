@@ -1,0 +1,1360 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": true,
+        "container|align": "stretch",
+        "designer|userAlias": "carnetsinstab",
+        "designer|userClassName": "CarnetsInsTab",
+        "height": 630,
+        "id": "CarnetsInsTab",
+        "itemId": "CarnetsInsTab",
+        "layout": "hbox",
+        "title": "Carnets Inscripción",
+        "width": 829
+    },
+    "configAlternates": {
+        "closable": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "id": "string",
+        "itemId": "string",
+        "layout": "string",
+        "title": "string",
+        "width": "auto",
+        "container|align": "string"
+    },
+    "name": "DatosFactTab2",
+    "designerId": "3fab0ea4-c8fc-4064-840c-fcd714ab8a1b",
+    "viewControllerInstanceId": "986085fd-e57f-4fb9-ae8e-290716651789",
+    "viewModelInstanceId": "6c90e804-87e7-4e55-8c82-81ec166eb847",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "dock": null,
+                "id": "PpalPanel2",
+                "layout": "vbox",
+                "layout|flex": 1
+            },
+            "configAlternates": {
+                "dock": "string",
+                "id": "string",
+                "layout": "string",
+                "layout|flex": "number",
+                "title": "string",
+                "container|align": "string"
+            },
+            "name": "MyPanel4",
+            "designerId": "95819884-f860-43ac-b098-687324d6d851",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "flex": 1,
+                        "id": "CarnetsPanel",
+                        "layout": "fit",
+                        "layout|flex": 1,
+                        "title": ""
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "id": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "title": "string",
+                        "flex": "number"
+                    },
+                    "name": "MyPanel3",
+                    "designerId": "3d18d316-6cbc-4694-82a6-ff7a7c7ae6a4",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "configAlternates": {
+                                "dock": "string"
+                            },
+                            "name": "MyToolbar2",
+                            "designerId": "be24d4c5-2594-4809-af68-ad577fb637ea",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Text",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fieldLabel": "Buscar alumno",
+                                        "id": "txtBuscarAlumno",
+                                        "layout|flex": null,
+                                        "name": "txtBuscarAlumno",
+                                        "width": 432
+                                    },
+                                    "configAlternates": {
+                                        "fieldLabel": "string",
+                                        "id": "string",
+                                        "layout|flex": "number",
+                                        "width": "auto",
+                                        "hidden": "boolean",
+                                        "name": "string"
+                                    },
+                                    "name": "MyTextField1",
+                                    "designerId": "32b3d564-7ed9-49c9-8668-bafd75c644e4",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onTxtBuscarAlumnoChange",
+                                                "implHandler": [
+                                                    "",
+                                                    "var busqueda = Ext.getCmp('txtBuscarAlumno').getValue().toUpperCase();",
+                                                    "",
+                                                    "if(newValue === ''){",
+                                                    "",
+                                                    "    Ext.getStore('CarnetsStore').clearFilter();",
+                                                    "",
+                                                    "}else {",
+                                                    "    Ext.getStore('CarnetsStore').clearFilter();",
+                                                    "    Ext.getStore('CarnetsStore').filter({",
+                                                    "        filterFn: function(f) {",
+                                                    "             return f.get('ap_paterno').indexOf(busqueda) > -1;",
+                                                    "        }",
+                                                    "    });",
+                                                    "}"
+                                                ],
+                                                "name": "change",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onTxtBuscarAlumnoChange",
+                                            "designerId": "e504cb47-0a04-4390-95b6-2f9a31bf97c5"
+                                        },
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onTxtBuscarAlumnoKeypress",
+                                                "implHandler": [
+                                                    "var busqueda = Ext.getCmp('txtBuscarAlumno').getValue().toUpperCase();",
+                                                    "",
+                                                    "if(newValue === ''){",
+                                                    "",
+                                                    "    Ext.getStore('CarnetsStore').clearFilter();",
+                                                    "",
+                                                    "}else {",
+                                                    "    Ext.getStore('CarnetsStore').clearFilter();",
+                                                    "    Ext.getStore('CarnetsStore').filter({",
+                                                    "        filterFn: function(f) {",
+                                                    "             return f.get('ap_paterno').indexOf(busqueda) > -1;",
+                                                    "        }",
+                                                    "    });",
+                                                    "}"
+                                                ],
+                                                "name": "keypress",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onTxtBuscarAlumnoKeypress",
+                                            "designerId": "9fbe9109-ca83-4ba5-82e1-47df03e602fb"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/agregar.png",
+                                        "iconAlign": "top",
+                                        "id": "btnAgregarCarnets",
+                                        "itemId": "btnAgregarCarnets",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Agregar Carnet",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton1",
+                                    "designerId": "87df206c-235d-4a3f-90a1-f733ff880ca6",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnAgregarCarnetsClick",
+                                                "implHandler": [
+                                                    "    records = Ext.getCmp('GridCarnetsIns').getSelectionModel().getSelection();",
+                                                    "    var record = Ext.getCmp('GridCarnetsIns').getSelectionModel().getSelection()[0];",
+                                                    "    if(record !== undefined){",
+                                                    "",
+                                                    "      if(records[0].data.id_status_ciclo==2){",
+                                                    "                        Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se puede generar carnets en ciclos cerrados.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    "      }else if(records[0].data.id_status_ciclo==3 && records[0].data.id_nivel_educativo==4 && records[0].data.grado==6){",
+                                                    "               Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No genera carnet.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "      }else{",
+                                                    "",
+                                                    "    if(records.length > 0){",
+                                                    "          var WinCuotasInscripcion = Ext.create('cartera.view.CarnetsInsWin'),",
+                                                    "              EditForm = WinCuotasInscripcion.down('form'),",
+                                                    "              record = records[0],",
+                                                    "              form = Ext.getCmp('formCarnetsIns');",
+                                                    "",
+                                                    "          WinCuotasInscripcion.setTitle('Generar Carnets de Inscripción');",
+                                                    "          form.getForm().loadRecord(record);",
+                                                    "          //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "      }else{",
+                                                    "          Ext.MessageBox.show({",
+                                                    "              title : 'Advertencia',",
+                                                    "              buttons : Ext.MessageBox.OK,",
+                                                    "              msg : 'Seleccione registro.',",
+                                                    "              icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "          });",
+                                                    "",
+                                                    "      }",
+                                                    " }",
+                                                    "    }else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Información',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.INFO",
+                                                    "    });",
+                                                    "",
+                                                    "}",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnAgregarCarnetsClick",
+                                            "designerId": "564cc6ce-58df-4b82-9f24-b1f4a8e21986"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "hidden": true,
+                                        "icon": "resources/images/eliminar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnBorrarCarnets",
+                                        "itemId": "btnBorrarCarnets",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "523b13f2-bd7b-4618-baf8-cc6d22c9dfcc",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnBorrarCarnetsClick",
+                                                "implHandler": [
+                                                    "var record = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0];",
+                                                    "if(record !== undefined){",
+                                                    "    var estatus = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0].data.estatus;",
+                                                    "    var descripcion = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0].data.descripcion;",
+                                                    "    console.log(estatus);",
+                                                    "    if(estatus === 1){",
+                                                    "        Ext.MessageBox.show({",
+                                                    "            title : 'Desactivar Cuota',",
+                                                    "            buttons : Ext.MessageBox.YESNO,",
+                                                    "            buttonText:{",
+                                                    "                yes:'Sí',",
+                                                    "                no:'No',",
+                                                    "                cancel:'Cancelar'",
+                                                    "            },",
+                                                    "            msg : '¿Desea Desactivar a '+descripcion+'?',",
+                                                    "            icon : Ext.Msg.WARNING,",
+                                                    "            fn : function(btn)",
+                                                    "            {",
+                                                    "                if (btn == 'yes')",
+                                                    "                {",
+                                                    "                    var values= {'estatus': 0};",
+                                                    "                    record.set(values);",
+                                                    "                    Ext.getStore('CuotasInscripcionStore').sync({",
+                                                    "                        callback: function(records, operation, success)",
+                                                    "                        {",
+                                                    "                            Ext.MessageBox.show({",
+                                                    "                                title : 'Desactivar Cuota',",
+                                                    "                                buttons : Ext.MessageBox.OK,",
+                                                    "                                msg : 'Cuota desactivada correctamente',",
+                                                    "                                icon : Ext.Msg.INFO",
+                                                    "                            });",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "    else{",
+                                                    "        Ext.MessageBox.show({",
+                                                    "            title : 'Activar Cuota',",
+                                                    "            buttons : Ext.MessageBox.YESNO,",
+                                                    "            buttonText:{",
+                                                    "                yes:'Sí',",
+                                                    "                no:'No',",
+                                                    "                cancel:'Cancelar'",
+                                                    "            },",
+                                                    "            msg : '¿Desea Activar a '+descripcion+'?',",
+                                                    "            icon : Ext.Msg.WARNING,",
+                                                    "            fn : function(btn)",
+                                                    "            {",
+                                                    "                if (btn == 'yes')",
+                                                    "                {",
+                                                    "                    var values= {'estatus': 1};",
+                                                    "                    record.set(values);",
+                                                    "                    Ext.getStore('CuotasInscripcionStore').sync({",
+                                                    "                        callback: function(records, operation, success)",
+                                                    "                        {",
+                                                    "                            Ext.MessageBox.show({",
+                                                    "                                title : 'Activar Cuota',",
+                                                    "                                buttons : Ext.MessageBox.OK,",
+                                                    "                                msg : 'Cuota activada correctamente',",
+                                                    "                                icon : Ext.Msg.INFO",
+                                                    "                            });",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "}",
+                                                    "else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Información',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.INFO",
+                                                    "    });",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnBorrarCarnetsClick",
+                                            "designerId": "ca9e1485-ed4d-4a01-a937-ffd34f09821d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "hidden": true,
+                                        "icon": "resources/images/modificar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnModificarCarnets",
+                                        "itemId": "btnModificarCarnets",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "09afc328-26b2-4df0-8146-eff1e4fecabb",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnModificarCarnetsClick",
+                                                "implHandler": [
+                                                    "records = Ext.getCmp('GridPromos').getSelectionModel().getSelection();",
+                                                    "if(records.length > 0){",
+                                                    "    var WinCuotasInscripcion = Ext.create('cartera.view.PromocionesInsWin'),",
+                                                    "        EditForm = WinCuotasInscripcion.down('form'),",
+                                                    "        record = records[0],",
+                                                    "        form = Ext.getCmp('formPromocionesIns');",
+                                                    "",
+                                                    "    WinCuotasInscripcion.setTitle('Modificar Promoción');",
+                                                    "    form.getForm().loadRecord(record);",
+                                                    "    //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "}else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Advertencia',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "    });",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnModificarCarnetsClick",
+                                            "designerId": "09b78d41-e2b6-4cef-ae3e-4179c18da005"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/actualizar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnActualizarCarnets",
+                                        "itemId": "btnActualizarCarnets",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Actualizar",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "bbb10812-0add-44fc-983a-8cb45f0cf3b5",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnActualizarCarnetsClick",
+                                                "implHandler": [
+                                                    " Ext.getStore('CarnetsInsStore').load({",
+                                                    "                params:{",
+                                                    "                    'id_ins': Ext._id_institucion,",
+                                                    "                    'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "                    },",
+                                                    "});"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnActualizarCarnetsClick",
+                                            "designerId": "8af84fae-ff8a-4136-ad85-7626c5996f38"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/correo.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnActualizarCorreo",
+                                        "itemId": "btnActualizarCorreo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Enviar Correo",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "5992467e-44e3-42ea-acc7-3916f79583e5",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnActualizarCoreoClick",
+                                                "implHandler": [
+                                                    "   var record = Ext.getCmp('GridCarnetsIns').getSelectionModel().getSelection()[0];",
+                                                    "    if(record !== undefined){",
+                                                    "",
+                                                    "",
+                                                    "     if(records[0].data.id_carnet_colegiatura===0 && records[0].data.id_carnet_inscripcion===0){",
+                                                    "       Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se han generado carnets para el alumno seleccionado.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    "     }else{",
+                                                    "",
+                                                    "      if(records[0].data.id_status_ciclo==2){",
+                                                    "                        Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se puede enviar carnets en periodos cerrados.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    "      }else{",
+                                                    "",
+                                                    "    if(records.length > 0){",
+                                                    "          var WinCuotasInscripcion = Ext.create('cartera.view.CorreoInsWin'),",
+                                                    "              EditForm = WinCuotasInscripcion.down('formCorreoIns'),",
+                                                    "              record = records[0],",
+                                                    "              form = Ext.getCmp('formCorreoIns');",
+                                                    "",
+                                                    "          WinCuotasInscripcion.setTitle('Enviar Carnets de Inscripción');",
+                                                    "          form.getForm().loadRecord(record);",
+                                                    "          //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "      }else{",
+                                                    "          Ext.MessageBox.show({",
+                                                    "              title : 'Advertencia',",
+                                                    "              buttons : Ext.MessageBox.OK,",
+                                                    "              msg : 'Seleccione registro.',",
+                                                    "              icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "          });",
+                                                    "",
+                                                    "",
+                                                    "      }",
+                                                    " }",
+                                                    "            }",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "  }else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Información',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.INFO",
+                                                    "    });",
+                                                    "",
+                                                    "}",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnActualizarCoreoClick",
+                                            "designerId": "0f15f5b3-3f87-405a-b4e6-ce97de990eb1"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "GridCarnetsIns",
+                                "store": "CarnetsInsStore"
+                            },
+                            "configAlternates": {
+                                "store": "store",
+                                "id": "string"
+                            },
+                            "name": "MyGridPanel1",
+                            "designerId": "e833397e-0d17-49e5-94a0-182c0e3aa2bc",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_alumno",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_alumno"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn1",
+                                    "designerId": "3ad97648-6488-4ccb-89e7-5119d231549e"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_status_ciclo",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_status_ciclo"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn8",
+                                    "designerId": "5b0dd6fd-862a-4887-b421-6350a8770ae0"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_cuota_inscripcion",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_cuota_inscripcion"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn7",
+                                    "designerId": "e20a5a1a-8558-48dc-82d5-7cda3fd76cce"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_carnet_inscripcion",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_carnet_inscripcion"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn6",
+                                    "designerId": "d8221eb3-3294-401a-af71-aebf39f3e114"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_carnet_colegiatura",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_carnet_colegiatura"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn5",
+                                    "designerId": "f7b08e71-34f8-4bcd-95f9-6d2ec250d474"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_familia",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_familia"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn",
+                                    "designerId": "d345c77c-1005-456b-b00e-f0ef78750359"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_mes2",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_institucion"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn3",
+                                    "designerId": "69d36c14-4293-4988-861e-1039c9432d41"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_ciclo_escolar",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_ciclo_escolar"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn2",
+                                    "designerId": "35b163d2-ed4c-417d-9b7c-22470894151a"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_ciclo_escolar_colegiatura",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_ciclo_escolar_colegiatura"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn11",
+                                    "designerId": "5e49152f-e972-4db6-a98f-4a378b8ceda7"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_status_alumno",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_status_alumno"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn4",
+                                    "designerId": "b20db7c1-7ce8-4e77-a912-f6cb6f14a991"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "matri",
+                                        "menuDisabled": true,
+                                        "text": "Mat. Anterior",
+                                        "width": 116
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn5",
+                                    "designerId": "3c1c6b51-5763-4b02-a6aa-e90080414b78"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "matricula",
+                                        "text": "Matrícula",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "align": "string"
+                                    },
+                                    "name": "MyColumn2",
+                                    "designerId": "4e04d284-8a23-4ec2-ab72-67a6a32dad60"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "ap_paterno",
+                                        "text": "Apellido Paterno",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn",
+                                    "designerId": "7229f058-f5b4-4642-9302-abed6c41ec49"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "ap_materno",
+                                        "text": "Apellido Materno",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn3",
+                                    "designerId": "bb284b0c-754b-483d-ba83-e16df3d138ec"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "nombre",
+                                        "text": "Nombre",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn4",
+                                    "designerId": "a92d2943-79e4-4dac-94d6-9f9305fd2dfe"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_nivel_educativo",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_nivel_educativo"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn9",
+                                    "designerId": "409ff1f2-83e2-4c52-a5ad-21b1ab88ad4f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "nivel_educativo",
+                                        "hideable": false,
+                                        "text": "Nivel Educativo",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "hidden": "boolean",
+                                        "hideable": "boolean",
+                                        "align": "string"
+                                    },
+                                    "name": "MyColumn6",
+                                    "designerId": "3f6481c1-dd7d-4001-ab13-3f326a0fd279"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "grado",
+                                        "hideable": false,
+                                        "text": "Grado",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "hidden": "boolean",
+                                        "hideable": "boolean",
+                                        "align": "string"
+                                    },
+                                    "name": "MyColumn8",
+                                    "designerId": "ae26560f-3bf9-4462-a09b-d40761d917d6"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_status_alumno",
+                                        "hidden": true,
+                                        "text": "Estatus",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyColumn12",
+                                    "designerId": "9e12ff74-270b-45c6-a351-fb86136c1bb5"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Action",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "id_carnet_colegiatura",
+                                        "text": "Carnet Inscripción",
+                                        "width": 150
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "align": "string"
+                                    },
+                                    "name": "MyActionColumn5",
+                                    "designerId": "ba12ee4e-914a-4d8f-a95b-eeb7705d677d",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "fn": "renderer",
+                                                "implHandler": [
+                                                    "    this.items[0].icon =  record.get('id_carnet_inscripcion') > 1 && record.get('id_ciclo_escolar') == Ext._id_ciclo_escolar ? \"resources/images/ok2.png\" : \"resources/images/eliminar.png\";",
+                                                    "return value;"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "designer|params": "typedarray",
+                                                "fn": "string",
+                                                "implHandler": "code"
+                                            },
+                                            "name": "renderer",
+                                            "designerId": "90448bb4-28e8-43ad-8c6c-52edcc3984f3"
+                                        },
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "view",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "item",
+                                                    "e",
+                                                    "record",
+                                                    "row"
+                                                ],
+                                                "fn": "handler",
+                                                "implHandler": [
+                                                    "",
+                                                    "if(record.get('id_status_ciclo')===2) {",
+                                                    " Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se puede imprimir carnets de ciclos cerrados.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    " }else{",
+                                                    "",
+                                                    "",
+                                                    "if(record.get('id_ciclo_escolar') == Ext._id_ciclo_escolar && record.get('id_carnet_inscripcion') > 1 ){",
+                                                    "",
+                                                    "    var id_institucion = Ext._id_institucion;",
+                                                    "    var id_alumno =record.data.id_alumno;",
+                                                    "    var id_status_ciclo =record.data.id_status_ciclo;",
+                                                    "    var id_ciclo_escolar=Ext._id_ciclo_escolar;",
+                                                    "    var grado=record.data.grado;",
+                                                    "    var id_nivel_educativo=record.data.id_nivel_educativo;",
+                                                    "",
+                                                    "",
+                                                    "    new Ext.Window({",
+                                                    "        title : \"CARNET DE INSCRIPCIÓN\",",
+                                                    "        width : 990,",
+                                                    "        maximizable: true,",
+                                                    "        modal: true,",
+                                                    "        height: 700,",
+                                                    "        layout : 'fit',",
+                                                    "        items : [{",
+                                                    "            xtype : \"component\",",
+                                                    "            autoEl : {",
+                                                    "                tag : \"iframe\",",
+                                                    "                src : \"pdf/pdf_CarnetInscripcion.php?id_institucion=\"+id_institucion+\"&id_ciclo_escolar=\"+id_ciclo_escolar+\"&id_alumno=\"+id_alumno+\"&id_status_ciclo=\"+id_status_ciclo+\"&grado=\"+grado+\"&id_nivel_educativo=\"+id_nivel_educativo",
+                                                    "",
+                                                    "            }",
+                                                    "        }]",
+                                                    "    }).show();",
+                                                    "}",
+                                                    "}",
+                                                    ""
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "designer|params": "typedarray",
+                                                "fn": "string",
+                                                "implHandler": "code"
+                                            },
+                                            "name": "handler",
+                                            "designerId": "34e168a3-21c0-4f00-929f-f76cdf165cc2"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onGridcolumnAfterRender11",
+                                        "implHandler": [
+                                            "",
+                                            "Ext.getStore('CarnetsInsStore').load({",
+                                            "                params:{",
+                                            "                    'id_ins': Ext._id_institucion,",
+                                            "                    'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                    },",
+                                            "});",
+                                            "",
+                                            "",
+                                            ""
+                                        ],
+                                        "name": "afterrender",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onGridcolumnAfterRender11",
+                                    "designerId": "19b93738-9f33-45a9-bbd2-ba39cf97447c"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

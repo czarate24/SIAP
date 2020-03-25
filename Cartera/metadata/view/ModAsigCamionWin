@@ -1,0 +1,639 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "modasigcamionwin",
+        "designer|userClassName": "ModAsigCamionWin",
+        "dock": null,
+        "height": 368,
+        "id": "ModAsigCamionWin",
+        "itemId": "ModAsigCamionWin",
+        "layout": "hbox",
+        "modal": true,
+        "resizable": false,
+        "title": "Modificar Camión",
+        "width": 463
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "resizable": "boolean",
+        "id": "string",
+        "itemId": "string",
+        "container|align": "string",
+        "dock": "string",
+        "layout": "string"
+    },
+    "name": "AsigCamionWin1",
+    "designerId": "721addcc-c24f-4c52-bd58-f3d91bac2a5e",
+    "viewControllerInstanceId": "da9ca2a6-ccc2-4872-ad29-c3cfa507a063",
+    "viewModelInstanceId": "b88bbf39-1b86-446c-8028-8d65037011d3",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "dock": "top",
+                "height": 320,
+                "id": "formAsigCamion1",
+                "itemId": "formAsigCamion",
+                "layout": "form",
+                "width": 459
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "height": "auto",
+                "width": "auto",
+                "id": "string",
+                "dock": "string",
+                "layout": "string"
+            },
+            "name": "MyForm1",
+            "designerId": "d60e46e7-4cce-4ad1-8c71-45a40ed289f8",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "flex": null,
+                        "width": 416
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "flex": "number",
+                        "width": "auto"
+                    },
+                    "name": "MyPanel7",
+                    "designerId": "8316b21c-dca6-419b-b34e-2e9b38eb67eb",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "id_institucion",
+                                "hidden": true,
+                                "hideTrigger": true,
+                                "id": "id_institucionAC1",
+                                "name": "id_institucion"
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "validateBlank": "boolean",
+                                "hideTrigger": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyNumberField2",
+                            "designerId": "770ee36b-b79f-4f32-af1f-2b3a7f9bd870"
+                        },
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "id_alumno",
+                                "hidden": true,
+                                "hideTrigger": true,
+                                "id": "id_alumnoAC1",
+                                "name": "id_alumno"
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "validateBlank": "boolean",
+                                "hideTrigger": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyNumberField",
+                            "designerId": "e83e5423-cd20-48a9-90b1-c401e4eea6c5"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "dock": null,
+                                "editable": false,
+                                "fieldLabel": "Nombre",
+                                "id": "txtNombreAC1",
+                                "name": "nombre",
+                                "validateBlank": true,
+                                "width": 402
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto",
+                                "editable": "boolean"
+                            },
+                            "name": "MyTextField",
+                            "designerId": "49064503-cb16-4c97-8368-72d78fa0f92b"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "dock": null,
+                                "editable": false,
+                                "fieldLabel": "Apellido Paterno",
+                                "id": "txtApellidopAC1",
+                                "name": "ap_paterno",
+                                "validateBlank": true,
+                                "width": 402
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto",
+                                "editable": "boolean"
+                            },
+                            "name": "MyTextField1",
+                            "designerId": "4c14bbd5-bd5d-4adb-886b-64bc01dd28bc"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "dock": null,
+                                "editable": false,
+                                "fieldLabel": "Apellido Materno",
+                                "id": "txtApellidomAC1",
+                                "name": "ap_materno",
+                                "validateBlank": true,
+                                "width": 401
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto",
+                                "editable": "boolean"
+                            },
+                            "name": "MyTextField3",
+                            "designerId": "26c45ca4-6102-4562-af92-89b769ccf2d7"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "displayField": "descripcion",
+                                "dock": null,
+                                "editable": false,
+                                "fieldLabel": "Transporte",
+                                "id": "cmbTransporteAC1",
+                                "name": "descripcion",
+                                "store": "cmbTransporteStore",
+                                "validateBlank": true,
+                                "valueField": "descripcion",
+                                "width": 402
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto",
+                                "displayField": "datafield",
+                                "store": "store",
+                                "valueField": "datafield",
+                                "editable": "boolean"
+                            },
+                            "name": "MyComboBox",
+                            "designerId": "ab5ece6b-8bc7-4f38-9aaf-f4011fe14f80",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTransporteACChange",
+                                        "implHandler": [
+                                            "var lengthRecord = field.lastSelectedRecords;",
+                                            "var cuota = field.lastSelectedRecords[0].data.cuota;",
+                                            "var id_cuota = field.lastSelectedRecords[0].data.id_cuota_transporte;",
+                                            "if(lengthRecord !== null){",
+                                            "Ext.getCmp('txtCuotaAC').setValue(cuota);",
+                                            "Ext.getCmp('id_cuota_transporteAC').setValue(id_cuota);",
+                                            "",
+                                            "",
+                                            "}",
+                                            ""
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTransporteACChange",
+                                    "designerId": "b6ae0d89-3782-41b8-aae3-0eab9b9eae70"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "dock": null,
+                                "editable": false,
+                                "fieldLabel": "Cuota",
+                                "id": "txtCuotaAC1",
+                                "name": "cuota",
+                                "validateBlank": true,
+                                "width": 401
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto",
+                                "editable": "boolean"
+                            },
+                            "name": "MyTextField2",
+                            "designerId": "860d4932-554c-42d5-9530-0f68ee519e8f"
+                        },
+                        {
+                            "type": "Ext.form.field.Number",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "id_cuota_transporte",
+                                "hidden": true,
+                                "hideTrigger": true,
+                                "id": "id_cuota_transporteAC1",
+                                "name": "id_cuota_transporte"
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "validateBlank": "boolean",
+                                "hideTrigger": "boolean",
+                                "hidden": "boolean"
+                            },
+                            "name": "MyNumberField1",
+                            "designerId": "24af4795-148a-4fd2-8319-9353a7fdfdda"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "height": 70,
+                        "width": 459
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "width": "auto"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "ec1bff0f-1f6c-4941-be20-6a3fff9ae600",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "left",
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "dock": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer",
+                            "designerId": "b357e7f6-3af4-45e2-82ed-728f6c33359d"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/guardar.png",
+                                "iconAlign": "top",
+                                "id": "btnGuardarB2",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Guardar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "height": "auto",
+                                "icon": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "iconAlign": "string",
+                                "id": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "abb143c6-dae1-452f-b509-c07ec8dae9de",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnGuardarB",
+                                        "implHandler": [
+                                            "var win = button.up('window'),",
+                                            "    form   = Ext.getCmp('formAsigCamion'),",
+                                            "    record = form.getRecord(),",
+                                            "    values = form.getValues();",
+                                            "",
+                                            "if(form.isValid()){",
+                                            "    if(values.id_banco>0){",
+                                            "        //Modificar Forma de Pago.",
+                                            "",
+                                            "         form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/transportealumno/actualiza',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Estatus '+values.nombre+' ha sido actualizada.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                   Ext.getStore('BancosStore').load();",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                }",
+                                            "            });",
+                                            "    }else{",
+                                            "         //Agregar Estatus Ingreso.",
+                                            "      console.log('holaaa' + Ext.getStore('TransporteAlumnoStore').findExact('id_alumno', values.id_alumno));",
+                                            "",
+                                            "        if(Ext.getStore('TransporteAlumnoStore').findExact('id_alumno', parseInt(values.id_alumno))!=-1){",
+                                            "               Ext.MessageBox.show({",
+                                            "                title : 'Advertencia',",
+                                            "                buttons : Ext.MessageBox.OK,",
+                                            "                msg : 'Ya existen datos para ese alumno. Verifique...',",
+                                            "                icon : Ext.Msg.ERROR",
+                                            "            });",
+                                            "        }",
+                                            "    }",
+                                            "",
+                                            "}else{",
+                                            "    //Si el formulario no es válido",
+                                            "     Ext.MessageBox.show({",
+                                            "        title : 'Atencion',",
+                                            "        buttons : Ext.MessageBox.OK,",
+                                            "        msg : 'Ingrese todos los campos obligatorios',",
+                                            "        icon : Ext.Msg.ERROR",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onbtnGuardarB",
+                                    "designerId": "5ee63986-2504-47ff-aac5-0dc59a8c022f"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/cancelar.png",
+                                "iconAlign": "top",
+                                "id": "btnCancelarB2",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Cancelar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "icon": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "height": "auto",
+                                "iconAlign": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "aab3a337-9602-47bc-8b2c-806a39595a72",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnCancelarB",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onbtnCancelarB",
+                                    "designerId": "b4ac5796-fa82-4de3-bfe0-45009edc654b"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onFormasPagoWinAfterRender",
+                "implHandler": [
+                    "Ext.getStore('CamionesAlumnosStore').load({",
+                    "                                params:{",
+                    "                                    'id_alumno': Ext._id_alumno",
+                    "                                },",
+                    "                            });",
+                    "",
+                    "Ext.getStore('MesesCicloStore').load({",
+                    "                                params:{",
+                    "                                    'id_alumno': Ext._id_alumno",
+                    "                                },",
+                    "                            });",
+                    "",
+                    "",
+                    "Ext.getStore('cmbTransporteStore').load({",
+                    "                                params:{",
+                    "                                    'id_ins': Ext._id_institucion,",
+                    "                                    'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                    "                                },",
+                    "                            });"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onFormasPagoWinAfterRender",
+            "designerId": "a47720c8-c32f-4cdc-bcd0-9ceb461d337e"
+        }
+    ]
+}

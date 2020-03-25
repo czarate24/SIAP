@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "parcialidadestab",
+        "designer|userClassName": "InstitucionesTabViewController20"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesTabViewController20",
+    "designerId": "bd95477e-506e-433b-b6dc-734789070b8f"
+}
