@@ -3,7 +3,7 @@
 namespace App\Controller;
 
 use Exception;
-
+d
 class AjustesController extends AppController {
 
  
