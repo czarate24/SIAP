@@ -7,7 +7,7 @@
             "frameworkVersion": "6.5.3.57"
         },
         "urlPrefixTemplate": "http://localhost:{port}/{path}",
-        "urlPrefix": "http://localhost:50913/",
+        "urlPrefix": "http://localhost:49721/",
         "exportPath": "",
         "buildShouldOverwriteIndex": true,
         "generateArchitectVersion": false,
