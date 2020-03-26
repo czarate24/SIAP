@@ -1,0 +1,1839 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": true,
+        "designer|userAlias": "cuotasinscripcionstab",
+        "designer|userClassName": "CuotasInscripcionTab",
+        "height": 630,
+        "id": "CuotasInscripcionTab",
+        "itemId": "CuotasInscripcionTab",
+        "layout": "fit",
+        "title": "Cuotas de Inscripción",
+        "width": 829
+    },
+    "configAlternates": {
+        "closable": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "id": "string",
+        "itemId": "string",
+        "layout": "string",
+        "title": "string",
+        "width": "auto"
+    },
+    "name": "CiclosEscolaresTab1",
+    "designerId": "060aca79-ff25-4bbd-8145-cb1d1cc27556",
+    "viewControllerInstanceId": "b7665e15-747e-4270-a9f3-aa93356189cc",
+    "viewModelInstanceId": "2ff1950c-2cd7-42f2-9122-152bf2f36065",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "layout": "hbox"
+            },
+            "configAlternates": {
+                "container|align": "string",
+                "layout": "string"
+            },
+            "name": "MyPanel2",
+            "designerId": "7bcdb114-b66f-433c-8c47-841b79c30461",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "id": "CuotasPanel",
+                        "layout": "fit",
+                        "layout|flex": 1,
+                        "title": "Cuotas"
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "id": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "title": "string"
+                    },
+                    "name": "MyPanel1",
+                    "designerId": "01b34a3f-a048-4ab6-9485-2826a2fcf7e1",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "configAlternates": {
+                                "dock": "string"
+                            },
+                            "name": "MyToolbar1",
+                            "designerId": "81123352-1207-412f-891c-0595eb566401",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/agregar.png",
+                                        "iconAlign": "top",
+                                        "id": "btnAgregarCuoIns",
+                                        "itemId": "btnAgregarCiclo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean"
+                                    },
+                                    "name": "MyButton1",
+                                    "designerId": "6fd930c5-e32c-4e71-b0c7-f71590ea8057",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnAgregarCuoInsClick",
+                                                "implHandler": [
+                                                    "    var FormCuoIns = Ext.create('cartera.view.CuotasInscripcionWin');",
+                                                    "    FormCuoIns.show();"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnAgregarCuoInsClick",
+                                            "designerId": "beec2a0d-0d03-44b7-b7f7-c6c0861b5521"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/eliminar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnBorrarCuoIns",
+                                        "itemId": "btnBorrarCiclo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "5e28490c-8d08-4af4-9b49-7aa90e0ed152",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnBorrarCuoInsClick",
+                                                "implHandler": [
+                                                    "var record = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0];",
+                                                    "if(record !== undefined){",
+                                                    "    var estatus = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0].data.estatus;",
+                                                    "    var descripcion = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0].data.descripcion;",
+                                                    "    console.log(estatus);",
+                                                    "    if(estatus === 1){",
+                                                    "        Ext.MessageBox.show({",
+                                                    "            title : 'Desactivar Cuota',",
+                                                    "            buttons : Ext.MessageBox.YESNO,",
+                                                    "            buttonText:{",
+                                                    "                yes:'Sí',",
+                                                    "                no:'No',",
+                                                    "                cancel:'Cancelar'",
+                                                    "            },",
+                                                    "            msg : '¿Desea Desactivar a '+descripcion+'?',",
+                                                    "            icon : Ext.Msg.WARNING,",
+                                                    "            fn : function(btn)",
+                                                    "            {",
+                                                    "                if (btn == 'yes')",
+                                                    "                {",
+                                                    "                    var values= {'estatus': 0};",
+                                                    "                    record.set(values);",
+                                                    "                    Ext.getStore('CuotasInscripcionStore').sync({",
+                                                    "                        callback: function(records, operation, success)",
+                                                    "                        {",
+                                                    "                            Ext.MessageBox.show({",
+                                                    "                                title : 'Desactivar Cuota',",
+                                                    "                                buttons : Ext.MessageBox.OK,",
+                                                    "                                msg : 'Cuota desactivada correctamente',",
+                                                    "                                icon : Ext.Msg.INFO",
+                                                    "                            });",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "    else{",
+                                                    "        Ext.MessageBox.show({",
+                                                    "            title : 'Activar Cuota',",
+                                                    "            buttons : Ext.MessageBox.YESNO,",
+                                                    "            buttonText:{",
+                                                    "                yes:'Sí',",
+                                                    "                no:'No',",
+                                                    "                cancel:'Cancelar'",
+                                                    "            },",
+                                                    "            msg : '¿Desea Activar a '+descripcion+'?',",
+                                                    "            icon : Ext.Msg.WARNING,",
+                                                    "            fn : function(btn)",
+                                                    "            {",
+                                                    "                if (btn == 'yes')",
+                                                    "                {",
+                                                    "                    var values= {'estatus': 1};",
+                                                    "                    record.set(values);",
+                                                    "                    Ext.getStore('CuotasInscripcionStore').sync({",
+                                                    "                        callback: function(records, operation, success)",
+                                                    "                        {",
+                                                    "                            Ext.MessageBox.show({",
+                                                    "                                title : 'Activar Cuota',",
+                                                    "                                buttons : Ext.MessageBox.OK,",
+                                                    "                                msg : 'Cuota activada correctamente',",
+                                                    "                                icon : Ext.Msg.INFO",
+                                                    "                            });",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "}",
+                                                    "else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Información',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.INFO",
+                                                    "    });",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnBorrarCuoInsClick",
+                                            "designerId": "a01d11d6-1aa4-4cad-96f7-2083de513b1d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/modificar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnModificarCuoIns",
+                                        "itemId": "btnModificarCiclo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "42bdbdb1-d91e-4ae2-980e-5168cd81be8a",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnModificarCuoInsClick",
+                                                "implHandler": [
+                                                    "records = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection();",
+                                                    "if(records.length > 0){",
+                                                    "    var WinCuotasInscripcion = Ext.create('cartera.view.CuotasInscripcionWin'),",
+                                                    "        EditForm = WinCuotasInscripcion.down('form'),",
+                                                    "        record = records[0],",
+                                                    "        form = Ext.getCmp('formCuotaInscripcion');",
+                                                    "",
+                                                    "    WinCuotasInscripcion.setTitle('Modificar Cuotas de Inscripción');",
+                                                    "    form.getForm().loadRecord(record);",
+                                                    "    //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "}else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Advertencia',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "    });",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnModificarCuoInsClick",
+                                            "designerId": "a56499d9-735a-4cbb-b5d2-513452a851f7"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/actualizar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnActualizarCuoIns",
+                                        "itemId": "btnActualizarCuoIns",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "4aeb3036-0470-4f92-bb80-6d310501f540",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnActualizarCuoInsClick",
+                                                "implHandler": [
+                                                    "  Ext.getStore('CuotasInscripcionStore').load({",
+                                                    "            params:{",
+                                                    "                'id_ins': Ext._id_institucion,",
+                                                    "                'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "            },",
+                                                    "        });",
+                                                    "    ",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnActualizarCuoInsClick",
+                                            "designerId": "2439dfa8-35bc-4125-8062-f3624d60bbfe"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "GridCuoIns",
+                                "store": "CuotasInscripcionStore"
+                            },
+                            "configAlternates": {
+                                "store": "store",
+                                "id": "string"
+                            },
+                            "name": "MyGridPanel",
+                            "designerId": "2f78acdb-5d8a-466b-867d-b02c66b4b6f7",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_ciclo_escolar",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_ciclo_escolar"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn1",
+                                    "designerId": "72df5179-1b4d-4b1b-8237-8d3c93ab9840"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_cuota_inscripcion",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_cuota_inscripcion"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn3",
+                                    "designerId": "4c0e4c98-5c1c-4c9a-9209-34d6fc69912c"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_institucion",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_institucion"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn2",
+                                    "designerId": "907bfdad-ee41-48c9-b460-98b70ca6ab02"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_nivel_educativo",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_nivel_educativo"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn4",
+                                    "designerId": "d3878ed7-d83e-49ab-9da2-c4aa81fc7fb5"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "descripcion",
+                                        "text": "Descripción",
+                                        "width": 150
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn2",
+                                    "designerId": "c6705fdf-3d1c-43a5-a5ce-d4a402f9d655"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "grado",
+                                        "text": "Grado",
+                                        "width": 150
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn1",
+                                    "designerId": "5ac559d4-c1df-477a-9c82-dade01b3d15c"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "descrip_nivel",
+                                        "text": "Nivel",
+                                        "width": 150
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn11",
+                                    "designerId": "4400423b-bb15-4268-9fca-0764823a77d9"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "cuota",
+                                        "text": "Cuota",
+                                        "width": 150
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyNumberColumn",
+                                    "designerId": "917e3063-e71a-4b5a-9b72-0b4a14ac74b3"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Action",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "estatus",
+                                        "text": "Promociones",
+                                        "width": 150
+                                    },
+                                    "configAlternates": {
+                                        "align": "string",
+                                        "dataIndex": "datafield",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyActionColumn3",
+                                    "designerId": "4332f41d-4a3f-4370-9eda-2729c733fa59",
+                                    "cn": [
+                                        {
+                                            "type": "actioncolumnitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyActionColumnItem1",
+                                            "designerId": "f87ccb33-4f15-40d0-ac19-2b094de72fc2",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "view",
+                                                            "rowIndex",
+                                                            "colIndex",
+                                                            "item",
+                                                            "e",
+                                                            "record",
+                                                            "row"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "// console.log('HANDLER');",
+                                                            "view.select(record);",
+                                                            "records = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection();",
+                                                            "if(records.length > 0){",
+                                                            "    var WinCuotasInscripcion = Ext.create('cartera.view.PromocionesInsWin'),",
+                                                            "        EditForm = WinCuotasInscripcion.down('form'),",
+                                                            "        record = records[0],",
+                                                            "        form = Ext.getCmp('formPromocionesIns');",
+                                                            "",
+                                                            "    WinCuotasInscripcion.setTitle('Agregar Promoción');",
+                                                            "    form.getForm().loadRecord(record);",
+                                                            "    //Ext.getCmp('institucionescmb').disabled=true;",
+                                                            "",
+                                                            "}else{",
+                                                            "    Ext.MessageBox.show({",
+                                                            "        title : 'Advertencia',",
+                                                            "        buttons : Ext.MessageBox.OK,",
+                                                            "        msg : 'Seleccione registro.',",
+                                                            "        icon : Ext.Msg.ERROR",
+                                                            "",
+                                                            "    });",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|params": "typedarray",
+                                                        "fn": "string",
+                                                        "implHandler": "code"
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "0b7431ae-9cae-4a9b-8df4-6d515e81859a"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "fn": "renderer",
+                                                "implHandler": [
+                                                    "this.items[0].icon =\"resources/images/descuento.png\";",
+                                                    "return value;"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "designer|params": "typedarray",
+                                                "fn": "string",
+                                                "implHandler": "code"
+                                            },
+                                            "name": "renderer",
+                                            "designerId": "4c0c2652-9751-4b33-8557-bc87a439a936"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.column.Action",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "estatus",
+                                        "text": "Estatus"
+                                    },
+                                    "configAlternates": {
+                                        "align": "string",
+                                        "dataIndex": "datafield",
+                                        "text": "string"
+                                    },
+                                    "name": "MyActionColumn",
+                                    "designerId": "9034af8c-e392-447a-a9ff-7ba017498b4d",
+                                    "cn": [
+                                        {
+                                            "type": "actioncolumnitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyActionColumnItem1",
+                                            "designerId": "97ccfe1d-6980-4091-903a-92e4633a432c",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "view",
+                                                            "rowIndex",
+                                                            "colIndex",
+                                                            "item",
+                                                            "e",
+                                                            "record",
+                                                            "row"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "console.log(record.data.estatus);",
+                                                            "var descripcion = record.data.descripcion;",
+                                                            "if(record.data.estatus === 1){",
+                                                            "    Ext.MessageBox.show({",
+                                                            "        title : 'Desactivar Cuota',",
+                                                            "        buttons : Ext.MessageBox.YESNO,",
+                                                            "        buttonText:{",
+                                                            "                yes:'Sí',",
+                                                            "                no:'No',",
+                                                            "                cancel:'Cancelar'",
+                                                            "            },",
+                                                            "        msg : '¿Desea Desactivar a '+descripcion+'?',",
+                                                            "        icon : Ext.Msg.WARNING,",
+                                                            "        fn : function(btn)",
+                                                            "        {",
+                                                            "            if (btn == 'yes')",
+                                                            "            {",
+                                                            "                var values= {'estatus': 0};",
+                                                            "                record.set(values);",
+                                                            "                Ext.getStore('CuotasInscripcionStore').sync({",
+                                                            "                    callback: function(records, operation, success)",
+                                                            "                    {",
+                                                            "                        Ext.MessageBox.show({",
+                                                            "                            title : 'Desactivar Cuota',",
+                                                            "                            buttons : Ext.MessageBox.OK,",
+                                                            "                            msg : 'Cuota desactivada correctamente',",
+                                                            "                            icon : Ext.Msg.INFO",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                });",
+                                                            "                Ext.getStore('CuotasInscripcionStore').load({",
+                                                            "                    params:{",
+                                                            "                        'id_ins': Ext._id_institucion,",
+                                                            "                        'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                            "                    },",
+                                                            "                });",
+                                                            "            }",
+                                                            "        }",
+                                                            "    });",
+                                                            "}",
+                                                            "else{",
+                                                            "    Ext.MessageBox.show({",
+                                                            "        title : 'Activar Cuota',",
+                                                            "        buttons : Ext.MessageBox.YESNO,",
+                                                            "        buttonText:{",
+                                                            "                yes:'Sí',",
+                                                            "                no:'No',",
+                                                            "                cancel:'Cancelar'",
+                                                            "            },",
+                                                            "        msg : '¿Desea Activar a '+descripcion+'?',",
+                                                            "        icon : Ext.Msg.WARNING,",
+                                                            "        fn : function(btn)",
+                                                            "        {",
+                                                            "            if (btn == 'yes')",
+                                                            "            {",
+                                                            "                var values= {'estatus': 1};",
+                                                            "                record.set(values);",
+                                                            "                Ext.getStore('CuotasInscripcionStore').sync({",
+                                                            "                    callback: function(records, operation, success)",
+                                                            "                    {",
+                                                            "                        Ext.MessageBox.show({",
+                                                            "                            title : 'Activar Cuota',",
+                                                            "                            buttons : Ext.MessageBox.OK,",
+                                                            "                            msg : 'Cuota Activada correctamente',",
+                                                            "                            icon : Ext.Msg.INFO",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                });",
+                                                            "",
+                                                            "                Ext.getStore('CuotasInscripcionStore').load({",
+                                                            "                    params:{",
+                                                            "                        'id_ins': Ext._id_institucion,",
+                                                            "                        'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                            "                    },",
+                                                            "                });",
+                                                            "            }",
+                                                            "        }",
+                                                            "    });",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|params": "typedarray",
+                                                        "fn": "string",
+                                                        "implHandler": "code"
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "b0e387f7-436d-4f32-8b49-668267a772e3"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "fn": "renderer",
+                                                "implHandler": [
+                                                    "this.items[0].icon = record.get('estatus') == 1 ? \"resources/images/ok2.png\" : \"resources/images/eliminar.png\";",
+                                                    "return value;"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "designer|params": "typedarray",
+                                                "fn": "string",
+                                                "implHandler": "code"
+                                            },
+                                            "name": "renderer",
+                                            "designerId": "20d6c3a9-64aa-4610-983e-c5261259a2de"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onGridcolumnAfterRender",
+                                        "implHandler": [
+                                            "Ext.getStore('CuotasInscripcionStore').load({",
+                                            "                params:{",
+                                            "                    'id_ins': Ext._id_institucion,",
+                                            "                    'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                    },",
+                                            "});"
+                                        ],
+                                        "name": "afterrender",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onGridcolumnAfterRender",
+                                    "designerId": "cc8b0e29-1e55-47af-9492-7cbb8e806331"
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onGridCuoInsSelect",
+                                        "implHandler": [
+                                            "Ext.getStore('PromocionesInsStore').load({",
+                                            "                params:{",
+                                            "                    'id_ins': Ext._id_institucion,",
+                                            "                    'id_ciclo_escolar': Ext._id_ciclo_escolar,",
+                                            "                    'id_cuota_inscripcion': record.data.id_cuota_inscripcion",
+                                            "                    },",
+                                            "});"
+                                        ],
+                                        "name": "select",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onGridCuoInsSelect",
+                                    "designerId": "57d0f1a0-076e-4a9d-aaa4-9d5145f175ca"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "id": "PromocionesPanel",
+                        "layout": "fit",
+                        "layout|flex": 1,
+                        "title": "Promociones de Inscripción"
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "id": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "title": "string"
+                    },
+                    "name": "MyPanel",
+                    "designerId": "e4c068ea-933b-4c8d-8d9c-386751e5e44d",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "configAlternates": {
+                                "dock": "string"
+                            },
+                            "name": "MyToolbar2",
+                            "designerId": "a034ff32-2923-4f4d-a93e-8a3c9f7c9305",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/agregar.png",
+                                        "iconAlign": "top",
+                                        "id": "btnAgregarPromo",
+                                        "itemId": "btnAgregarPromo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean"
+                                    },
+                                    "name": "MyButton1",
+                                    "designerId": "59d2b98c-df95-4570-812b-202c82da885a",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnAgregarPromoClick",
+                                                "implHandler": [
+                                                    "  // console.log('HANDLER');",
+                                                    "//view.select(record);",
+                                                    "records = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection();",
+                                                    "if(records.length > 0){",
+                                                    "    var WinCuotasInscripcion = Ext.create('cartera.view.PromocionesInsWin'),",
+                                                    "        EditForm = WinCuotasInscripcion.down('form'),",
+                                                    "        record = records[0],",
+                                                    "        form = Ext.getCmp('formPromocionesIns');",
+                                                    "",
+                                                    "    WinCuotasInscripcion.setTitle('Agregar Promoción');",
+                                                    "    form.getForm().loadRecord(record);",
+                                                    "    //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "}else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Advertencia',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "    });",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnAgregarPromoClick",
+                                            "designerId": "56a079c0-1fe8-472b-9892-b9ee2ca67364"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/eliminar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnBorrarPromo",
+                                        "itemId": "btnBorrarPromo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "35041b46-c584-4c53-995e-b56d971182cb",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnBorrarPromoClick",
+                                                "implHandler": [
+                                                    "var record = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0];",
+                                                    "if(record !== undefined){",
+                                                    "    var estatus = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0].data.estatus;",
+                                                    "    var descripcion = Ext.getCmp('GridCuoIns').getSelectionModel().getSelection()[0].data.descripcion;",
+                                                    "    console.log(estatus);",
+                                                    "    if(estatus === 1){",
+                                                    "        Ext.MessageBox.show({",
+                                                    "            title : 'Desactivar Cuota',",
+                                                    "            buttons : Ext.MessageBox.YESNO,",
+                                                    "            buttonText:{",
+                                                    "                yes:'Sí',",
+                                                    "                no:'No',",
+                                                    "                cancel:'Cancelar'",
+                                                    "            },",
+                                                    "            msg : '¿Desea Desactivar a '+descripcion+'?',",
+                                                    "            icon : Ext.Msg.WARNING,",
+                                                    "            fn : function(btn)",
+                                                    "            {",
+                                                    "                if (btn == 'yes')",
+                                                    "                {",
+                                                    "                    var values= {'estatus': 0};",
+                                                    "                    record.set(values);",
+                                                    "                    Ext.getStore('CuotasInscripcionStore').sync({",
+                                                    "                        callback: function(records, operation, success)",
+                                                    "                        {",
+                                                    "                            Ext.MessageBox.show({",
+                                                    "                                title : 'Desactivar Cuota',",
+                                                    "                                buttons : Ext.MessageBox.OK,",
+                                                    "                                msg : 'Cuota desactivada correctamente',",
+                                                    "                                icon : Ext.Msg.INFO",
+                                                    "                            });",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "    else{",
+                                                    "        Ext.MessageBox.show({",
+                                                    "            title : 'Activar Cuota',",
+                                                    "            buttons : Ext.MessageBox.YESNO,",
+                                                    "            buttonText:{",
+                                                    "                yes:'Sí',",
+                                                    "                no:'No',",
+                                                    "                cancel:'Cancelar'",
+                                                    "            },",
+                                                    "            msg : '¿Desea Activar a '+descripcion+'?',",
+                                                    "            icon : Ext.Msg.WARNING,",
+                                                    "            fn : function(btn)",
+                                                    "            {",
+                                                    "                if (btn == 'yes')",
+                                                    "                {",
+                                                    "                    var values= {'estatus': 1};",
+                                                    "                    record.set(values);",
+                                                    "                    Ext.getStore('CuotasInscripcionStore').sync({",
+                                                    "                        callback: function(records, operation, success)",
+                                                    "                        {",
+                                                    "                            Ext.MessageBox.show({",
+                                                    "                                title : 'Activar Cuota',",
+                                                    "                                buttons : Ext.MessageBox.OK,",
+                                                    "                                msg : 'Cuota activada correctamente',",
+                                                    "                                icon : Ext.Msg.INFO",
+                                                    "                            });",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "}",
+                                                    "else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Información',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.INFO",
+                                                    "    });",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnBorrarPromoClick",
+                                            "designerId": "faba5dd4-8107-47b7-9621-cd690a45b70b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/modificar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnModificarPromo",
+                                        "itemId": "btnModificarPromo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "8a218e2d-3379-4653-bccf-e6c9e6d47203",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnModificarPromoClick",
+                                                "implHandler": [
+                                                    "records = Ext.getCmp('GridPromos').getSelectionModel().getSelection();",
+                                                    "if(records.length > 0){",
+                                                    "    var WinCuotasInscripcion = Ext.create('cartera.view.PromocionesInsWin'),",
+                                                    "        EditForm = WinCuotasInscripcion.down('form'),",
+                                                    "        record = records[0],",
+                                                    "        form = Ext.getCmp('formPromocionesIns');",
+                                                    "",
+                                                    "    WinCuotasInscripcion.setTitle('Modificar Promoción');",
+                                                    "    form.getForm().loadRecord(record);",
+                                                    "    //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "}else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Advertencia',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "    });",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnModificarPromoClick",
+                                            "designerId": "96fcb3d3-6425-4171-b9f5-36ee1f4e1170"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/actualizar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnActualizarPromo",
+                                        "itemId": "btnActualizarPromo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "2ab14dc7-27db-4fa6-b748-73518daf1654",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnActualizarPromoClick",
+                                                "implHandler": [
+                                                    "  Ext.getStore('PromocionesInsStore').load();",
+                                                    "           /* params:{",
+                                                    "                'id_ins': Ext._id_institucion,",
+                                                    "                'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "            },*/",
+                                                    "    //    );",
+                                                    "",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnActualizarPromoClick",
+                                            "designerId": "55e9bb1d-d1d8-4fe1-ba1b-9d0e37995b5c"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "GridPromos",
+                                "store": "PromocionesInsStore"
+                            },
+                            "configAlternates": {
+                                "store": "store",
+                                "id": "string"
+                            },
+                            "name": "MyGridPanel1",
+                            "designerId": "8d6640ec-acb5-4649-b5b7-6ba708f2ae90",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_descuento_inscripcion",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_descuento_inscripcion"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn1",
+                                    "designerId": "e08e9b4a-df9d-46a2-a727-2be4b0aff198"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_cuota_inscripcion",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_cuota_inscripcion"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn3",
+                                    "designerId": "d54d26a5-848f-47b9-ab8f-34049460f257"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_estatus_ingreso",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_estatus_ingreso"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn2",
+                                    "designerId": "6e18d054-5ab9-4db5-960c-c2c979948371"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "descripcion",
+                                        "text": "Descripción",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn2",
+                                    "designerId": "624abb5f-e23e-44fa-bb13-931528040ca9"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "cuota",
+                                        "text": "Cuota"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyNumberColumn5",
+                                    "designerId": "ae40f23b-831c-4e04-bc8e-79c249a72ca2"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "descuento",
+                                        "text": "% Descuento"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyNumberColumn6",
+                                    "designerId": "90d446c0-6127-4b8f-b7fc-23e18112b4ec"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "total",
+                                        "text": "Total"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyNumberColumn",
+                                    "designerId": "b1c52b45-c780-4b1e-8a57-26c5c29f4420"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Fecha"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn",
+                                    "designerId": "04b78241-b0f2-4088-9cfd-21fb702fdad8",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.grid.column.Date",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "fecha_inicio",
+                                                "format": "F d, Y",
+                                                "formatter": "",
+                                                "text": "Inicial",
+                                                "width": 180
+                                            },
+                                            "configAlternates": {
+                                                "dataIndex": "datafield",
+                                                "format": "string",
+                                                "menuDisabled": "boolean",
+                                                "text": "string",
+                                                "width": "auto",
+                                                "formatter": "string"
+                                            },
+                                            "name": "MyDateColumn2",
+                                            "designerId": "ff610e0e-28f4-4535-8426-802ad5d53898"
+                                        },
+                                        {
+                                            "type": "Ext.grid.column.Date",
+                                            "reference": {
+                                                "name": "columns",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "dataIndex": "fecha_fin",
+                                                "format": "F d, Y",
+                                                "text": "Final",
+                                                "width": 180
+                                            },
+                                            "configAlternates": {
+                                                "dataIndex": "datafield",
+                                                "format": "string",
+                                                "menuDisabled": "boolean",
+                                                "text": "string",
+                                                "width": "auto"
+                                            },
+                                            "name": "MyDateColumn3",
+                                            "designerId": "f46514a7-4e64-4ab3-92ed-b6a2db258a80"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.grid.column.Action",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "estatus",
+                                        "text": "Estatus"
+                                    },
+                                    "configAlternates": {
+                                        "align": "string",
+                                        "dataIndex": "datafield",
+                                        "text": "string"
+                                    },
+                                    "name": "MyActionColumn3",
+                                    "designerId": "37404749-f01e-4cac-90b2-87b2e11b7005",
+                                    "cn": [
+                                        {
+                                            "type": "actioncolumnitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyActionColumnItem1",
+                                            "designerId": "ff1edbee-2383-4158-af09-c0908298a528",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "view",
+                                                            "rowIndex",
+                                                            "colIndex",
+                                                            "item",
+                                                            "e",
+                                                            "record",
+                                                            "row"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "console.log(record.data.estatus);",
+                                                            "var descripcion = record.data.descripcion;",
+                                                            "if(record.data.estatus === 1){",
+                                                            "    Ext.MessageBox.show({",
+                                                            "        title : 'Desactivar Promoción',",
+                                                            "        buttons : Ext.MessageBox.YESNO,",
+                                                            "        buttonText:{",
+                                                            "                yes:'Sí',",
+                                                            "                no:'No',",
+                                                            "                cancel:'Cancelar'",
+                                                            "            },",
+                                                            "        msg : '¿Desea Desactivar Promoción?',",
+                                                            "        icon : Ext.Msg.WARNING,",
+                                                            "        fn : function(btn)",
+                                                            "        {",
+                                                            "            if (btn == 'yes')",
+                                                            "            {",
+                                                            "                var values= {'estatus': 0};",
+                                                            "                record.set(values);",
+                                                            "                Ext.getStore('PromocionesInsStore').sync({",
+                                                            "                    callback: function(records, operation, success)",
+                                                            "                    {",
+                                                            "                        Ext.MessageBox.show({",
+                                                            "                            title : 'Desactivar Promoción',",
+                                                            "                            buttons : Ext.MessageBox.OK,",
+                                                            "                            msg : 'Promoción desactivada correctamente',",
+                                                            "                            icon : Ext.Msg.INFO",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                });",
+                                                            "                Ext.getStore('PromocionesInsStore').load({",
+                                                            "                    params:{",
+                                                            "                        'id_ins': Ext._id_institucion,",
+                                                            "                        'id_ciclo_escolar': Ext._id_ciclo_escolar,",
+                                                            "                        'id_cuota_inscripcion': record.data.id_cuota_inscripcion",
+                                                            "                    },",
+                                                            "                });",
+                                                            "            }",
+                                                            "        }",
+                                                            "    });",
+                                                            "}",
+                                                            "else{",
+                                                            "    Ext.MessageBox.show({",
+                                                            "        title : 'Activar Promoción',",
+                                                            "        buttons : Ext.MessageBox.YESNO,",
+                                                            "        buttonText:{",
+                                                            "                yes:'Sí',",
+                                                            "                no:'No',",
+                                                            "                cancel:'Cancelar'",
+                                                            "            },",
+                                                            "        msg : '¿Desea Activar a promoción?',",
+                                                            "        icon : Ext.Msg.WARNING,",
+                                                            "        fn : function(btn)",
+                                                            "        {",
+                                                            "            if (btn == 'yes')",
+                                                            "            {",
+                                                            "                var values= {'estatus': 1};",
+                                                            "                record.set(values);",
+                                                            "                Ext.getStore('PromocionesInsStore').sync({",
+                                                            "                    callback: function(records, operation, success)",
+                                                            "                    {",
+                                                            "                        Ext.MessageBox.show({",
+                                                            "                            title : 'Activar Promoción',",
+                                                            "                            buttons : Ext.MessageBox.OK,",
+                                                            "                            msg : 'Promoción Activada correctamente',",
+                                                            "                            icon : Ext.Msg.INFO",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                });",
+                                                            "",
+                                                            "                Ext.getStore('PromocionesInsStore').load({",
+                                                            "                    params:{",
+                                                            "                        'id_ins': Ext._id_institucion,",
+                                                            "                        'id_ciclo_escolar': Ext._id_ciclo_escolar,",
+                                                            "                        'id_cuota_inscripcion': record.data.id_cuota_inscripcion",
+                                                            "                    },",
+                                                            "                });",
+                                                            "            }",
+                                                            "        }",
+                                                            "    });",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|params": "typedarray",
+                                                        "fn": "string",
+                                                        "implHandler": "code"
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "18f0336b-6840-4768-9f35-0fafd5bbbeb3"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "fn": "renderer",
+                                                "implHandler": [
+                                                    "this.items[0].icon = record.get('estatus') == 1 ? \"resources/images/ok2.png\" : \"resources/images/eliminar.png\";",
+                                                    "return value;"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "designer|params": "typedarray",
+                                                "fn": "string",
+                                                "implHandler": "code"
+                                            },
+                                            "name": "renderer",
+                                            "designerId": "26058230-3c09-4dfa-8e66-4332a17d3c5e"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onGridcolumnAfterRender1",
+                                        "implHandler": [
+                                            "Ext.getStore('CuotasInscripcionStore').load({",
+                                            "                params:{",
+                                            "                    'id_ins': Ext._id_institucion,",
+                                            "                    'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                    },",
+                                            "});"
+                                        ],
+                                        "name": "afterrender",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onGridcolumnAfterRender1",
+                                    "designerId": "e3e8ae33-b389-4a2c-adc7-5a2b63985962"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

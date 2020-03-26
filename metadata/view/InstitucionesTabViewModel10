@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "referenciastab",
+        "designer|userClassName": "InstitucionesTabViewModel10"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesTabViewModel10",
+    "designerId": "aa5437be-ef91-4ecf-bbe8-d9fd26a82cd2"
+}

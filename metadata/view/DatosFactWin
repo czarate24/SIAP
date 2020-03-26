@@ -1,0 +1,1358 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "datosfactwin",
+        "designer|userClassName": "DatosFactWin",
+        "dock": null,
+        "height": 551,
+        "id": "DatosFactWin",
+        "itemId": "DatosFactWin",
+        "layout": "hbox",
+        "modal": true,
+        "resizable": false,
+        "title": "Agregar Datos Facturación",
+        "width": 527
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "resizable": "boolean",
+        "id": "string",
+        "itemId": "string",
+        "container|align": "string",
+        "dock": "string",
+        "layout": "string"
+    },
+    "name": "BancosWin1",
+    "designerId": "ccc803f8-5f87-4b75-9d74-afe15ca5d69c",
+    "viewControllerInstanceId": "bb1e9cd2-9531-4815-87f9-fa2d6684f9ba",
+    "viewModelInstanceId": "9e4857fe-de29-4180-808c-57afeed3a765",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|align": "stretch",
+                "dock": "top",
+                "height": 517,
+                "id": "formDatosFact",
+                "itemId": "formDatosFact",
+                "layout": "vbox",
+                "width": 881
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "height": "auto",
+                "width": "auto",
+                "id": "string",
+                "dock": "string",
+                "layout": "string",
+                "container|align": "string"
+            },
+            "name": "MyForm1",
+            "designerId": "931617a7-2a2a-4f3f-9806-55c002038a88",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_dato_facturacion",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_dato_facturacion",
+                        "name": "id_dato_facturacion"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField1",
+                    "designerId": "baa3e26c-2398-45dc-a6fa-9c1cc23f9bb8"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_familia",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_familia",
+                        "name": "id_familia"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField",
+                    "designerId": "fc1d154b-60f2-477e-b98d-55d212c3cd6e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "dock": null,
+                        "fieldLabel": "RFC",
+                        "id": "txtRfcDF",
+                        "name": "rfc",
+                        "validateBlank": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string"
+                    },
+                    "name": "MyTextField",
+                    "designerId": "c4616e09-31ec-475b-974a-2502de70ba12",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTxtRfcDFChange",
+                                "implHandler": [
+                                    "field.setValue(newValue.toUpperCase());"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTxtRfcDFChange",
+                            "designerId": "82f723e4-f4b4-4036-9202-697bbc054c74"
+                        },
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTxtRfcDFBlur",
+                                "implHandler": [
+                                    "if(component.getValue() !== \"\"){",
+                                    "    if(!component.getValue().match(/^[A-Za-z]{3,4}([0-9]{2})(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])((\\d|[A-Z]){3})$/)) {",
+                                    "       // Ext.getCmp('txtRfcDF').focus();",
+                                    "       // Ext.MessageBox.alert('Mensaje del sistema.', 'El RFC <b>\"'+component.getValue()+'\"</b> es inválido.');",
+                                    "       // Ext.getCmp('txtRfcDF').setValue('');",
+                                    "        Ext.MessageBox.show({",
+                                    "                title:'Mensaje del Sistema',",
+                                    "                buttons : Ext.MessageBox.OK,",
+                                    "                msg: 'El RFC <b>\"'+component.getValue()+'\"</b> es inválido.',",
+                                    "                icon: Ext.Msg.INFO,",
+                                    "                fn: function(btn){",
+                                    "                    if(btn === 'ok'){",
+                                    "                         Ext.getCmp('txtRfcDF').focus();",
+                                    "                        //win.close();",
+                                    "",
+                                    "                    }",
+                                    "                }",
+                                    "            });",
+                                    "",
+                                    "    }",
+                                    "}"
+                                ],
+                                "name": "blur",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTxtRfcDFBlur",
+                            "designerId": "234cfdb8-bfb0-436e-a1a2-89d84bdbc511"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "dock": null,
+                        "fieldLabel": "Razón Social",
+                        "id": "txtRazonsocialDF1",
+                        "name": "razon_social",
+                        "validateBlank": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string"
+                    },
+                    "name": "MyTextField5",
+                    "designerId": "93020355-8fad-4320-8aed-56b72d8759bc",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onAfiliacionBChange1",
+                                "implHandler": [
+                                    "field.setValue(newValue.toUpperCase());"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onAfiliacionBChange1",
+                            "designerId": "ec9e045c-cb4a-4536-b907-3cff221b4079"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "displayField": "uso",
+                        "editable": false,
+                        "fieldLabel": "Uso CDFI:",
+                        "id": "cmdUsocfdiDF",
+                        "name": "uso",
+                        "queryMode": "local",
+                        "store": "UsoCFDIDfStore",
+                        "valueField": "uso"
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "readOnly": "boolean",
+                        "displayField": "datafield",
+                        "queryMode": "string",
+                        "store": "store",
+                        "valueField": "datafield"
+                    },
+                    "name": "MyComboBox2",
+                    "designerId": "93a47ab2-63f6-4a8e-b432-a0585475dc92",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onCmdUsocfdiDFChange",
+                                "implHandler": [
+                                    "var lengthRecord = field.lastSelectedRecords;",
+                                    "   // form = Ext.getCmp('formUsoCFDI'),",
+                                    "   // formCmb = Ext.getCmp('comboForm');",
+                                    "var clave = field.lastSelectedRecords[0].data.clave;",
+                                    "var tipo_persona = field.lastSelectedRecords[0].data.tipo_persona;",
+                                    "console.log(tipo_persona);",
+                                    "if(lengthRecord !== null){",
+                                    "Ext.getCmp('txtClaveCFDIDF').setValue(clave);",
+                                    "Ext.getCmp('txtTipoPersonaDF').setValue(tipo_persona);",
+                                    "}",
+                                    ""
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onCmdUsocfdiDFChange",
+                            "designerId": "0a38be1d-ae63-4d19-a5f0-bd004cf51895"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "editable": false,
+                        "fieldLabel": "Clave CDFI:",
+                        "id": "txtClaveCFDIDF",
+                        "name": "usoCFDI",
+                        "readOnly": false,
+                        "width": 638
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "readOnly": "boolean",
+                        "width": "auto"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "7b9459dd-2bba-4554-9c39-be39630c9248"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "editable": false,
+                        "fieldLabel": "Tipo persona:",
+                        "hidden": true,
+                        "id": "txtTipoPersonaDF",
+                        "name": "tipo_persona",
+                        "readOnly": false
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "readOnly": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "4521080c-f854-4bd1-b97b-43e87491eea2"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "editable": false,
+                        "fieldLabel": "predeterminado",
+                        "hidden": true,
+                        "id": "predeterminado",
+                        "name": "predeterminado",
+                        "readOnly": false
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "readOnly": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextField13",
+                    "designerId": "8c13fde3-8fa1-4953-91aa-f573be9e1356"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "Calle",
+                        "id": "txtCalle",
+                        "name": "calle",
+                        "validateBlank": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "d4fed7eb-ae15-4608-923b-300c614262e7",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onTxtCalleChange",
+                                "implHandler": [
+                                    "field.setValue(newValue.toUpperCase());"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onTxtCalleChange",
+                            "designerId": "8be48ff6-54fa-4e9d-bd83-5d499e2e63a6"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "table",
+                        "width": 438
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "d1ecf093-1a01-4260-b815-0f84eebec1b8",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "N. Exterior",
+                                "id": "txtNExterior",
+                                "name": "numero_exterior",
+                                "validateBlank": true,
+                                "width": 271
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField7",
+                            "designerId": "7bde4ab7-d7f5-4847-bf51-be0b42d0787b"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "N. Interior",
+                                "id": "txtNInterior",
+                                "labelAlign": "right",
+                                "name": "numero_interior",
+                                "validateBlank": true,
+                                "width": 232
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "labelAlign": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField8",
+                            "designerId": "e9dab92a-8ad7-49ec-8251-218646122880",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTxtNInteriorChange",
+                                        "implHandler": [
+                                            "field.setValue(newValue.toUpperCase());"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTxtNInteriorChange",
+                                    "designerId": "9f99ba5a-6921-43a6-aee9-7f582ed6011e"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "fieldLabel": "Colonia",
+                        "id": "txtColonia",
+                        "name": "colonia",
+                        "validateBlank": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "c398fd8b-e5ed-48dd-8369-0a165a50e67e",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onAfiliacionBChange2",
+                                "implHandler": [
+                                    "field.setValue(newValue.toUpperCase());"
+                                ],
+                                "name": "change",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onAfiliacionBChange2",
+                            "designerId": "c7fb9d81-2908-4049-82c7-48d4311b11a8"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "table",
+                        "width": 438
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer3",
+                    "designerId": "d6b9b75e-0ee3-4f95-855a-af21fe2830ab",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Estado",
+                                "id": "txtEstado",
+                                "name": "estado",
+                                "validateBlank": true,
+                                "width": 267
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField7",
+                            "designerId": "b7a899d1-f595-4a0e-be68-25b258352aec",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTxtEstadoChange",
+                                        "implHandler": [
+                                            "field.setValue(newValue.toUpperCase());"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTxtEstadoChange",
+                                    "designerId": "8f82526a-7938-4c7c-8341-0a2ff2b9225e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Municipio",
+                                "id": "txtMunicipio",
+                                "labelAlign": "right",
+                                "name": "municipio",
+                                "validateBlank": true,
+                                "width": 234
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "labelAlign": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField8",
+                            "designerId": "e3972fd3-a299-40ab-8d0d-440c8f79ef2e",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTxtMunicipioChange",
+                                        "implHandler": [
+                                            "field.setValue(newValue.toUpperCase());"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTxtMunicipioChange",
+                                    "designerId": "348fc07e-a470-4d49-9a94-db756fe78372"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "table",
+                        "width": 438
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer4",
+                    "designerId": "61b7cf1a-541a-440e-b925-d5d7e8db3b0c",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Localidad",
+                                "id": "txtLocalidad",
+                                "name": "localidad",
+                                "validateBlank": true,
+                                "width": 266
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField7",
+                            "designerId": "fb4c5bdc-fcb1-42fb-b77b-a4e8281e6a84",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTxtLocalidadChange",
+                                        "implHandler": [
+                                            "field.setValue(newValue.toUpperCase());"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTxtLocalidadChange",
+                                    "designerId": "94ba3010-1f45-465f-b5c6-dde4f75e272e"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "C. Postal ",
+                                "id": "txtCPostal",
+                                "labelAlign": "right",
+                                "name": "codigo_postal",
+                                "validateBlank": true,
+                                "width": 235
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "labelAlign": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField8",
+                            "designerId": "1f97ab7b-fe37-4f0b-ad1f-47f56c6a0875"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout": "table",
+                        "width": 438
+                    },
+                    "configAlternates": {
+                        "layout": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyContainer5",
+                    "designerId": "84904c71-e61a-4d40-99d8-855b5ae96491",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "País",
+                                "id": "txtPais",
+                                "name": "pais",
+                                "validateBlank": true,
+                                "width": 263
+                            },
+                            "configAlternates": {
+                                "allowBlank": "boolean",
+                                "fieldLabel": "string",
+                                "layout|anchor": "string",
+                                "name": "string",
+                                "id": "string",
+                                "readOnly": "boolean",
+                                "maxLength": "number",
+                                "maxLengthText": "string",
+                                "validateBlank": "boolean",
+                                "dock": "string",
+                                "width": "auto"
+                            },
+                            "name": "MyTextField7",
+                            "designerId": "83d1997c-145c-45d8-afa9-5976e3d6efb3",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onTxtPaisChange",
+                                        "implHandler": [
+                                            "field.setValue(newValue.toUpperCase());"
+                                        ],
+                                        "name": "change",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onTxtPaisChange",
+                                    "designerId": "fb76688c-60ca-4c46-8ecc-2e43d521d5ee"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "Predeterminado    ",
+                                "fieldLabel": "  ",
+                                "id": "chckPredeterminado"
+                            },
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "fieldLabel": "string",
+                                "id": "string"
+                            },
+                            "name": "MyCheckbox1",
+                            "designerId": "970f914e-ca0d-405d-b408-58fe786aaf49"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "editable": false,
+                        "fieldLabel": "Aplica para:",
+                        "hidden": true,
+                        "id": "cmbAplicaDF",
+                        "name": "aplica"
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "name": "string",
+                        "editable": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyComboBox1",
+                    "designerId": "1a8eafd1-6323-4f0a-9350-b642ea23f8cb"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "height": 85,
+                        "width": 900
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "width": "auto"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "ac24e6f5-f70a-42e7-9670-59fdf680d795",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "left",
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "dock": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer",
+                            "designerId": "1667eb0f-dd3b-4e96-b428-ae2685d08e83"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/guardar.png",
+                                "iconAlign": "top",
+                                "id": "btnGuardarDF",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Guardar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "height": "auto",
+                                "icon": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "iconAlign": "string",
+                                "id": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "9662200e-f827-4cfe-9dd8-962daff2ab0a",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnGuardarDF",
+                                        "implHandler": [
+                                            "if(Ext.getCmp('chckPredeterminado').getValue()===true){",
+                                            "    Ext.getCmp('predeterminado').setValue(\"1\");",
+                                            "}else{",
+                                            "    Ext.getCmp('predeterminado').setValue(\"0\");",
+                                            "}",
+                                            "",
+                                            "var win = button.up('window'),",
+                                            "    form   = Ext.getCmp('formDatosFact'),",
+                                            "    record = form.getRecord(),",
+                                            "    values = form.getValues();",
+                                            "",
+                                            "",
+                                            "if(form.isValid()){",
+                                            "    if(values.id_dato_facturacion>0){",
+                                            "        var rfc_length=Ext.getCmp('txtRfcDF').getValue().length;",
+                                            "",
+                                            "",
+                                            "        if(rfc_length==12 && Ext.getCmp('txtTipoPersonaDF').getValue()=='Física'  ){",
+                                            "",
+                                            "            Ext.MessageBox.show({",
+                                            "                title : 'Advertencia',",
+                                            "                buttons : Ext.MessageBox.OK,",
+                                            "                msg : 'El Uso CFDI seleccionado no aplica a personas morales...' ,",
+                                            "                icon : Ext.Msg.ERROR",
+                                            "            });",
+                                            "",
+                                            "         }else if(rfc_length==13 && Ext.getCmp('txtTipoPersonaDF').getValue()=='Moral' ){",
+                                            "",
+                                            "             Ext.MessageBox.show({",
+                                            "                 title : 'Advertencia',",
+                                            "                 buttons : Ext.MessageBox.OK,",
+                                            "                 msg : 'El Uso CFDI seleccionado no aplica a personas físicas....' ,",
+                                            "                 icon : Ext.Msg.ERROR",
+                                            "             });",
+                                            "",
+                                            "         }else{",
+                                            "",
+                                            "",
+                                            "         form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/datosfact/actualiza',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Los datos de facturación han sido actualizados.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                   Ext.getStore('DatosFactStore').load({",
+                                            "                params:{",
+                                            "                    'id_familia': record.data.id_familia",
+                                            "                    }",
+                                            "});",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                   // console.log('FAILURE CAPTURA ESTATUS');",
+                                            "                }",
+                                            "            });",
+                                            "              }",
+                                            "    }else{",
+                                            "",
+                                            "        //Agregar Datos Facturación.",
+                                            "           var rfc_length=Ext.getCmp('txtRfcDF').getValue().length;",
+                                            "          if(rfc_length==12 && Ext.getCmp('txtTipoPersonaDF').getValue()=='Física' ){",
+                                            "",
+                                            "            Ext.MessageBox.show({",
+                                            "                title : 'Advertencia',",
+                                            "                buttons : Ext.MessageBox.OK,",
+                                            "                msg : 'El Uso CFDI seleccionado no aplica a personas morales...' ,",
+                                            "                icon : Ext.Msg.ERROR",
+                                            "            });",
+                                            "",
+                                            "          }else if(rfc_length==13 && Ext.getCmp('txtTipoPersonaDF').getValue()=='Moral' ){",
+                                            "",
+                                            "                Ext.MessageBox.show({",
+                                            "                title : 'Advertencia',",
+                                            "                buttons : Ext.MessageBox.OK,",
+                                            "                msg : 'El Uso CFDI seleccionado no aplica a personas físicas....' ,",
+                                            "                icon : Ext.Msg.ERROR",
+                                            "            });",
+                                            "",
+                                            "          }else{",
+                                            "",
+                                            "",
+                                            "",
+                                            "             if(Ext.getStore('DatosFactStore').findExact('rfc', values.rfc)!=-1){",
+                                            "",
+                                            "            Ext.MessageBox.show({",
+                                            "                title : 'Advertencia',",
+                                            "                buttons : Ext.MessageBox.OK,",
+                                            "                msg : 'Ya Existe Datos : '+values.rfc+'. Verifique...',",
+                                            "                icon : Ext.Msg.ERROR",
+                                            "            });",
+                                            "        }else{",
+                                            "         // var recordLogin = Ext.getStore('StoreLogin').data.items[0];",
+                                            "         //values.id_usuarioAct = recordLogin.data.id_usuario;",
+                                            "         record = Ext.create('cartera.model.DatosFactModel');",
+                                            "         console.log(record);",
+                                            "         record.set(values);",
+                                            "         //Ext.getStore('FormasPagoStore').add(record);",
+                                            "         //Ext.getStore('FormasPagoStore').sync();",
+                                            "          //Ext.getCmp('id_insFP').setValue(Ext._id_institucion);",
+                                            "            form.submit({",
+                                            "                params: Ext.JSON.encode(values),",
+                                            "                url: 'api/datosFact/create',",
+                                            "                waitMsg: 'Procesando información...',",
+                                            "                success: function() {",
+                                            "",
+                                            "",
+                                            "                    Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Datos '+values.rfc+' ha sido agregado.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "                   Ext.getStore('DatosFactStore').load({",
+                                            "                params:{",
+                                            "                    'id_familia': record.data.id_familia",
+                                            "                    }",
+                                            "});",
+                                            "",
+                                            "                    win.close();",
+                                            "                },",
+                                            "                failure: function() {",
+                                            "                    //console.log('FAILURE CAPTURA INSTITUCION');",
+                                            "                }",
+                                            "            });",
+                                            "",
+                                            "",
+                                            "        }",
+                                            "              }",
+                                            "    }",
+                                            "",
+                                            "}else{",
+                                            "    //Si el formulario no es válido",
+                                            "     Ext.MessageBox.show({",
+                                            "        title : 'Atencion',",
+                                            "        buttons : Ext.MessageBox.OK,",
+                                            "        msg : 'Ingrese todos los campos obligatorios',",
+                                            "        icon : Ext.Msg.ERROR",
+                                            "    });",
+                                            "}"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onbtnGuardarDF",
+                                    "designerId": "bf84270a-9e0f-4137-a6bb-75cca31c9f33"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/cancelar.png",
+                                "iconAlign": "top",
+                                "id": "btnCancelarDF",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Cancelar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "icon": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "height": "auto",
+                                "iconAlign": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "bc999950-1061-4a50-aead-768a4bb04316",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnCancelarDF",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onbtnCancelarDF",
+                                    "designerId": "73a311ad-2f40-4f73-b532-92141f71b08e"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onDatosFactWinAfterRender",
+                "implHandler": [
+                    "Ext.getStore('UsoCFDIDfStore').load({",
+                    "                                params:{",
+                    "                                    'id_ins': Ext._id_institucion",
+                    "                                },",
+                    "                            });",
+                    "",
+                    "Ext.getCmp('cmdUsocfdiDF').setValue(records[0].data.uso);",
+                    "",
+                    "",
+                    "Ext.getStore(\"UsoCFDIDfStore\").load({",
+                    "    params : {",
+                    "        'id_ins' : Ext._id_institucion",
+                    "    },",
+                    "    callback : function(records, operation, success) {",
+                    "        if(success) {",
+                    "            console.log(records);",
+                    "            //Ext.getCmp(\"cmdUsocfdiDF\").setValue();",
+                    "        }",
+                    "    }",
+                    "});"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onDatosFactWinAfterRender",
+            "designerId": "ed334fbc-63ac-40a9-ac42-aa04eba21289"
+        }
+    ]
+}

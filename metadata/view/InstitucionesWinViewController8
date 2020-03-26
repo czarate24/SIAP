@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "datosfactwin",
+        "designer|userClassName": "InstitucionesWinViewController8"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesWinViewController8",
+    "designerId": "bb1e9cd2-9531-4815-87f9-fa2d6684f9ba"
+}

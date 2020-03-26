@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "cuotasinscripcionwin",
+        "designer|userClassName": "InstitucionesWinViewController4"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesWinViewController4",
+    "designerId": "676b81a2-97c2-4f18-8ab8-8c283286ea12"
+}

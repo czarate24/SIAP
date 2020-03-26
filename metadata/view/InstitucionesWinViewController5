@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "promocionesinswin",
+        "designer|userClassName": "InstitucionesWinViewController5"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesWinViewController5",
+    "designerId": "795401e0-7130-49a2-96e1-2b9a857fe239"
+}

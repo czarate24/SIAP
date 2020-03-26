@@ -1,0 +1,512 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "designer|userAlias": "windowAjustes",
+        "designer|userClassName": "windowAjustes",
+        "height": 258,
+        "modal": true,
+        "resizable": false,
+        "title": "Aplicar Ajustes de Auditoria",
+        "width": 476
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "resizable": "boolean"
+    },
+    "name": "windowGenerar1",
+    "designerId": "214ebe6b-ed8a-4089-a23d-384c5e7de27d",
+    "viewControllerInstanceId": "2eae366c-6360-4d38-a643-37b9693f4a20",
+    "viewModelInstanceId": "8f8c0ecd-fa8a-4d1c-a7cc-932dd703273e",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|pack": "center",
+                "height": 51,
+                "itemId": "formSobrante",
+                "layout": "hbox",
+                "width": 467
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "container|pack": "string",
+                "height": "auto",
+                "layout": "string",
+                "width": "auto"
+            },
+            "name": "MyForm1",
+            "designerId": "374b1904-dc5e-457a-8db8-b581b419aca2",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Sobrante",
+                        "id": "SobranteCant",
+                        "readOnly": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "4980bf59-2a53-4e8e-9cb4-894e50452fa4"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "SobranteCto",
+                        "readOnly": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean"
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "bf572709-d939-482f-a80a-396a1130982d"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|pack": "center",
+                "itemId": "formFaltante",
+                "layout": "hbox"
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "container|pack": "string",
+                "layout": "string"
+            },
+            "name": "MyForm3",
+            "designerId": "63b7786c-fca7-47b4-a152-868dd82da85d",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Faltante",
+                        "id": "FaltanteCant",
+                        "readOnly": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean"
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "b969bd81-4193-4bf1-a47c-a79dbe5da717"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "FaltanteCto",
+                        "name": "",
+                        "readOnly": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean"
+                    },
+                    "name": "MyTextField6",
+                    "designerId": "641af58d-4962-477f-89b0-851750b2d08c"
+                }
+            ]
+        },
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "container|pack": "center",
+                "itemId": "formTotales",
+                "layout": "hbox"
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "container|pack": "string",
+                "layout": "string"
+            },
+            "name": "MyForm4",
+            "designerId": "9565fded-0004-49ab-89ec-272b3d5cc375",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "Neto",
+                        "id": "NetoCant",
+                        "readOnly": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "a0f02eb5-a72f-4282-b710-5f4191fac7a6"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "id": "NetoCto",
+                        "readOnly": true
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean"
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "eaa25784-0d4f-462e-a28c-82b47335b88e"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "layout|flex": 1
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "layout|flex": "number"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "2fb26bba-3d4a-40dd-9c51-c112c94ad564",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 32,
+                                "icon": "resources/images/ok.png",
+                                "layout|flex": null,
+                                "width": 160
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "height": "auto",
+                                "icon": "string",
+                                "layout|flex": "number",
+                                "width": "auto"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "ca27ec7e-b368-4716-81e4-c3e64bc3c8c7",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnGuardar1",
+                                        "implHandler": [
+                                            "var record1, record2, store;",
+                                            "var data_jsonAr = [];",
+                                            "var ctrl = this,",
+                                            "    storeGenerar = Ext.getStore(\"GenerarStore\"),",
+                                            "    record;",
+                                            "// rec;",
+                                            "record = storeGenerar;",
+                                            "// console.log(record.data.items);",
+                                            "// var existe= Ext.getCmp(\"exis\").checked;",
+                                            "//var todos= Ext.getCmp(\"todos\").checked;",
+                                            "//var fisico = Ext.getCmp('fisico').getValue();",
+                                            "//var p = Ext.getCmp('proBar', {",
+                                            "//  renderTo: Ext.getBody(),",
+                                            "// width: 300",
+                                            "//});",
+                                            "",
+                                            "",
+                                            "",
+                                            "",
+                                            "",
+                                            "",
+                                            "Ext.Ajax.request({",
+                                            "    clientValidation: true,",
+                                            "    url: 'api/ajustes/generarajustes',",
+                                            "    method: \"POST\",",
+                                            "    params: {",
+                                            "        nombre: Ext._nombre,",
+                                            "",
+                                            "    },",
+                                            "",
+                                            "",
+                                            "    success: function(response) {",
+                                            "        Ext.Msg.show({",
+                                            "            title: 'Mensaje del Sistema',",
+                                            "            msg: \"Se han Aplicado los Ajustes con éxito\",",
+                                            "            buttons: Ext.Msg.OK,",
+                                            "            icon: Ext.Msg.INFO,",
+                                            "            closable: false,",
+                                            "            callback:function(){",
+                                            "                //  button.up('window').close();",
+                                            "                // alert();",
+                                            "            }",
+                                            "",
+                                            "",
+                                            "        });",
+                                            "        new Ext.Window({",
+                                            "            title : \"ENTRADAS POR AJUSTES DE AUDITORIA (FALTANTES SOBRE KARDEX) \",",
+                                            "            width : 990,",
+                                            "            maximizable: true,",
+                                            "            modal: true,",
+                                            "            height: 700,",
+                                            "            layout : 'fit',",
+                                            "            items : [{",
+                                            "                xtype : \"component\",",
+                                            "                autoEl : {",
+                                            "                    tag : \"iframe\",",
+                                            "                    src : 'pdf/pdf_EntradaAjustes.php'",
+                                            "                    //?direccion='+direccion+'&idcolumna='+idcolumna+'&nivel='+nivel+",
+                                            "                    //'&origenbeca='+origenbeca+'&tiposolicitud='+tiposolicitud+'&tipobeca='+tipobeca+'&estatus='+estatus+",
+                                            "                    //'&grado='+grado",
+                                            "                }",
+                                            "            }]",
+                                            "        }).show();",
+                                            "        new Ext.Window({",
+                                            "            title : \"SALIDAS POR AJUSTES DE AUDITORIA (SOBRANTES SOBRE KARDEX) \",",
+                                            "            width : 990,",
+                                            "            maximizable: true,",
+                                            "            modal: true,",
+                                            "            height: 700,",
+                                            "            layout : 'fit',",
+                                            "            items : [{",
+                                            "                xtype : \"component\",",
+                                            "                autoEl : {",
+                                            "                    tag : \"iframe\",",
+                                            "                    src : 'pdf/pdf_SalidaAjustes.php'",
+                                            "                    //?direccion='+direccion+'&idcolumna='+idcolumna+'&nivel='+nivel+",
+                                            "                    //'&origenbeca='+origenbeca+'&tiposolicitud='+tiposolicitud+'&tipobeca='+tipobeca+'&estatus='+estatus+",
+                                            "                    //'&grado='+grado",
+                                            "                }",
+                                            "            }]",
+                                            "        }).show();",
+                                            "        button.up('window').close();",
+                                            "        Ext.getCmp('tabAjuste').close();",
+                                            "",
+                                            "    },",
+                                            "    failure: function(response) {",
+                                            "        Ext.Msg.show({",
+                                            "            title: 'Error',",
+                                            "            msg: \"No se pudieron aplicar los ajustes\",",
+                                            "            buttons: Ext.Msg.OK,",
+                                            "            icon: Ext.Msg.ERROR",
+                                            "        });",
+                                            "    }",
+                                            "});",
+                                            "",
+                                            "",
+                                            "",
+                                            "",
+                                            ""
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onbtnGuardar1",
+                                    "designerId": "b9188652-c142-422f-9160-cbed2b1bd246"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "icon": "resources/images/cancel.png",
+                                "id": "btnCancelar2",
+                                "layout|flex": null,
+                                "width": 160
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "icon": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "width": "auto"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "0fd9e7cb-32e0-4015-9b7a-3c6e07019d1c",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnCancelar1",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onbtnCancelar1",
+                                    "designerId": "83541b0a-1d8c-499b-936b-940cff2b31ed"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWindowAfterRender",
+                "implHandler": [
+                    " ",
+                    "     var sobrante_exi = 0;",
+                    "    var sobrante_cto = 0;",
+                    "     var faltante_exi = 0;",
+                    "    var faltante_cto = 0;",
+                    "    //storeSobranteSum = Ext.getStore(\"SobrantesSumStore\");",
+                    "     Ext.getStore('SumStore').load();",
+                    "      var storeSob =   Ext.getStore(\"SumStore\");",
+                    "",
+                    "",
+                    "            storeSob.on('load', function() {",
+                    "                sobrante_exi = storeSob.getAt(0).get('sobrante_exi_sum');",
+                    "                sobrante_cto = storeSob.getAt(0).get('sobrante_cto_sum');",
+                    "                faltante_exi = storeSob.getAt(0).get('faltante_exi_sum');",
+                    "                faltante_cto = storeSob.getAt(0).get('faltante_cto_sum');",
+                    "",
+                    "                //Ext.Msg.alert('Simpson', 'Name: ' + faltante_exi);",
+                    "                Ext.getCmp('SobranteCant').setValue(sobrante_exi);",
+                    "                Ext.getCmp('SobranteCto').setValue(sobrante_cto);",
+                    "                Ext.getCmp('FaltanteCant').setValue(faltante_exi);",
+                    "                Ext.getCmp('FaltanteCto').setValue(faltante_cto);",
+                    "",
+                    "                Ext.getCmp('NetoCant').setValue(sobrante_exi-faltante_exi);",
+                    "                Ext.getCmp('NetoCto').setValue(sobrante_cto-faltante_cto);",
+                    "            });",
+                    "                       ",
+                    ""
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onWindowAfterRender",
+            "designerId": "3ca9a372-4aa5-40e6-b4cd-68bae2348abb"
+        }
+    ]
+}

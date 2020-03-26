@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tiposmovimientostab",
+        "designer|userClassName": "InstitucionesTabViewController14"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesTabViewController14",
+    "designerId": "f1e59d2a-e831-4e80-9776-520aeaf4826d"
+}

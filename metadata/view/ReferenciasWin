@@ -1,0 +1,497 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "referenciaswin",
+        "designer|userClassName": "ReferenciasWin",
+        "dock": null,
+        "height": 215,
+        "id": "ReferenciasWin",
+        "itemId": "ReferenciasWin",
+        "layout": "hbox",
+        "modal": true,
+        "resizable": false,
+        "title": "Generar Referencias",
+        "width": 441
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "resizable": "boolean",
+        "id": "string",
+        "itemId": "string",
+        "container|align": "string",
+        "dock": "string",
+        "layout": "string"
+    },
+    "name": "CarnetsColWin1",
+    "designerId": "7a0ae5cb-3ead-4fe3-8c42-427a0f31cb91",
+    "viewControllerInstanceId": "64566201-64e5-45c3-9b54-ca43177109a2",
+    "viewModelInstanceId": "21acf1d5-23f0-4dd6-b45b-0ecdc5b3075c",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "dock": "top",
+                "height": 169,
+                "id": "formReferencias",
+                "itemId": "formReferencias",
+                "layout": "form",
+                "width": 569
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "height": "auto",
+                "width": "auto",
+                "id": "string",
+                "dock": "string",
+                "layout": "string"
+            },
+            "name": "MyForm1",
+            "designerId": "62e82cd3-431b-4016-98ce-837932c1ccbf",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_alumno",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "id_alumnoRef",
+                        "name": "id_alumno"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField9",
+                    "designerId": "a44e6fc6-955e-4ffc-84f5-75c7bd8bc14e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "matricula",
+                        "hidden": true,
+                        "id": "matriculaRef",
+                        "name": "matricula"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyTextField1",
+                    "designerId": "f7cbdc7b-c553-4448-991c-4a7e39a62db0"
+                },
+                {
+                    "type": "Ext.form.RadioGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "fieldLabel": "Generar por",
+                        "id": "rgroupGenerarRef",
+                        "layout": "vbox",
+                        "width": 396
+                    },
+                    "configAlternates": {
+                        "container|align": "string",
+                        "fieldLabel": "string",
+                        "id": "string",
+                        "layout": "string",
+                        "width": "auto"
+                    },
+                    "name": "MyRadioGroup1",
+                    "designerId": "adb5d764-5f2e-4039-a2cf-4eb318170f58",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "Alumno Seleccionado",
+                                "checked": true,
+                                "fieldLabel": null,
+                                "id": "rbtSelecRef"
+                            },
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "checked": "boolean",
+                                "fieldLabel": "string",
+                                "id": "string"
+                            },
+                            "name": "MyRadio2",
+                            "designerId": "bfc57d26-1c29-473c-a8c0-28560c03fed5"
+                        },
+                        {
+                            "type": "Ext.form.field.Radio",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "Todos los Alumnos",
+                                "fieldLabel": null,
+                                "id": "rbtTodosRef"
+                            },
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "fieldLabel": "string",
+                                "id": "string"
+                            },
+                            "name": "MyRadio3",
+                            "designerId": "a49844fc-4a92-404a-807f-ab29544c3839"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "height": 70,
+                        "width": 900
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "width": "auto"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "f1e70b5b-f5a4-43a2-85c2-ddadc9a23235",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "left",
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "dock": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer",
+                            "designerId": "df01dcb7-0611-4052-8efc-bcce3aacd324"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/guardar.png",
+                                "iconAlign": "top",
+                                "id": "btnGuardarRef",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Guardar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "height": "auto",
+                                "icon": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "iconAlign": "string",
+                                "id": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "4c763406-b83b-4432-8c50-c37c7432d628",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnGuardarRef",
+                                        "implHandler": [
+                                            "    var win = button.up('window'),",
+                                            "    form   = Ext.getCmp('formReferencias'),",
+                                            "    record = form.getRecord(),",
+                                            "    values = form.getValues();",
+                                            "",
+                                            "",
+                                            "",
+                                            "",
+                                            "    //AGREGAR REFERENCIAS",
+                                            "",
+                                            "         //AGREGAR REFERENCIAS A TODOS LOS ALUMNOS",
+                                            "",
+                                            "",
+                                            "             if(Ext.getCmp('rbtSelecRef').getValue()===true){",
+                                            "                 ",
+                                            "                   //Agregar Estatus Ingreso.",
+                                            "                if(Ext.getStore('ReferenciasStore').findExact('id_alumno', parseInt(values.id_alumno))!=-1){",
+                                            "                       Ext.MessageBox.show({",
+                                            "                        title : 'Advertencia',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Ya existen datos para ese alumno. Verifique...',",
+                                            "                        icon : Ext.Msg.ERROR",
+                                            "                    });",
+                                            "                }else{",
+                                            "",
+                                            "                    record = Ext.create('cartera.model.ReferenciasModel');",
+                                            "                    console.log(record);",
+                                            "                    record.set(values);",
+                                            "                    form.submit({",
+                                            "                        params: Ext.JSON.encode(values),",
+                                            "                        url: 'api/referencias/create',",
+                                            "                        waitMsg: 'Procesando información...',",
+                                            "                        success: function() {",
+                                            "",
+                                            "",
+                                            "                            Ext.MessageBox.show({",
+                                            "                                title : 'Información',",
+                                            "                                buttons : Ext.MessageBox.OK,",
+                                            "                                msg : 'El carnet se ha generado',",
+                                            "                                icon : Ext.Msg.INFO",
+                                            "",
+                                            "                            });",
+                                            "",
+                                            "",
+                                            "                            Ext.getStore('ReferenciasStore').load({",
+                                            "                                params:{",
+                                            "                                    'id_alumno': record.data.id_alumno,",
+                                            "                                    'id_institucion': Ext._id_institucion",
+                                            "",
+                                            "",
+                                            "                                }",
+                                            "                            });",
+                                            "",
+                                            "",
+                                            "                            win.close();",
+                                            "                        },",
+                                            "                        failure: function() {",
+                                            "                        }",
+                                            "                });",
+                                            "                }",
+                                            "",
+                                            "         }else{",
+                                            "             // AGREGAR REFENCIAS PARA EL ALUMNO SELECCIONADO",
+                                            "",
+                                            "             record = Ext.create('cartera.model.ReferenciasModel');",
+                                            "                console.log(record);",
+                                            "                record.set(values);",
+                                            "                form.submit({",
+                                            "                    params: Ext.JSON.encode(values),",
+                                            "                    url: 'api/referencias/createall',",
+                                            "                    waitMsg: 'Procesando información...',",
+                                            "                    success: function() {",
+                                            "",
+                                            "",
+                                            "                        Ext.MessageBox.show({",
+                                            "                            title : 'Información',",
+                                            "                            buttons : Ext.MessageBox.OK,",
+                                            "                            msg : 'El carnet se ha generado',",
+                                            "                            icon : Ext.Msg.INFO",
+                                            "",
+                                            "                        });",
+                                            "",
+                                            "",
+                                            "                        Ext.getStore('ReferenciasStore').load({",
+                                            "                            params:{",
+                                            "                                'id_alumno': record.data.id_alumno,",
+                                            "                                'id_institucion': Ext._id_institucion",
+                                            "",
+                                            "                            }",
+                                            "                        });",
+                                            "",
+                                            "                        win.close();",
+                                            "                    },",
+                                            "                    failure: function() {",
+                                            "",
+                                            "                    }",
+                                            "            });",
+                                            "",
+                                            "",
+                                            "         }",
+                                            "",
+                                            "",
+                                            ""
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onbtnGuardarRef",
+                                    "designerId": "9796345f-2bbf-46b4-8f89-80f697ad8ef2"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/cancelar.png",
+                                "iconAlign": "top",
+                                "id": "btnCancelarRef",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Cancelar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "icon": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "height": "auto",
+                                "iconAlign": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "a44f6d7c-8360-4962-9378-1ace91cf4d1d",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnCancelarRef",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onbtnCancelarRef",
+                                    "designerId": "123caecd-f3aa-4bc2-808f-977c83d89c7f"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCarnetsWinAfterRender",
+                "implHandler": [
+                    "",
+                    "",
+                    "Ext.getStore('CarnetsAlumnosStore').load({",
+                    "                params:{",
+                    "                    'id_ins': Ext._id_institucion,",
+                    "                    'id_ciclo_escolar': Ext._id_ciclo_escolar,",
+                    "                    'id_cuota_inscripcion': Ext._id_cuota_inscripcion",
+                    "                    },",
+                    "});",
+                    "",
+                    "",
+                    "",
+                    "Ext.getStore('cmbMesesCicloStore').load({",
+                    "                params:{",
+                    "                    'id_ins': Ext._id_institucion",
+                    "",
+                    "                    },",
+                    "});",
+                    "",
+                    "",
+                    ""
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onCarnetsWinAfterRender",
+            "designerId": "2efe1b40-bccd-4c91-83e4-82fcc8fb896a"
+        }
+    ]
+}

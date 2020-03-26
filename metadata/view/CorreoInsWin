@@ -1,0 +1,391 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "container|align": "stretch",
+        "designer|userAlias": "correoinswin",
+        "designer|userClassName": "CorreoInsWin",
+        "dock": null,
+        "height": 178,
+        "id": "CorreoInsWin",
+        "itemId": "CorreoInsWin",
+        "layout": "hbox",
+        "modal": true,
+        "resizable": false,
+        "title": "Enviar Carnets Inscripción",
+        "width": 441
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "autoShow": "boolean",
+        "resizable": "boolean",
+        "id": "string",
+        "itemId": "string",
+        "container|align": "string",
+        "dock": "string",
+        "layout": "string"
+    },
+    "name": "CorreoWin1",
+    "designerId": "d1151546-badb-4863-a01b-33e4a5148c77",
+    "viewControllerInstanceId": "054fc1f8-419d-41f5-af2e-5bd37c1d0e40",
+    "viewModelInstanceId": "9869bc00-6c4c-4017-ad3e-878f89e2b61e",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "dock": "top",
+                "height": 126,
+                "id": "formCorreoIns",
+                "itemId": "formCorreoIns",
+                "layout": "form",
+                "width": 569
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string",
+                "height": "auto",
+                "width": "auto",
+                "id": "string",
+                "dock": "string",
+                "layout": "string"
+            },
+            "name": "MyForm1",
+            "designerId": "47fd5c5a-2912-40ae-9723-c758489c7021",
+            "cn": [
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "displayField": "correo",
+                        "dock": null,
+                        "fieldLabel": "Correo",
+                        "id": "cmbCorreoIns",
+                        "name": "correo",
+                        "readOnly": false,
+                        "store": "CorreoStore",
+                        "valueField": "correo",
+                        "width": 421
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "maxLength": "number",
+                        "maxLengthText": "string",
+                        "validateBlank": "boolean",
+                        "dock": "string",
+                        "editable": "boolean",
+                        "displayField": "datafield",
+                        "store": "store",
+                        "valueField": "datafield",
+                        "width": "auto"
+                    },
+                    "name": "MyComboBox1",
+                    "designerId": "86e067db-41ac-4442-a8d3-573ea81932b4"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fieldLabel": "id_alumno",
+                        "hidden": true,
+                        "hideTrigger": true,
+                        "id": "txtIdAlumnoIns",
+                        "name": "id_alumno"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string",
+                        "id": "string",
+                        "readOnly": "boolean",
+                        "validateBlank": "boolean",
+                        "hideTrigger": "boolean",
+                        "hidden": "boolean"
+                    },
+                    "name": "MyNumberField",
+                    "designerId": "1013be03-06f9-4502-a599-6493e4cd599e"
+                },
+                {
+                    "type": "Ext.toolbar.Toolbar",
+                    "reference": {
+                        "name": "dockedItems",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": "bottom",
+                        "height": 70,
+                        "width": 900
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "height": "auto",
+                        "width": "auto"
+                    },
+                    "name": "MyToolbar",
+                    "designerId": "3be53076-7220-4fa3-aaee-81873fc1add7",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "left",
+                                "layout|flex": 1
+                            },
+                            "configAlternates": {
+                                "dock": "string",
+                                "layout|flex": "number"
+                            },
+                            "name": "MySpacer",
+                            "designerId": "555cb791-7f0d-4098-9a76-01de22f431e0"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/enviar_correo.png",
+                                "iconAlign": "top",
+                                "id": "btnGuardarCo1",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Enviar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "height": "auto",
+                                "icon": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "iconAlign": "string",
+                                "id": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton4",
+                            "designerId": "7a105a0f-e049-4b24-ad59-ffdea6836460",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnGuardarCo",
+                                        "implHandler": [
+                                            "",
+                                            "var id_institucion = Ext._id_institucion;",
+                                            "var id_ciclo_escolar=Ext._id_ciclo_escolar;",
+                                            "var id_alumno =records[0].data.id_alumno;",
+                                            "var id_status_ciclo =records[0].data.id_status_ciclo;",
+                                            "var grado =records[0].data.grado;",
+                                            "var id_nivel_educativo=records[0].data.id_nivel_educativo;",
+                                            "var correo =Ext.getCmp('cmbCorreoIns').getValue();",
+                                            "var win = button.up('window');",
+                                            "console.log(correo);",
+                                            "",
+                                            "",
+                                            "    // ENVIAR EL CARNET DE INSCRIPCIÓN",
+                                            "     if(records[0].data.id_carnet_inscripcion===0){",
+                                            "         Ext.MessageBox.show({",
+                                            "             title : 'Advertencia',",
+                                            "             buttons : Ext.MessageBox.OK,",
+                                            "             msg : 'No se ha generado carnet para el alumno seleccionado.',",
+                                            "             icon : Ext.Msg.ERROR",
+                                            "         });",
+                                            "     }else{",
+                                            "",
+                                            "",
+                                            "",
+                                            "            new Ext.Window({",
+                                            "                title : \"CARNET DE INSCRIPCIÓN\",",
+                                            "                width : 990,",
+                                            "                maximizable: true,",
+                                            "                modal: true,",
+                                            "                height: 700,",
+                                            "                layout : 'fit',",
+                                            "                items : [{",
+                                            "                    xtype : \"component\",",
+                                            "                    autoEl : {",
+                                            "                        tag : \"iframe\",",
+                                            "                        src : \"pdf/pdf_CarnetInscripcionEnviar.php?id_institucion=\"+id_institucion+\"&id_ciclo_escolar=\"+id_ciclo_escolar+\"&correo=\"+correo+\"&id_alumno=\"+id_alumno+\"&id_status_ciclo=\"+id_status_ciclo+\"&grado=\"+grado+\"&id_nivel_educativo=\"+id_nivel_educativo",
+                                            "",
+                                            "                    }",
+                                            "                }]",
+                                            "           }).show();",
+                                            "",
+                                            "            Ext.MessageBox.show({",
+                                            "                        title : 'Información',",
+                                            "                        buttons : Ext.MessageBox.OK,",
+                                            "                        msg : 'Se ha enviado el carnet de inscripción.',",
+                                            "                        icon : Ext.Msg.INFO",
+                                            "",
+                                            "                    });",
+                                            "",
+                                            "              win.close();",
+                                            "",
+                                            "",
+                                            "}",
+                                            "",
+                                            "",
+                                            "",
+                                            ""
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onbtnGuardarCo",
+                                    "designerId": "291fd0cf-bb6d-481d-9adf-3468a36d1107"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 45,
+                                "icon": "resources/images/cancelar_correo.png",
+                                "iconAlign": "top",
+                                "id": "btnCancelarCo1",
+                                "layout|flex": null,
+                                "scale": "large",
+                                "tooltip": "Cancelar",
+                                "width": 100
+                            },
+                            "configAlternates": {
+                                "text": "string",
+                                "icon": "string",
+                                "id": "string",
+                                "layout|flex": "number",
+                                "width": "auto",
+                                "height": "auto",
+                                "iconAlign": "string",
+                                "scale": "string",
+                                "tooltip": "string"
+                            },
+                            "name": "MyButton3",
+                            "designerId": "a97aeb08-d4d5-4a16-926c-0e1b1b318bea",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onbtnCancelarCo",
+                                        "implHandler": [
+                                            "button.up('window').close();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "name": "string",
+                                        "scope": "string",
+                                        "implHandler": "code"
+                                    },
+                                    "name": "onbtnCancelarCo",
+                                    "designerId": "0e7f61b1-1fc4-43ad-90ad-f79da2a0a06e"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onCarnetsWinAfterRender",
+                "implHandler": [
+                    "",
+                    "Ext._id_alumno=records[0].data.id_alumno;",
+                    "Ext.getStore('CorreoStore').load({",
+                    "                params:{",
+                    "                    'id_ins': Ext._id_institucion,",
+                    "                    'id_ciclo_escolar': Ext._id_ciclo_escolar,",
+                    "                    'id_alumno': Ext._id_alumno",
+                    "                    },",
+                    "});",
+                    "",
+                    "Ext.getStore('cmbTipoMovimientoStore').load({",
+                    "                params:{",
+                    "                    'id_ins': Ext._id_institucion,",
+                    "                    },",
+                    "});",
+                    "",
+                    ""
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "configAlternates": {
+                "fn": "string",
+                "implHandler": "code",
+                "name": "string",
+                "scope": "string"
+            },
+            "name": "onCarnetsWinAfterRender",
+            "designerId": "89ca3e3e-bbc3-4bed-bd4e-d9837f548de6"
+        }
+    ]
+}

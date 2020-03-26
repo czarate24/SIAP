@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "tabcap",
+        "designer|userClassName": "tabArtLisViewModel1"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "tabArtLisViewModel1",
+    "designerId": "e061dbe2-bcb5-4061-aa41-dfe2d0329adf"
+}

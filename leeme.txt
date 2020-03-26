@@ -1,0 +1,1 @@
+esta carpeta CAKEAPP se renombra como APP cuando se copia a la carpeta MiProyecto dentro del HTDOCS para poder ejecutar la configuracion dle sencha (revisar DOC)

@@ -1,0 +1,1684 @@
+{
+    "type": "Ext.panel.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "closable": true,
+        "container|align": "stretch",
+        "designer|userAlias": "capturacobrostab",
+        "designer|userClassName": "CapturaCobrosTab",
+        "height": 622,
+        "id": "CapturaCobrosTab",
+        "itemId": "CapturaCobrosTab",
+        "layout": "hbox",
+        "title": "Captura de Cobros",
+        "width": 1554
+    },
+    "configAlternates": {
+        "closable": "boolean",
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "id": "string",
+        "itemId": "string",
+        "layout": "string",
+        "title": "string",
+        "width": "auto",
+        "container|align": "string"
+    },
+    "name": "CarnetsTab1",
+    "designerId": "bb749b80-82a3-41e6-b49b-031f5b44d778",
+    "viewControllerInstanceId": "2d7b88ff-df73-445f-a0ff-eda86be2db5f",
+    "viewModelInstanceId": "d06e73fd-a700-4514-8e1e-15b69a50f094",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|align": "stretch",
+                "dock": null,
+                "id": "PpalPanel4",
+                "layout": "vbox",
+                "layout|flex": 1
+            },
+            "configAlternates": {
+                "dock": "string",
+                "id": "string",
+                "layout": "string",
+                "layout|flex": "number",
+                "title": "string",
+                "container|align": "string"
+            },
+            "name": "MyPanel4",
+            "designerId": "9e8a6d54-d17b-4694-91c7-875d10165a0b",
+            "cn": [
+                {
+                    "type": "Ext.panel.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dock": null,
+                        "flex": 1,
+                        "id": "CapturaCobrosPanel",
+                        "layout": "fit",
+                        "layout|flex": 1,
+                        "title": ""
+                    },
+                    "configAlternates": {
+                        "dock": "string",
+                        "id": "string",
+                        "layout": "string",
+                        "layout|flex": "number",
+                        "title": "string",
+                        "flex": "number"
+                    },
+                    "name": "MyPanel3",
+                    "designerId": "e0a1986b-223a-4765-85e7-ef5ac332a061",
+                    "cn": [
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "top"
+                            },
+                            "configAlternates": {
+                                "dock": "string"
+                            },
+                            "name": "MyToolbar2",
+                            "designerId": "9cd67ee3-ce26-480f-80e5-cc7c24024111",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/agregar.png",
+                                        "iconAlign": "top",
+                                        "id": "btnAgregarCobros1",
+                                        "itemId": "btnAgregarCobros1",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Agregar Cobro",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton7",
+                                    "designerId": "fca132dd-7522-4494-9f0b-245b9d0ed4a8",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnAgregarCobrosClick1",
+                                                "implHandler": [
+                                                    "    var FormCobros = Ext.create('cartera.view.CapturaCobrosWin');",
+                                                    "    FormCobros.show();"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnAgregarCobrosClick1",
+                                            "designerId": "8f686537-91e6-4b40-9321-87c2283f8de4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/eliminar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnBorrarCobros",
+                                        "itemId": "btnBorrarCobros",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Cancelar Cobro",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "hidden": "boolean",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton2",
+                                    "designerId": "942b792a-18c0-44e4-876e-085b90e755e0",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnBorrarCobrosClick",
+                                                "implHandler": [
+                                                    "var record = Ext.getCmp('GridCobros').getSelectionModel().getSelection()[0];",
+                                                    "if(record !== undefined){",
+                                                    "    var estatus = Ext.getCmp('GridCobros').getSelectionModel().getSelection()[0].data.id_estatus_cobro;",
+                                                    "    var descripcion = Ext.getCmp('GridCobros').getSelectionModel().getSelection()[0].data.nombre;",
+                                                    "    console.log(estatus);",
+                                                    "    if(estatus === 1){",
+                                                    "        Ext.MessageBox.show({",
+                                                    "            title : 'Desactivar Cobro',",
+                                                    "            buttons : Ext.MessageBox.YESNO,",
+                                                    "            buttonText:{",
+                                                    "                yes:'Sí',",
+                                                    "                no:'No',",
+                                                    "                cancel:'Cancelar'",
+                                                    "            },",
+                                                    "            msg : '¿Desea Desactivar a '+descripcion+'?',",
+                                                    "            icon : Ext.Msg.WARNING,",
+                                                    "            fn : function(btn)",
+                                                    "            {",
+                                                    "                if (btn == 'yes')",
+                                                    "                {",
+                                                    "                    var values= {'id_estatus_cobro': 0};",
+                                                    "                    record.set(values);",
+                                                    "                    Ext.getStore('CapturaCobrosStore').sync({",
+                                                    "                        callback: function(records, operation, success)",
+                                                    "                        {",
+                                                    "                            Ext.MessageBox.show({",
+                                                    "                                title : 'Desactivar Cobro',",
+                                                    "                                buttons : Ext.MessageBox.OK,",
+                                                    "                                msg : 'Cobro desactivado correctamente',",
+                                                    "                                icon : Ext.Msg.INFO",
+                                                    "                            });",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "    else{",
+                                                    "        Ext.MessageBox.show({",
+                                                    "            title : 'Activar Cobro',",
+                                                    "            buttons : Ext.MessageBox.YESNO,",
+                                                    "            buttonText:{",
+                                                    "                yes:'Sí',",
+                                                    "                no:'No',",
+                                                    "                cancel:'Cancelar'",
+                                                    "            },",
+                                                    "            msg : '¿Desea Activar a '+descripcion+'?',",
+                                                    "            icon : Ext.Msg.WARNING,",
+                                                    "            fn : function(btn)",
+                                                    "            {",
+                                                    "                if (btn == 'yes')",
+                                                    "                {",
+                                                    "                    var values= {'id_estatus_cobro': 1};",
+                                                    "                    record.set(values);",
+                                                    "                    Ext.getStore('CapturaCobrosStore').sync({",
+                                                    "                        callback: function(records, operation, success)",
+                                                    "                        {",
+                                                    "                            Ext.MessageBox.show({",
+                                                    "                                title : 'Activar Cobro',",
+                                                    "                                buttons : Ext.MessageBox.OK,",
+                                                    "                                msg : 'Cobro activado correctamente',",
+                                                    "                                icon : Ext.Msg.INFO",
+                                                    "                            });",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "}",
+                                                    "else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Información',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.INFO",
+                                                    "    });",
+                                                    "",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnBorrarCobrosClick",
+                                            "designerId": "0153878f-afb7-49b6-b9aa-e721a80e07a3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "hidden": true,
+                                        "icon": "resources/images/modificar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnModificarCobros",
+                                        "itemId": "btnModificarCobros",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "hidden": "boolean"
+                                    },
+                                    "name": "MyButton5",
+                                    "designerId": "9f010c94-0f28-415f-abdf-548bd9c6aca6",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnModificarCobrosClick",
+                                                "implHandler": [
+                                                    "records = Ext.getCmp('GridPromos').getSelectionModel().getSelection();",
+                                                    "if(records.length > 0){",
+                                                    "    var WinCuotasInscripcion = Ext.create('cartera.view.PromocionesInsWin'),",
+                                                    "        EditForm = WinCuotasInscripcion.down('form'),",
+                                                    "        record = records[0],",
+                                                    "        form = Ext.getCmp('formPromocionesIns');",
+                                                    "",
+                                                    "    WinCuotasInscripcion.setTitle('Modificar Promoción');",
+                                                    "    form.getForm().loadRecord(record);",
+                                                    "    //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "}else{",
+                                                    "    Ext.MessageBox.show({",
+                                                    "        title : 'Advertencia',",
+                                                    "        buttons : Ext.MessageBox.OK,",
+                                                    "        msg : 'Seleccione registro.',",
+                                                    "        icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "    });",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnModificarCobrosClick",
+                                            "designerId": "c7dcb5a8-9911-49a9-ab89-cb340ccddb3d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/actualizar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnActualizarCobros",
+                                        "itemId": "btnActualizarCobros",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Actualizar",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton6",
+                                    "designerId": "24d372cf-d520-46fb-b6dd-f7c7c5021394",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnActualizarCobrosClick",
+                                                "implHandler": [
+                                                    "Ext.getStore('CapturaCobrosStore').load({",
+                                                    "                params:{",
+                                                    "                    'id_institucion': Ext._id_institucion,",
+                                                    "                    'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "                    },",
+                                                    "});",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnActualizarCobrosClick",
+                                            "designerId": "42f6505d-eea9-4639-8924-44a35403d3ed"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/web.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnPagosWeb",
+                                        "itemId": "btnPagosWeb",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Aplicar Pagos Web",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "5b230c9e-f33a-475b-a9fe-ed5208a6d0bf",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnPagosWebClick",
+                                                "implHandler": [
+                                                    "     records = Ext.getCmp('GridCarnets').getSelectionModel().getSelection();",
+                                                    "",
+                                                    "     if(records[0].data.id_carnet_colegiatura===0 && records[0].data.id_carnet_inscripcion===0){",
+                                                    "       Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se han generado carnets para el alumno seleccionado.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "     ",
+                                                    "     }else{",
+                                                    "      ",
+                                                    "      if(records[0].data.id_status_ciclo==2){",
+                                                    "                        Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se puede enviar carnets en periodos cerrados.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    "      }else{",
+                                                    "",
+                                                    "    if(records.length > 0){",
+                                                    "          var WinCuotasInscripcion = Ext.create('cartera.view.CorreoWin'),",
+                                                    "              EditForm = WinCuotasInscripcion.down('formCorreo'),",
+                                                    "              record = records[0],",
+                                                    "              form = Ext.getCmp('formCorreo');",
+                                                    "",
+                                                    "          WinCuotasInscripcion.setTitle('Enviar Carnets');",
+                                                    "          form.getForm().loadRecord(record);",
+                                                    "          //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "      }else{",
+                                                    "          Ext.MessageBox.show({",
+                                                    "              title : 'Advertencia',",
+                                                    "              buttons : Ext.MessageBox.OK,",
+                                                    "              msg : 'Seleccione registro.',",
+                                                    "              icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "          });",
+                                                    "",
+                                                    "",
+                                                    "      }",
+                                                    " }",
+                                                    "            }",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnPagosWebClick",
+                                            "designerId": "f0f5279f-5e80-4e3e-9640-da3864a9049c"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/import.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnImportarLayout",
+                                        "itemId": "btnImportarLayout",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Importar Layout",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton3",
+                                    "designerId": "c2d7c4e2-546b-4cbf-a6be-5b5397cc736d",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnImportarLayoutClick",
+                                                "implHandler": [
+                                                    "     records = Ext.getCmp('GridCarnets').getSelectionModel().getSelection();",
+                                                    "",
+                                                    "     if(records[0].data.id_carnet_colegiatura===0 && records[0].data.id_carnet_inscripcion===0){",
+                                                    "       Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se han generado carnets para el alumno seleccionado.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "     ",
+                                                    "     }else{",
+                                                    "      ",
+                                                    "      if(records[0].data.id_status_ciclo==2){",
+                                                    "                        Ext.MessageBox.show({",
+                                                    "                            title : 'Advertencia',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se puede enviar carnets en periodos cerrados.',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    "      }else{",
+                                                    "",
+                                                    "    if(records.length > 0){",
+                                                    "          var WinCuotasInscripcion = Ext.create('cartera.view.CorreoWin'),",
+                                                    "              EditForm = WinCuotasInscripcion.down('formCorreo'),",
+                                                    "              record = records[0],",
+                                                    "              form = Ext.getCmp('formCorreo');",
+                                                    "",
+                                                    "          WinCuotasInscripcion.setTitle('Enviar Carnets');",
+                                                    "          form.getForm().loadRecord(record);",
+                                                    "          //Ext.getCmp('institucionescmb').disabled=true;",
+                                                    "",
+                                                    "      }else{",
+                                                    "          Ext.MessageBox.show({",
+                                                    "              title : 'Advertencia',",
+                                                    "              buttons : Ext.MessageBox.OK,",
+                                                    "              msg : 'Seleccione registro.',",
+                                                    "              icon : Ext.Msg.ERROR",
+                                                    "",
+                                                    "          });",
+                                                    "",
+                                                    "",
+                                                    "      }",
+                                                    " }",
+                                                    "            }",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnImportarLayoutClick",
+                                            "designerId": "cef4da9e-6107-4cf5-9ce4-3e0a23b54796"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/factind.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnFacturar",
+                                        "itemId": "btnFacturar",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Facturar",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton1",
+                                    "designerId": "81493236-d7ab-4a52-967b-083ece4a7612",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnImportarLayoutClick1",
+                                                "implHandler": [
+                                                    "records = Ext.getCmp('GridCobros').getSelectionModel().getSelection();",
+                                                    "id_cobro=records[0].data.id_cobro;",
+                                                    "",
+                                                    "Ext.getCmp(\"CapturaCobrosTab\").setLoading(\"Realizando Factura, espere un momento...\");",
+                                                    "",
+                                                    "if(records[0].data.id_cuota_transporte>=1 && records[0].data.id_facturacion_transporte==2){",
+                                                    "",
+                                                    "    Ext.getStore('FacturacionIngresosTransporteStore').load({",
+                                                    "        params:{",
+                                                    "            'id_cobro': id_cobro",
+                                                    "        },",
+                                                    "        waitMsg: 'Procesando ...',",
+                                                    "        callback : function(success) {",
+                                                    "       //     alert(success);",
+                                                    "            if(success){",
+                                                    "",
+                                                    "                Ext.MessageBox.show({",
+                                                    "                    title : 'Atencion',",
+                                                    "                    buttons : Ext.MessageBox.OK,",
+                                                    "                    msg : 'Factura timbrada con éxito',",
+                                                    "                    icon : Ext.Msg.INFO",
+                                                    "                });",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "                Ext.getStore('CapturaCobrosStore').load({",
+                                                    "                    params:{",
+                                                    "                        'id_institucion': Ext._id_institucion,",
+                                                    "                        'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "                    }",
+                                                    "                });",
+                                                    "",
+                                                    "            }else{",
+                                                    "",
+                                                    "                Ext.MessageBox.show({",
+                                                    "                    title : 'Atencion',",
+                                                    "                    buttons : Ext.MessageBox.OK,",
+                                                    "                    msg : 'No se ha timbrado la factura',",
+                                                    "                    icon : Ext.Msg.ERROR",
+                                                    "                });",
+                                                    "",
+                                                    "            }",
+                                                    "        }",
+                                                    "    });",
+                                                    "",
+                                                    "",
+                                                    "}else{",
+                                                    "",
+                                                    "    if(records[0].data.id_tipo_movimiento==1){",
+                                                    "",
+                                                    "        Ext.getStore('FacturacionIngresosInsStore').load({",
+                                                    "            params:{",
+                                                    "                'id_cobro': id_cobro",
+                                                    "            },",
+                                                    "            waitMsg: 'Procesando información...',",
+                                                    "            callback : function(success) {",
+                                                    "                if(success){",
+                                                    "",
+                                                    "                    Ext.MessageBox.show({",
+                                                    "                        title : 'Atencion',",
+                                                    "                        buttons : Ext.MessageBox.OK,",
+                                                    "                        msg : 'Factura timbrada con éxito',",
+                                                    "                        icon : Ext.Msg.INFO",
+                                                    "                    });",
+                                                    "",
+                                                    "                    Ext.getStore('CapturaCobrosStore').load({",
+                                                    "                        params:{",
+                                                    "                            'id_institucion': Ext._id_institucion,",
+                                                    "                            'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "                        }",
+                                                    "                    });",
+                                                    "",
+                                                    "                }else{",
+                                                    "",
+                                                    "                    Ext.MessageBox.show({",
+                                                    "                        title : 'Atencion',",
+                                                    "                        buttons : Ext.MessageBox.OK,",
+                                                    "                        msg : 'No se ha timbrado la factura',",
+                                                    "                        icon : Ext.Msg.ERROR",
+                                                    "                    });",
+                                                    "",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "",
+                                                    "    }else{",
+                                                    "        console.log(\"Vamos a Facturar un Ingreso\");",
+                                                    "       // console.log(Ext.getStore(\"FacturacionIngresosStore\"));",
+                                                    "",
+                                                    "        Ext.getStore('FacturacionIngresosStore').load({",
+                                                    "            params: {",
+                                                    "                'id_cobro': id_cobro",
+                                                    "            },",
+                                                    "            callback: function(records, operation, success) {",
+                                                    "              ",
+                                                    "                if(success){",
+                                                    "                    var response = Ext.JSON.decode(operation.getResponse().responseText),",
+                                                    "                        mensaje = '<div style=\"text-align: center;\">';",
+                                                    "                        mensaje += response.message + \"<br>\";",
+                                                    "",
+                                                    "                        //console.log();",
+                                                    "                    var ruta_xml = records[0].data.data.url_xml,",
+                                                    "                        ruta_pdf = records[0].data.data.url_pdf;",
+                                                    "                    alert(ruta_xml);",
+                                                    "                    alert(ruta_pdf);",
+                                                    "",
+                                                    "                    if(ruta_xml !== \"\" && ruta_pdf !== \"\"){",
+                                                    "                    mensaje += 'Puede descargar los archivos dando click en los enlaces siguientes:';",
+                                                    "                    mensaje += '<br><br>';",
+                                                    "                    mensaje += '<a href=\"' + ruta_xml + '/1\" target=\"_blank\"><img src=\"resources/images/xml.png\" height=\"64\" width=\"64\" title=\"Descargar XML\"></a>';",
+                                                    "                    mensaje += '<a href=\"' + ruta_pdf + '/1\" target=\"_blank\"><img src=\"resources/images/pdf.png\" height=\"64\" width=\"64\" title=\"Descargar PDF\"></a>';",
+                                                    "                    mensaje += '<br><br>';",
+                                                    "                    mensaje += '¿Desea generar otro comprobante?';",
+                                                    "                    btn = Ext.Msg.YESNO;",
+                                                    "                    btnText = {yes: 'Sí', no: 'No'};",
+                                                    "                    cerrar = true;",
+                                                    "                } else {",
+                                                    "                    btn = Ext.Msg.OK;",
+                                                    "                    btnText = {ok: \"Aceptar\"};",
+                                                    "                    cerrar = false;",
+                                                    "                }",
+                                                    "",
+                                                    "                mensaje += '</div>';",
+                                                    "",
+                                                    "",
+                                                    "                    Ext.getCmp(\"CapturaCobrosTab\").setLoading(false);",
+                                                    "",
+                                                    "                    Ext.MessageBox.show({",
+                                                    "                        title : 'Atencion',",
+                                                    "                        buttons : Ext.MessageBox.OK,",
+                                                    "                        msg : mensaje,//'Factura timbrada con éxito',",
+                                                    "                        icon : Ext.Msg.INFO",
+                                                    "                    });",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "            Ext.getStore('CapturaCobrosStore').load({",
+                                                    "                    params:{",
+                                                    "                        'id_institucion': Ext._id_institucion,",
+                                                    "                        'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "                        }",
+                                                    "                });",
+                                                    "",
+                                                    "                }else{",
+                                                    "                    Ext.getCmp(\"CapturaCobrosTab\").setLoading(false);",
+                                                    "",
+                                                    "                    Ext.MessageBox.show({",
+                                                    "                        title : 'Atencion',",
+                                                    "                        buttons : Ext.MessageBox.OK,",
+                                                    "                        msg : 'No se ha timbrado la factura',",
+                                                    "                        icon : Ext.Msg.ERROR",
+                                                    "                    });",
+                                                    "",
+                                                    "                }",
+                                                    "            }",
+                                                    "        });",
+                                                    "    }",
+                                                    "}",
+                                                    "",
+                                                    "",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnImportarLayoutClick1",
+                                            "designerId": "6c498384-8bc4-4be2-9c57-a45dd67c6f06"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "height": 45,
+                                        "icon": "resources/images/facturar.png",
+                                        "iconAlign": "bottom",
+                                        "id": "btnFacturarTodo",
+                                        "itemId": "btnFacturarTodo",
+                                        "layout|flex": null,
+                                        "scale": "large",
+                                        "tooltip": "Facturar Todo",
+                                        "width": 45
+                                    },
+                                    "configAlternates": {
+                                        "iconCls": "binding",
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "tooltip": "string"
+                                    },
+                                    "name": "MyButton8",
+                                    "designerId": "f0e483ce-abef-4579-aea4-9db29bed9d45",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onBtnImportarLayoutClick11",
+                                                "implHandler": [
+                                                    "    var numRegistros=Ext.getStore('CapturaCobrosStore').getCount();",
+                                                    "",
+                                                    "    for(var x=0; x<numRegistros; x++){",
+                                                    "",
+                                                    "        Ext.getCmp('GridCobros').getSelectionModel().select(x);",
+                                                    "        records = Ext.getCmp('GridCobros').getSelectionModel().getSelection();",
+                                                    "        id_cobro=records[0].data.id_cobro;",
+                                                    "        console.log('vuelta:' + x);",
+                                                    "        console.log('cobro: ' +records[0].data.id_cobro);",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    "       if(records[0].data.id_cuota_transporte>=1 && records[0].data.id_facturacion_transporte==2){",
+                                                    "",
+                                                    "            Ext.getStore('FacturacionIngresosTransporteStore').load({",
+                                                    "            params:{",
+                                                    "                'id_cobro': id_cobro",
+                                                    "            },",
+                                                    "            waitMsg: 'Procesando ...',",
+                                                    "            callback : function(success) {",
+                                                    "               if(success){",
+                                                    "",
+                                                    "                   Ext.MessageBox.show({",
+                                                    "                        title : 'Atencion',",
+                                                    "                        buttons : Ext.MessageBox.OK,",
+                                                    "                        msg : 'Factura timbrada con éxito',",
+                                                    "                        icon : Ext.Msg.INFO",
+                                                    "                    });",
+                                                    "",
+                                                    "                   Ext.getStore('CapturaCobrosStore').load({",
+                                                    "                        params:{",
+                                                    "                            'id_institucion': Ext._id_institucion,",
+                                                    "                            'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "                            }",
+                                                    "                    });",
+                                                    "",
+                                                    "           }else{",
+                                                    "",
+                                                    "                Ext.MessageBox.show({",
+                                                    "                    title : 'Atencion',",
+                                                    "                    buttons : Ext.MessageBox.OK,",
+                                                    "                    msg : 'No se ha timbrado la factura',",
+                                                    "                    icon : Ext.Msg.ERROR",
+                                                    "                });",
+                                                    "",
+                                                    "           }",
+                                                    "        }",
+                                                    "    });",
+                                                    "",
+                                                    "",
+                                                    "        }else{",
+                                                    "",
+                                                    "        if(records[0].data.id_tipo_movimiento==1){",
+                                                    "",
+                                                    "            Ext.getStore('FacturacionIngresosInsStore').load({",
+                                                    "                params:{",
+                                                    "                    'id_cobro': id_cobro",
+                                                    "                },",
+                                                    "                waitMsg: 'Procesando información...',",
+                                                    "                callback : function(success) {",
+                                                    "                   if(success){",
+                                                    "",
+                                                    "                       Ext.MessageBox.show({",
+                                                    "                            title : 'Atencion',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'Factura timbrada con éxito',",
+                                                    "                            icon : Ext.Msg.INFO",
+                                                    "                        });",
+                                                    "",
+                                                    "                       Ext.getStore('CapturaCobrosStore').load({",
+                                                    "                            params:{",
+                                                    "                                'id_institucion': Ext._id_institucion,",
+                                                    "                                'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "                                }",
+                                                    "                        });",
+                                                    "",
+                                                    "                   }else{",
+                                                    "",
+                                                    "                        Ext.MessageBox.show({",
+                                                    "                            title : 'Atencion',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se ha timbrado la factura',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    "                   }",
+                                                    "                }",
+                                                    "            });",
+                                                    "",
+                                                    "        }else{",
+                                                    "",
+                                                    "            Ext.getStore('FacturacionIngresosStore').load({",
+                                                    "                params:{",
+                                                    "                    'id_cobro': id_cobro",
+                                                    "                },",
+                                                    "                waitMsg: 'Procesando ...',",
+                                                    "                callback : function(success) {",
+                                                    "                   if(success){",
+                                                    "",
+                                                    "                       Ext.MessageBox.show({",
+                                                    "                            title : 'Atencion',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'Factura timbrada con éxito',",
+                                                    "                            icon : Ext.Msg.INFO",
+                                                    "                        });",
+                                                    "",
+                                                    "                    Ext.getStore('CapturaCobrosStore').load({",
+                                                    "                            params:{",
+                                                    "                                'id_institucion': Ext._id_institucion,",
+                                                    "                                'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                                    "                                }",
+                                                    "                        });",
+                                                    "",
+                                                    "                   }else{",
+                                                    "",
+                                                    "                        Ext.MessageBox.show({",
+                                                    "                            title : 'Atencion',",
+                                                    "                            buttons : Ext.MessageBox.OK,",
+                                                    "                            msg : 'No se ha timbrado la factura',",
+                                                    "                            icon : Ext.Msg.ERROR",
+                                                    "                        });",
+                                                    "",
+                                                    "                   }",
+                                                    "                }",
+                                                    "            });",
+                                                    "",
+                                                    "        }",
+                                                    "",
+                                                    "        }",
+                                                    "",
+                                                    "",
+                                                    "}",
+                                                    "",
+                                                    "",
+                                                    "",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onBtnImportarLayoutClick11",
+                                            "designerId": "6bf60c15-0054-4c02-a6a1-913f695450cf"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.TextItem",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dock": "right",
+                                        "height": 45,
+                                        "html": "Movimientos del día 09 de Octubre de 2019.",
+                                        "id": "txtFecha",
+                                        "itemId": "txtFecha",
+                                        "layout|flex": null,
+                                        "padding": 15,
+                                        "resizable": false,
+                                        "style": [
+                                            "'font-weight:bold;font-size: 11pt;display:inline-block; text-align:right;'"
+                                        ],
+                                        "width": 1135
+                                    },
+                                    "configAlternates": {
+                                        "height": "auto",
+                                        "icon": "string",
+                                        "iconAlign": "string",
+                                        "id": "string",
+                                        "itemId": "string",
+                                        "layout|flex": "number",
+                                        "scale": "string",
+                                        "width": "auto",
+                                        "disabled": "boolean",
+                                        "dock": "string",
+                                        "html": "string",
+                                        "resizable": "boolean",
+                                        "style": "object",
+                                        "padding": "auto"
+                                    },
+                                    "name": "MyTextItem",
+                                    "designerId": "ae970af7-6b40-4080-ac18-e4f41dedd77e",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onTxtFechaAfterRender",
+                                                "implHandler": [
+                                                    ""
+                                                ],
+                                                "name": "afterrender",
+                                                "scope": "me"
+                                            },
+                                            "configAlternates": {
+                                                "fn": "string",
+                                                "implHandler": "code",
+                                                "name": "string",
+                                                "scope": "string"
+                                            },
+                                            "name": "onTxtFechaAfterRender",
+                                            "designerId": "0a689789-aa07-47f8-af35-d2ebfa22d9b5"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.Panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "id": "GridCobros",
+                                "store": "CapturaCobrosStore"
+                            },
+                            "configAlternates": {
+                                "store": "store",
+                                "id": "string"
+                            },
+                            "name": "MyGridPanel1",
+                            "designerId": "2b35e078-6016-4dea-8cb6-0e4130346bf5",
+                            "cn": [
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_alumno",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_alumno"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn1",
+                                    "designerId": "dbbd2aa1-74ba-4b57-a99d-7ce3c27f979b"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_facturacion_transporte",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_facturacion_transporte"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn3",
+                                    "designerId": "3075dcf1-49a9-42c1-a880-697515c781eb"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_cuota_transporte",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_cuota_transporte"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn4",
+                                    "designerId": "4a7d560c-d0bf-45c8-a87a-a09a71131785"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_cuota_transporte",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_tipo_movimiento"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn",
+                                    "designerId": "1f85e80e-8c71-49dd-b426-65d595d00d0c"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_cobro",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_cobro"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn2",
+                                    "designerId": "4e91a9f3-0ada-453e-9ab8-b0b274ee6263"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Number",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "id_status_ciclo",
+                                        "format": "0",
+                                        "hidden": true,
+                                        "menuDisabled": true,
+                                        "text": "id_status_ciclo"
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string"
+                                    },
+                                    "name": "MyNumberColumn8",
+                                    "designerId": "0fd8ab39-6662-4640-a999-25cb9f3e9992"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "referencia",
+                                        "defaultWidth": 120,
+                                        "menuDisabled": true,
+                                        "text": "N. Referencia",
+                                        "width": 120
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "hidden": "boolean",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "format": "string",
+                                        "defaultWidth": "number",
+                                        "width": "auto",
+                                        "align": "string"
+                                    },
+                                    "name": "MyColumn5",
+                                    "designerId": "4e4823c5-6c7d-4195-b766-81947a14fffe"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "nombre",
+                                        "text": "Alumno(s)",
+                                        "width": 296
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn2",
+                                    "designerId": "bccb4d41-0e83-4b1c-a2b4-11c5221c32ec"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "concepto",
+                                        "text": "Concepto",
+                                        "width": 274
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn",
+                                    "designerId": "e1acc13a-0e7c-46b9-9327-589a6f51341f"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "nivel",
+                                        "text": "Nivel",
+                                        "width": 120
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto"
+                                    },
+                                    "name": "MyColumn3",
+                                    "designerId": "55dd0c98-b56b-49f4-9b80-f1b4d014c864"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "grado",
+                                        "text": "Grado",
+                                        "width": 120
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "align": "string"
+                                    },
+                                    "name": "MyColumn4",
+                                    "designerId": "34cccd6f-fc55-4369-ba07-da85b3211d32"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "importe",
+                                        "hideable": false,
+                                        "text": "Importe",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "hidden": "boolean",
+                                        "hideable": "boolean",
+                                        "align": "string"
+                                    },
+                                    "name": "MyColumn6",
+                                    "designerId": "a624c982-be3f-4aea-ac0a-98d6ace2ef87"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Column",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "dataIndex": "forma_pago",
+                                        "hideable": false,
+                                        "text": "Forma de Pago",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "hidden": "boolean",
+                                        "hideable": "boolean"
+                                    },
+                                    "name": "MyColumn7",
+                                    "designerId": "ae4cf97e-4c8e-4415-b4ae-35bb9772822b"
+                                },
+                                {
+                                    "type": "Ext.grid.column.Action",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "align": "center",
+                                        "dataIndex": "id_estatus_cobro",
+                                        "hideable": false,
+                                        "text": "Estatus",
+                                        "width": 170
+                                    },
+                                    "configAlternates": {
+                                        "dataIndex": "datafield",
+                                        "format": "string",
+                                        "menuDisabled": "boolean",
+                                        "text": "string",
+                                        "width": "auto",
+                                        "hidden": "boolean",
+                                        "hideable": "boolean",
+                                        "align": "string"
+                                    },
+                                    "name": "MyActionColumn5",
+                                    "designerId": "09d3064c-d206-4329-8fd3-0b999c451b2e",
+                                    "cn": [
+                                        {
+                                            "type": "actioncolumnitem",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "name": "MyActionColumnItem",
+                                            "designerId": "d07d4663-b1c3-4ff5-a391-431e94242ffd",
+                                            "cn": [
+                                                {
+                                                    "type": "fixedfunction",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "designer|params": [
+                                                            "view",
+                                                            "rowIndex",
+                                                            "colIndex",
+                                                            "item",
+                                                            "e",
+                                                            "record",
+                                                            "row"
+                                                        ],
+                                                        "fn": "handler",
+                                                        "implHandler": [
+                                                            "var nombre = record.data.nombre;",
+                                                            "if(record.data.id_estatus_cobro === 1){",
+                                                            "    Ext.MessageBox.show({",
+                                                            "        title : 'Desactivar Cobro',",
+                                                            "        buttons : Ext.MessageBox.YESNO,",
+                                                            "        buttonText:{",
+                                                            "                yes:'Sí',",
+                                                            "                no:'No',",
+                                                            "                cancel:'Cancelar'",
+                                                            "            },",
+                                                            "        msg : '¿Desea Desactivar a '+nombre+'?',",
+                                                            "        icon : Ext.Msg.WARNING,",
+                                                            "        fn : function(btn)",
+                                                            "        {",
+                                                            "            if (btn == 'yes')",
+                                                            "            {",
+                                                            "                var values= {'id_estatus_cobro': 0};",
+                                                            "                record.set(values);",
+                                                            "                Ext.getStore('CapturaCobrosStore').sync({",
+                                                            "                    callback: function(records, operation, success)",
+                                                            "                    {",
+                                                            "                        Ext.MessageBox.show({",
+                                                            "                            title : 'Desactivar Cobros',",
+                                                            "                            buttons : Ext.MessageBox.OK,",
+                                                            "                            msg : 'Cobro desactivado correctamente',",
+                                                            "                            icon : Ext.Msg.INFO",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                });",
+                                                            "",
+                                                            "            }",
+                                                            "        }",
+                                                            "    });",
+                                                            "}",
+                                                            "else{",
+                                                            "    Ext.MessageBox.show({",
+                                                            "        title : 'Activar Cobro',",
+                                                            "        buttons : Ext.MessageBox.YESNO,",
+                                                            "        buttonText:{",
+                                                            "                yes:'Sí',",
+                                                            "                no:'No',",
+                                                            "                cancel:'Cancelar'",
+                                                            "            },",
+                                                            "        msg : '¿Desea Activar a '+nombre+'?',",
+                                                            "        icon : Ext.Msg.WARNING,",
+                                                            "        fn : function(btn)",
+                                                            "        {",
+                                                            "            if (btn == 'yes')",
+                                                            "            {",
+                                                            "                var values= {'id_estatus_cobro': 1};",
+                                                            "                record.set(values);",
+                                                            "                Ext.getStore('CapturaCobrosStore').sync({",
+                                                            "                    callback: function(records, operation, success)",
+                                                            "                    {",
+                                                            "                        Ext.MessageBox.show({",
+                                                            "                            title : 'Activar Cobro',",
+                                                            "                            buttons : Ext.MessageBox.OK,",
+                                                            "                            msg : 'Cobro activado correctamente',",
+                                                            "                            icon : Ext.Msg.INFO",
+                                                            "                        });",
+                                                            "                    }",
+                                                            "                });",
+                                                            "",
+                                                            "",
+                                                            "            }",
+                                                            "        }",
+                                                            "    });",
+                                                            "}"
+                                                        ]
+                                                    },
+                                                    "configAlternates": {
+                                                        "designer|params": "typedarray",
+                                                        "fn": "string",
+                                                        "implHandler": "code"
+                                                    },
+                                                    "name": "handler",
+                                                    "designerId": "305ab07f-ea77-41aa-8fad-9331a537db04"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "fn": "renderer",
+                                                "implHandler": [
+                                                    "this.items[0].icon = record.get('id_estatus_cobro') == 1 ? \"resources/images/ok2.png\" : \"resources/images/eliminar.png\";",
+                                                    "return value;"
+                                                ]
+                                            },
+                                            "configAlternates": {
+                                                "designer|params": "typedarray",
+                                                "fn": "string",
+                                                "implHandler": "code"
+                                            },
+                                            "name": "renderer",
+                                            "designerId": "d6b8e55d-71ad-4422-bfae-d44343ff38a4"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onGridcolumnAfterRender11",
+                                        "implHandler": [
+                                            "Ext.getStore('CapturaCobrosStore').load({",
+                                            "                params:{",
+                                            "                    'id_institucion': Ext._id_institucion,",
+                                            "                    'id_ciclo_escolar': Ext._id_ciclo_escolar",
+                                            "                    },",
+                                            "});",
+                                            ""
+                                        ],
+                                        "name": "afterrender",
+                                        "scope": "me"
+                                    },
+                                    "configAlternates": {
+                                        "fn": "string",
+                                        "implHandler": "code",
+                                        "name": "string",
+                                        "scope": "string"
+                                    },
+                                    "name": "onGridcolumnAfterRender11",
+                                    "designerId": "a6601b23-10e5-4e3a-abce-7455d3693d0c"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

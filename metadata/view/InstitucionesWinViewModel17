@@ -1,0 +1,18 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "carnetsinswin",
+        "designer|userClassName": "InstitucionesWinViewModel17"
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesWinViewModel17",
+    "designerId": "4d8f32a4-bffb-4231-a8b6-837c35ea99a6"
+}

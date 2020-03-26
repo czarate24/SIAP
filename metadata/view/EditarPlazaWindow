@@ -1,0 +1,329 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "editarplazawindow",
+        "designer|userClassName": "EditarPlazaWindow",
+        "height": 600,
+        "itemId": "EditarPlazaWindow",
+        "modal": true,
+        "title": "Editar Plaza",
+        "width": 500
+    },
+    "configAlternates": {
+        "designer|userAlias": "string",
+        "designer|userClassName": "string",
+        "height": "auto",
+        "modal": "boolean",
+        "title": "string",
+        "width": "auto",
+        "itemId": "string"
+    },
+    "name": "NuevaPlazaWindow1",
+    "designerId": "1b0a99d5-a4af-46a8-89de-baa1e8c31940",
+    "viewControllerInstanceId": "d27d28d2-c8de-4f0c-86f6-afb833709600",
+    "viewModelInstanceId": "e02227cc-7e9b-4f62-ac40-39410ddec251",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "itemId": "formPlaza"
+            },
+            "configAlternates": {
+                "bodyPadding": "auto",
+                "itemId": "string"
+            },
+            "name": "MyForm1",
+            "designerId": "610e5bc8-4b4b-4118-9095-7e4df618d3df",
+            "cn": [
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Clave:",
+                        "layout|anchor": "100%",
+                        "name": "plaza"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string"
+                    },
+                    "name": "MyTextField3",
+                    "designerId": "015eb9c9-aaa7-4e38-a574-b404927afd2e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Plaza:",
+                        "layout|anchor": "100%",
+                        "name": "ciudad"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string"
+                    },
+                    "name": "MyTextField4",
+                    "designerId": "3bf98f59-3a9f-4cec-9d14-f27027114a9a"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Direccion:",
+                        "layout|anchor": "100%",
+                        "name": "direccion_sucursal"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "name": "string"
+                    },
+                    "name": "MyTextField2",
+                    "designerId": "2a42618f-8cac-40ec-aa74-92f66884511e"
+                },
+                {
+                    "type": "Ext.form.field.Text",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Permiso:",
+                        "layout|anchor": "100%",
+                        "name": "permiso"
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "allowBlank": "boolean",
+                        "name": "string"
+                    },
+                    "name": "MyTextField5",
+                    "designerId": "85247c10-eb3d-427a-bb27-dda257ccf878"
+                },
+                {
+                    "type": "Ext.form.field.Number",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "fieldLabel": "Total Clientes:",
+                        "hideTrigger": true,
+                        "layout|anchor": "100%",
+                        "minValue": 0,
+                        "name": "clientes_estacionario"
+                    },
+                    "configAlternates": {
+                        "allowBlank": "boolean",
+                        "fieldLabel": "string",
+                        "hideTrigger": "boolean",
+                        "layout|anchor": "string",
+                        "minValue": "number",
+                        "name": "string"
+                    },
+                    "name": "MyNumberField",
+                    "designerId": "e595b377-7b01-4555-942b-7928a92f05f7"
+                },
+                {
+                    "type": "Ext.form.field.ComboBox",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "allowBlank": false,
+                        "editable": false,
+                        "fieldLabel": "Empresa:",
+                        "forceSelection": true,
+                        "layout|anchor": "100%",
+                        "name": "empresa_id",
+                        "store": [
+                            "[",
+                            "   [1, \"GASPASA\"],",
+                            "   [2, \"DIESGAS\"]",
+                            "]"
+                        ]
+                    },
+                    "configAlternates": {
+                        "fieldLabel": "string",
+                        "layout|anchor": "string",
+                        "store": "array",
+                        "allowBlank": "boolean",
+                        "editable": "boolean",
+                        "forceSelection": "boolean",
+                        "name": "string"
+                    },
+                    "name": "MyComboBox",
+                    "designerId": "62fb1b3e-ef46-4cff-8040-b895efaef7c8"
+                },
+                {
+                    "type": "Ext.form.CheckboxGroup",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "name": "MyCheckboxGroup",
+                    "designerId": "27fb55b1-14b0-467f-b322-f303c4190151",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Checkbox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "boxLabel": "Aplica SUMA PUNTOS",
+                                "fieldLabel": null,
+                                "inputValue": "true",
+                                "name": "otorga_puntos",
+                                "uncheckedValue": "false"
+                            },
+                            "configAlternates": {
+                                "boxLabel": "string",
+                                "fieldLabel": "string",
+                                "inputValue": "string",
+                                "name": "string",
+                                "uncheckedValue": "string"
+                            },
+                            "name": "MyCheckbox",
+                            "designerId": "96281869-943c-4fbd-ac0b-52c8a23533f4"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "GUARDAR:"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton4",
+                    "designerId": "97ba0b3f-8c09-46e9-acdb-68541f09796a",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onbtnGuardar",
+                                "implHandler": [
+                                    "//console.log(\"HOLIS\");",
+                                    "var ctrl = this,",
+                                    "    editarPlazaForm = ctrl.view.down(\"#formPlaza\").getForm(),",
+                                    "    plazasStore = Ext.getStore(\"PlazasStore\");",
+                                    "",
+                                    "if (editarPlazaForm.isValid()) {",
+                                    "    editarPlazaForm.updateRecord();",
+                                    "    plazasStore.sync();",
+                                    "    ctrl.view.destroy();",
+                                    "}",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "implHandler": "code",
+                                "name": "string",
+                                "scope": "string"
+                            },
+                            "name": "onbtnGuardar",
+                            "designerId": "0a5bf754-3023-4282-a253-6a840759e541"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "text": "CANCELAR"
+                    },
+                    "configAlternates": {
+                        "text": "string"
+                    },
+                    "name": "MyButton3",
+                    "designerId": "3af2fc51-b4c6-4257-abbd-88b6c26ba03b",
+                    "cn": [
+                        {
+                            "type": "viewcontrollereventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fn": "onbtnCancelar",
+                                "implHandler": [
+                                    "this.view.destroy();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "configAlternates": {
+                                "fn": "string",
+                                "name": "string",
+                                "scope": "string",
+                                "implHandler": "code"
+                            },
+                            "name": "onbtnCancelar",
+                            "designerId": "a8034183-175e-432b-9e0b-e85fcda47904"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

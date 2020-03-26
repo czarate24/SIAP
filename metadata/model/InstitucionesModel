@@ -1,0 +1,52 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "InstitucionesModel"
+    },
+    "configAlternates": {
+        "designer|userClassName": "string"
+    },
+    "name": "InstitucionesModel1",
+    "designerId": "76b40d0d-9d7b-4ae7-bb6c-704e1c9a96e8",
+    "cn": [
+        {
+            "type": "Ext.data.field.Integer",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id_institucion"
+            },
+            "configAlternates": {
+                "name": "string"
+            },
+            "name": "MyInteger12",
+            "designerId": "7054a749-cdc4-4932-83a2-fe94ee02ce47"
+        },
+        {
+            "type": "Ext.data.field.String",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "allowNull": true,
+                "name": "nombre"
+            },
+            "configAlternates": {
+                "name": "string",
+                "allowNull": "boolean"
+            },
+            "name": "MyString2",
+            "designerId": "7ca99fa4-7e66-4680-a1f3-192ece1e88a2"
+        }
+    ]
+}
